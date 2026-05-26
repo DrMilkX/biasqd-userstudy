@@ -1,0 +1,252 @@
+{
+  "applicants": [
+    {
+      "name": "Alicia Tran",
+      "contact": {
+        "email": "alicia.tran.dev@example.com",
+        "phone": "(555) 201-8842",
+        "location": "Seattle, WA"
+      },
+      "photo_icon": "static/icons/alicia_tran.png",
+      "education": [
+        {
+          "college": "University of Washington",
+          "year": 2024,
+          "degree": "B.S. in Computer Science",
+          "awards_scholarships": [
+            "Dean's List",
+            "Husky Innovation Scholarship",
+            "ACM Programming Contest Finalist"
+          ]
+        },
+        {
+          "college": "Bellevue Community College",
+          "year": 2021,
+          "degree": "Associate of Science",
+          "awards_scholarships": [
+            "STEM Transfer Excellence Award"
+          ]
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "Microsoft",
+          "tasks": "Worked on internal dashboard tools using React and TypeScript, fixed frontend bugs, and wrote automated tests.",
+          "dates_worked": "Jun 2023 - Aug 2023"
+        },
+        {
+          "company": "Rainbyte Analytics",
+          "tasks": "Developed Python scripts for processing customer analytics data and maintained REST API endpoints.",
+          "dates_worked": "Jan 2022 - May 2023"
+        }
+      ],
+      "languages": {
+        "spoken": [
+          "English",
+          "Vietnamese"
+        ],
+        "programming": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "C++",
+          "SQL"
+        ]
+      },
+      "general_skills": [
+        "Agile Development",
+        "Git",
+        "Docker",
+        "REST APIs",
+        "Data Visualization",
+        "Unit Testing"
+      ]
+    },
+    {
+      "name": "Marcus Holloway",
+      "contact": {
+        "email": "mholloway.codes@example.com",
+        "phone": "(555) 448-1092",
+        "location": "Austin, TX"
+      },
+      "photo_icon": "static/icons/marcus_holloway.png",
+      "education": [
+        {
+          "college": "Rice University",
+          "year": 2022,
+          "degree": "B.A. in Computational Mathematics",
+          "awards_scholarships": [
+            "Presidential Merit Scholarship",
+            "Undergraduate Research Fellowship"
+          ]
+        },
+        {
+          "college": "Lone Star Community College",
+          "year": 2019,
+          "degree": "Associate of Arts",
+          "awards_scholarships": [
+            "Phi Theta Kappa Honor Society"
+          ]
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "Google",
+          "tasks": "Contributed to internal cloud monitoring tools and improved performance metrics collection pipelines.",
+          "dates_worked": "Jul 2021 - Dec 2021"
+        },
+        {
+          "company": "HexaForge Interactive",
+          "tasks": "Built backend game services in Node.js and maintained PostgreSQL databases for multiplayer matchmaking.",
+          "dates_worked": "Feb 2020 - Jun 2021"
+        }
+      ],
+      "languages": {
+        "spoken": [
+          "English",
+          "Spanish"
+        ],
+        "programming": [
+          "Java",
+          "Go",
+          "JavaScript",
+          "Node.js",
+          "SQL"
+        ]
+      },
+      "general_skills": [
+        "Cloud Computing",
+        "Linux Administration",
+        "Database Optimization",
+        "CI/CD Pipelines",
+        "Team Collaboration"
+      ]
+    },
+    {
+      "name": "Priya Ramanathan",
+      "contact": {
+        "email": "priya.ramanathan@example.com",
+        "phone": "(555) 782-3301",
+        "location": "Boston, MA"
+      },
+      "photo_icon": "static/icons/priya_ramanathan.png",
+      "education": [
+        {
+          "college": "Massachusetts Institute of Technology",
+          "year": 2025,
+          "degree": "M.Eng. in Electrical Engineering and Computer Science",
+          "awards_scholarships": [
+            "MIT Excellence Fellowship",
+            "Women in Computing Scholarship",
+            "Graduate Research Award"
+          ]
+        },
+        {
+          "college": "Smith College",
+          "year": 2023,
+          "degree": "B.S. in Computer Science",
+          "awards_scholarships": [
+            "Summa Cum Laude",
+            "Ada Lovelace Computing Award"
+          ]
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "Amazon",
+          "tasks": "Implemented AWS Lambda services for automated deployment tooling and optimized infrastructure scripts.",
+          "dates_worked": "May 2024 - Aug 2024"
+        },
+        {
+          "company": "BluePeak Robotics",
+          "tasks": "Designed embedded software prototypes and collaborated with firmware engineers on sensor integration.",
+          "dates_worked": "Jun 2022 - Apr 2024"
+        }
+      ],
+      "languages": {
+        "spoken": [
+          "English",
+          "Tamil",
+          "Hindi"
+        ],
+        "programming": [
+          "Python",
+          "Rust",
+          "C",
+          "MATLAB",
+          "Bash"
+        ]
+      },
+      "general_skills": [
+        "Embedded Systems",
+        "Machine Learning",
+        "AWS",
+        "Technical Documentation",
+        "Research Prototyping",
+        "Problem Solving"
+      ]
+    },
+    {
+      "name": "Diego Alvarez",
+      "contact": {
+        "email": "diego.alvarez.tech@example.com",
+        "phone": "(555) 991-4407",
+        "location": "Denver, CO"
+      },
+      "photo_icon": "static/icons/diego_alvarez.png",
+      "education": [
+        {
+          "college": "University of Colorado Boulder",
+          "year": 2021,
+          "degree": "B.S. in Information Systems",
+          "awards_scholarships": [
+            "First Generation Student Scholarship",
+            "Cybersecurity Leadership Award"
+          ]
+        },
+        {
+          "college": "Front Range Community College",
+          "year": 2018,
+          "degree": "Associate of Applied Science",
+          "awards_scholarships": [
+            "Outstanding IT Student Award"
+          ]
+        }
+      ],
+      "work_experience": [
+        {
+          "company": "Nexora Systems",
+          "tasks": "Managed internal support automation tools and created dashboards for ticket analytics and reporting.",
+          "dates_worked": "Jan 2022 - Present"
+        },
+        {
+          "company": "IBM",
+          "tasks": "Assisted with QA testing for enterprise software products and wrote scripts for regression testing.",
+          "dates_worked": "May 2020 - Dec 2021"
+        }
+      ],
+      "languages": {
+        "spoken": [
+          "English",
+          "Spanish",
+          "Portuguese"
+        ],
+        "programming": [
+          "Python",
+          "PowerShell",
+          "C#",
+          "SQL",
+          "HTML/CSS"
+        ]
+      },
+      "general_skills": [
+        "Cybersecurity Fundamentals",
+        "Windows Server Administration",
+        "Automation Scripting",
+        "Technical Support",
+        "QA Testing",
+        "Network Troubleshooting"
+      ]
+    }
+  ]
+}

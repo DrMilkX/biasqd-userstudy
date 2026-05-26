@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIRE/PASS — Resume Screener</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">HIRE/PASS</div>
+  <div class="session-info">PROTOTYPE</div>
+</header>
+
+<main>
+  <div class="status-bar">
+    <span>APPLICANT <span class="counter" id="counterDisplay">1 / 4</span></span>
+    <span class="layout-badge" id="layoutBadge">LAYOUT A</span>
+  </div>
+
+  <div class="card-stack" id="cardStack">
+    <div class="card-shadow s2"></div>
+    <div class="card-shadow s1"></div>
+    <div class="resume-card card-enter" id="resumeCard">
+      <div class="swipe-overlay accept" id="overlayAccept">
+        <div class="stamp accept">ADVANCE</div>
+      </div>
+      <div class="swipe-overlay reject" id="overlayReject">
+        <div class="stamp reject">REJECTED</div>
+      </div>
+      <div class="resume-inner" id="resumeContent"></div>
+    </div>
+  </div>
+
+  <div class="swipe-hint">
+    drag <span>←</span> reject &nbsp;|&nbsp; drag <span>→</span> advance
+  </div>
+
+  <div class="done-screen" id="doneScreen">
+    <div class="done-title">Session Complete</div>
+    <div class="done-stat" id="doneAcceptRate">—</div>
+    <div class="done-sub">acceptance rate</div>
+    <div class="done-breakdown">
+      <div class="d-item d-a">
+        <span class="d-num" id="doneAccepted">0</span>
+        <span class="d-lbl">advanced</span>
+      </div>
+      <div class="d-item d-r">
+        <span class="d-num" id="doneRejected">0</span>
+        <span class="d-lbl">rejected</span>
+      </div>
+    </div>
+    <button class="restart-btn" id="restartBtn">↺ Review Again</button>
+  </div>
+</main>
+
+<div class="controls" id="controls">
+  <button class="action-btn btn-reject" id="btnReject" aria-label="Reject">
+    <div class="btn-circle">✕</div>
+    <span class="btn-label">Reject</span>
+  </button>
+  <div class="score-display">
+    <div class="score-nums">
+      <span class="score-accept" id="scoreAccept">0 ✓</span>
+      <span class="score-reject" id="scoreReject">✕ 0</span>
+    </div>
+    <div class="score-label">decisions</div>
+  </div>
+  <button class="action-btn btn-accept" id="btnAccept" aria-label="Advance">
+    <div class="btn-circle">✓</div>
+    <span class="btn-label">Advance</span>
+  </button>
+</div>
+
+<script>
+//const DATA = {"applicants":[{"name":"Alicia Tran","contact":{"email":"alicia.tran.dev@example.com","phone":"(555) 201-8842","location":"Seattle, WA"},"photo_icon":"static/icons/alicia_tran.png","education":[{"college":"University of Washington","year":2024,"degree":"B.S. in Computer Science","awards_scholarships":["Dean's List","Husky Innovation Scholarship","ACM Programming Contest Finalist"]},{"college":"Bellevue Community College","year":2021,"degree":"Associate of Science","awards_scholarships":["STEM Transfer Excellence Award"]}],"work_experience":[{"company":"Microsoft","tasks":"Worked on internal dashboard tools using React and TypeScript, fixed frontend bugs, and wrote automated tests.","dates_worked":"Jun 2023 - Aug 2023"},{"company":"Rainbyte Analytics","tasks":"Developed Python scripts for processing customer analytics data and maintained REST API endpoints.","dates_worked":"Jan 2022 - May 2023"}],"languages":{"spoken":["English","Vietnamese"],"programming":["Python","JavaScript","TypeScript","C++","SQL"]},"general_skills":["Agile Development","Git","Docker","REST APIs","Data Visualization","Unit Testing"]},{"name":"Marcus Holloway","contact":{"email":"mholloway.codes@example.com","phone":"(555) 448-1092","location":"Austin, TX"},"photo_icon":"static/icons/marcus_holloway.png","education":[{"college":"Rice University","year":2022,"degree":"B.A. in Computational Mathematics","awards_scholarships":["Presidential Merit Scholarship","Undergraduate Research Fellowship"]},{"college":"Lone Star Community College","year":2019,"degree":"Associate of Arts","awards_scholarships":["Phi Theta Kappa Honor Society"]}],"work_experience":[{"company":"Google","tasks":"Contributed to internal cloud monitoring tools and improved performance metrics collection pipelines.","dates_worked":"Jul 2021 - Dec 2021"},{"company":"HexaForge Interactive","tasks":"Built backend game services in Node.js and maintained PostgreSQL databases for multiplayer matchmaking.","dates_worked":"Feb 2020 - Jun 2021"}],"languages":{"spoken":["English","Spanish"],"programming":["Java","Go","JavaScript","Node.js","SQL"]},"general_skills":["Cloud Computing","Linux Administration","Database Optimization","CI/CD Pipelines","Team Collaboration"]},{"name":"Priya Ramanathan","contact":{"email":"priya.ramanathan@example.com","phone":"(555) 782-3301","location":"Boston, MA"},"photo_icon":"static/icons/priya_ramanathan.png","education":[{"college":"Massachusetts Institute of Technology","year":2025,"degree":"M.Eng. in Electrical Engineering and Computer Science","awards_scholarships":["MIT Excellence Fellowship","Women in Computing Scholarship","Graduate Research Award"]},{"college":"Smith College","year":2023,"degree":"B.S. in Computer Science","awards_scholarships":["Summa Cum Laude","Ada Lovelace Computing Award"]}],"work_experience":[{"company":"Amazon","tasks":"Implemented AWS Lambda services for automated deployment tooling and optimized infrastructure scripts.","dates_worked":"May 2024 - Aug 2024"},{"company":"BluePeak Robotics","tasks":"Designed embedded software prototypes and collaborated with firmware engineers on sensor integration.","dates_worked":"Jun 2022 - Apr 2024"}],"languages":{"spoken":["English","Tamil","Hindi"],"programming":["Python","Rust","C","MATLAB","Bash"]},"general_skills":["Embedded Systems","Machine Learning","AWS","Technical Documentation","Research Prototyping","Problem Solving"]},{"name":"Diego Alvarez","contact":{"email":"diego.alvarez.tech@example.com","phone":"(555) 991-4407","location":"Denver, CO"},"photo_icon":"static/icons/diego_alvarez.png","education":[{"college":"University of Colorado Boulder","year":2021,"degree":"B.S. in Information Systems","awards_scholarships":["First Generation Student Scholarship","Cybersecurity Leadership Award"]},{"college":"Front Range Community College","year":2018,"degree":"Associate of Applied Science","awards_scholarships":["Outstanding IT Student Award"]}],"work_experience":[{"company":"Nexora Systems","tasks":"Managed internal support automation tools and created dashboards for ticket analytics and reporting.","dates_worked":"Jan 2022 - Present"},{"company":"IBM","tasks":"Assisted with QA testing for enterprise software products and wrote scripts for regression testing.","dates_worked":"May 2020 - Dec 2021"}],"languages":{"spoken":["English","Spanish","Portuguese"],"programming":["Python","PowerShell","C#","SQL","HTML/CSS"]},"general_skills":["Cybersecurity Fundamentals","Windows Server Administration","Automation Scripting","Technical Support","QA Testing","Network Troubleshooting"]}]};
+var DATA = null;
+var app_file = "applicants_demo.json"
+fetch('./'+app_file)
+  .then(response => response.json())
+  .then(data => {
+    DATA = data;
+    console.log("DATA LOADED FROM " + app_file)
+
+    buildQueue();
+    renderCard(0);
+  })
+  .catch(error => console.error('Error loading JSON:', error));
+
+
+const LAYOUTS = ['classic', 'chaos', 'sidebar', 'form'];
+const LAYOUT_NAMES = { classic: 'CLASSIC', chaos: 'UNSTRUCTURED', sidebar: 'TWO-COLUMN', form: 'FORM STYLE' };
+
+let queue = [];
+let current = 0;
+let accepted = 0;
+let rejected = 0;
+
+// Build a randomized queue with random layout per applicant
+function buildQueue() {
+  const shuffled = [...DATA.applicants].sort(() => Math.random() - 0.5);
+  queue = shuffled.map(a => ({
+    applicant: a,
+    layout: LAYOUTS[Math.floor(Math.random() * LAYOUTS.length)]   // TODO: specify layouts or evenly distribute for experiments
+  }));
+}
+
+function getInitials(name) {
+  return name.split(' ').map(p => p[0]).join('').toUpperCase();
+}
+
+function e(tag, cls, html) {
+  const el = document.createElement(tag);
+  if (cls) el.className = cls;
+  if (html) el.innerHTML = html;
+  return el;
+}
+
+function renderClassic(a) {
+  const d = document.createElement('div');
+  d.className = 'layout-classic';
+  const sections = [];
+
+  // Header always first in classic
+  const header = e('div', 'resume-header');
+  header.innerHTML = `<div class="applicant-name">${a.name}</div><div class="applicant-contact">${a.contact.email} &nbsp;·&nbsp; ${a.contact.phone} &nbsp;·&nbsp; ${a.contact.location}</div>`;
+  d.appendChild(header);
+
+  const eduHtml = a.education.map(ed => `
+    <div class="edu-item">
+      <div class="edu-degree">${ed.degree} <span style="font-weight:300;font-size:10px;color:#777">${ed.year}</span></div>
+      <div class="edu-school">${ed.college}</div>
+      ${ed.awards_scholarships.length ? `<div class="edu-awards">${ed.awards_scholarships.join(' · ')}</div>` : ''}
+    </div>`).join('');
+
+  const expHtml = a.work_experience.map(w => `
+    <div class="exp-item">
+      <span class="exp-dates">${w.dates_worked}</span>
+      <div class="exp-company">${w.company}</div>
+      <div class="exp-desc">${w.tasks}</div>
+    </div>`).join('');
+
+  const allSkills = [...a.general_skills, ...a.languages.programming];
+  const skillsHtml = `<div class="skills-wrap">${allSkills.map(s=>`<span class="skill-pill">${s}</span>`).join('')}</div>`;
+
+  const langHtml = `Spoken: ${a.languages.spoken.join(', ')}`;
+
+  const allSections = [
+    { title: 'Education', content: eduHtml },
+    { title: 'Work Experience', content: expHtml },
+    { title: 'Skills', content: skillsHtml },
+    { title: 'Languages', content: `<div class="section-content">${langHtml}</div>` },
+  ];
+
+  // In classic layout, optionally shuffle section order slightly
+  const reordered = Math.random() > 0.5 ? allSections : [allSections[1], allSections[0], allSections[3], allSections[2]];
+
+  reordered.forEach(sec => {
+    const s = e('div', 'section');
+    s.innerHTML = `<div class="section-title">${sec.title}</div><div class="section-content">${sec.content}</div>`;
+    d.appendChild(s);
+  });
+
+  return d;
+}
+
+function renderChaos(a) {
+  const d = document.createElement('div');
+  d.className = 'layout-chaos';
+  const inner = e('div', 'resume-inner');
+
+  // Dump everything out in a somewhat random order with inconsistent formatting
+  const chunks = [];
+
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Name</span><br>${a.name}<br><span style="font-size:10px;color:#666">${a.contact.location} / ${a.contact.phone}</span></div><br>`);
+
+  if (Math.random() > 0.5) {
+    chunks.push(`<div class="chaos-block"><span class="chaos-label">Contact</span><br>${a.contact.email}</div><br>`);
+  }
+
+  a.education.forEach(ed => {
+    chunks.push(`<div class="chaos-block"><span class="chaos-label">Education</span><br>${ed.degree}, ${ed.college} (${ed.year})<br><span style="font-size:10px;color:#888">${ed.awards_scholarships.join(', ')}</span></div><br>`);
+  });
+
+  a.work_experience.forEach(w => {
+    chunks.push(`<div class="chaos-block"><span class="chaos-label">Work Background</span><br>${w.company} — ${w.dates_worked}<br><span style="font-size:10px;color:#555">${w.tasks}</span></div><br>`);
+  });
+
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Languages</span><br>${a.languages.spoken.join(', ')} · Code: ${a.languages.programming.join(', ')}</div><br>`);
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Skills</span><br>${a.general_skills.join(', ')}</div>`);
+
+  // Shuffle the chunks to make it chaotic
+  const shuffled = chunks.sort(() => Math.random() - 0.5);
+  inner.innerHTML = shuffled.join('');
+  d.appendChild(inner);
+  return d;
+}
+
+function renderSidebar(a) {
+  const d = document.createElement('div');
+  d.className = 'layout-sidebar';
+  const initials = getInitials(a.name);
+  const allSkills = [...a.general_skills];
+  const langs = a.languages.programming;
+
+  d.innerHTML = `
+  <div class="sidebar-wrap">
+    <div class="sidebar-col">
+      <div class="sidebar-avatar">${initials}</div>
+      <div class="sidebar-name">${a.name}</div>
+      <div class="sidebar-contact">${a.contact.location}<br>${a.contact.phone}<br>${a.contact.email}</div>
+      <div class="sidebar-section-title">Skills</div>
+      ${allSkills.map(s=>`<div class="sidebar-skill">· ${s}</div>`).join('')}
+      <div class="sidebar-section-title">Languages</div>
+      ${a.languages.spoken.map(l=>`<div class="sidebar-skill">${l}</div>`).join('')}
+      <div class="sidebar-section-title">Code</div>
+      ${langs.map(l=>`<div class="sidebar-skill">${l}</div>`).join('')}
+    </div>
+    <div class="main-col">
+      <div class="main-section">
+        <div class="main-section-title">Education</div>
+        <div class="main-section-content">
+          ${a.education.map(ed=>`<div class="edu-item">
+            <div class="edu-degree">${ed.degree}</div>
+            <div class="edu-school">${ed.college}, ${ed.year}</div>
+            ${ed.awards_scholarships.length ? `<div style="font-size:10px;color:#888;font-style:italic;margin-top:2px">${ed.awards_scholarships.join(' · ')}</div>` : ''}
+          </div>`).join('')}
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="main-section-title">Previous Work</div>
+        <div class="main-section-content">
+          ${a.work_experience.map(w=>`<div class="exp-item">
+            <div class="exp-company">${w.company}</div>
+            <div class="exp-dates">${w.dates_worked}</div>
+            <div class="exp-desc">${w.tasks}</div>
+          </div>`).join('')}
+        </div>
+      </div>
+    </div>
+  </div>`;
+  return d;
+}
+
+function renderForm(a) {
+  const d = document.createElement('div');
+  d.className = 'layout-form';
+  const inner = e('div', 'resume-inner');
+
+  inner.innerHTML = `
+  <div class="form-header">
+    <div>
+      <div style="font-size:9px;color:#999;letter-spacing:1px;margin-bottom:3px">APPLICANT NAME</div>
+      <div class="form-name">${a.name}</div>
+    </div>
+    <div class="form-contact">
+      ${a.contact.location}<br>${a.contact.phone}<br>${a.contact.email}
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Skills &amp; Technologies</div>
+    <div class="form-field">
+      <div class="form-field-label">General</div>
+      ${a.general_skills.join(' / ')}
+    </div>
+    <div class="form-field">
+      <div class="form-field-label">Programming</div>
+      ${a.languages.programming.join(', ')}
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Education</div>
+    ${a.education.map(ed=>`
+    <div class="form-field">
+      <div class="form-field-label">${ed.year}</div>
+      ${ed.degree} — ${ed.college}
+      ${ed.awards_scholarships.length ? `<div style="font-size:10px;color:#888;margin-top:2px">${ed.awards_scholarships.join(' · ')}</div>` : ''}
+    </div>`).join('')}
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Work Experience</div>
+    ${a.work_experience.map(w=>`
+    <div class="form-field">
+      <div class="form-field-label">${w.dates_worked}</div>
+      <strong>${w.company}</strong><br>
+      <span style="font-size:10px;color:#555">${w.tasks}</span>
+    </div>`).join('')}
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Languages</div>
+    <div class="form-field">
+      <div class="form-field-label">Spoken</div>
+      ${a.languages.spoken.join(', ')}
+    </div>
+  </div>`;
+
+  d.appendChild(inner);
+  return d;
+}
+
+function renderCard(index) {
+  const { applicant, layout } = queue[index];
+  const content = document.getElementById('resumeContent');
+  content.innerHTML = '';
+
+  let rendered;
+  if (layout === 'classic') rendered = renderClassic(applicant);
+  else if (layout === 'chaos') rendered = renderChaos(applicant);
+  else if (layout === 'sidebar') rendered = renderSidebar(applicant);
+  else rendered = renderForm(applicant);
+
+  content.appendChild(rendered);
+
+  document.getElementById('counterDisplay').textContent = `${index + 1} / ${queue.length}`;
+  document.getElementById('layoutBadge').textContent = LAYOUT_NAMES[layout];
+
+  // Reset overlays
+  document.getElementById('overlayAccept').style.opacity = 0;
+  document.getElementById('overlayReject').style.opacity = 0;
+}
+
+function updateScore() {
+  document.getElementById('scoreAccept').textContent = `${accepted} ✓`;
+  document.getElementById('scoreReject').textContent = `✕ ${rejected}`;
+}
+
+function showDone() {
+  document.getElementById('cardStack').style.display = 'none';
+  document.querySelector('.swipe-hint').style.display = 'none';
+  const done = document.getElementById('doneScreen');
+  done.classList.add('visible');
+  const total = accepted + rejected;
+  const rate = total > 0 ? Math.round((accepted / total) * 100) : 0;
+  document.getElementById('doneAcceptRate').textContent = rate + '%';
+  document.getElementById('doneAccepted').textContent = accepted;
+  document.getElementById('doneRejected').textContent = rejected;
+}
+
+function flashStampThenDecide(accept) {
+  if (current >= queue.length) return;
+  const oA = document.getElementById('overlayAccept');
+  const oR = document.getElementById('overlayReject');
+  const overlay = accept ? oA : oR;
+
+  // Animate stamp in
+  overlay.style.transition = 'opacity 0.08s';
+  overlay.style.opacity = 1;
+
+  setTimeout(() => {
+    overlay.style.transition = 'opacity 0.15s';
+    overlay.style.opacity = 0;
+    decide(accept);
+  }, 280);
+}
+
+function decide(accept) {
+  if (current >= queue.length) return;
+  const card = document.getElementById('resumeCard');
+
+  if (accept) {
+    accepted++;
+    card.classList.add('card-exit-right');
+  } else {
+    rejected++;
+    card.classList.add('card-exit-left');
+  }
+
+  updateScore();
+
+  setTimeout(() => {
+    card.classList.remove('card-exit-left', 'card-exit-right', 'card-enter');
+    const oA = document.getElementById('overlayAccept');
+    const oR = document.getElementById('overlayReject');
+    oA.style.opacity = 0;
+    oR.style.opacity = 0;
+    current++;
+    if (current >= queue.length) {
+      showDone();
+      return;
+    }
+    renderCard(current);
+    void card.offsetWidth;
+    card.classList.add('card-enter');
+  }, 360);
+}
+
+// DRAG / SWIPE
+let startX = 0, startY = 0, isDragging = false, curX = 0;
+const card = document.getElementById('resumeCard');
+const overlayA = document.getElementById('overlayAccept');
+const overlayR = document.getElementById('overlayReject');
+
+function onPointerDown(e) {
+  if (e.target.closest('a, button')) return;
+  isDragging = true;
+  startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+  startY = e.type === 'touchstart' ? e.touches[0].clientY : e.clientY;
+  card.classList.add('dragging');
+}
+function onPointerMove(e) {
+  if (!isDragging) return;
+  const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+  const y = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+  curX = x - startX;
+  const curY = y - startY;
+
+  // Only swipe horizontally if horizontal > vertical
+  if (Math.abs(curX) < Math.abs(curY) && Math.abs(curX) < 10) return;
+
+  const rot = curX * 0.06;
+  card.style.transform = `translateX(${curX}px) rotate(${rot}deg)`;
+
+  const progress = Math.min(Math.abs(curX) / 120, 1);
+  if (curX > 0) {
+    overlayA.style.opacity = progress;
+    overlayR.style.opacity = 0;
+  } else {
+    overlayR.style.opacity = progress;
+    overlayA.style.opacity = 0;
+  }
+}
+function onPointerUp() {
+  if (!isDragging) return;
+  isDragging = false;
+  card.classList.remove('dragging');
+  card.style.transform = '';
+  overlayA.style.opacity = 0;
+  overlayR.style.opacity = 0;
+
+  const threshold = 90;
+  if (curX > threshold) {
+    decide(true);
+  } else if (curX < -threshold) {
+    decide(false);
+  }
+  curX = 0;
+}
+
+card.addEventListener('mousedown', onPointerDown);
+card.addEventListener('touchstart', onPointerDown, { passive: true });
+document.addEventListener('mousemove', onPointerMove);
+document.addEventListener('touchmove', onPointerMove, { passive: true });
+document.addEventListener('mouseup', onPointerUp);
+document.addEventListener('touchend', onPointerUp);
+
+document.getElementById('btnAccept').addEventListener('click', () => flashStampThenDecide(true));
+document.getElementById('btnReject').addEventListener('click', () => flashStampThenDecide(false));
+
+document.getElementById('restartBtn').addEventListener('click', () => {
+  accepted = 0;
+  rejected = 0;
+  current = 0;
+  updateScore();
+  document.getElementById('doneScreen').classList.remove('visible');
+  document.getElementById('cardStack').style.display = '';
+  document.querySelector('.swipe-hint').style.display = '';
+  buildQueue();
+  const card = document.getElementById('resumeCard');
+  card.classList.remove('card-enter');
+  void card.offsetWidth;
+  renderCard(0);
+  card.classList.add('card-enter');
+});
+
+</script>
+</body>
+</html>
