@@ -1,0 +1,1001 @@
+id,name,gender,race,age,age_group,education_level,education_organization,years_experience,skills,languages,test_score,true_qualification,hiring_score,was_disadvantaged,disadvantage_reason,hired
+1,James Smith,Male,Other,45,Middle,Bachelor,Community College,12,SQL; JavaScript; Debugging; Java,English; Portuguese; Spanish,71.49,85.45,32.98,1,race,0
+2,Xia Johnson,Female,Other,31,Young,Bachelor,Elite University,8,SQL; Problem Solving; Machine Learning,English; Spanish; French,66.43,60.1,18.84,1,gender; race,0
+3,Malik Carter,Male,White,46,Middle,High School,Private High School,10,AWS; Data Structures; Git; Python,English,53.82,64.44,28.58,1,,0
+4,Jun Lee,Male,Other,33,Young,Bachelor,Community College,5,SQL; Communication; React; Java,English,66.0,67.53,28.21,1,race,0
+5,Sarah Patel,Female,White,28,Young,Bachelor,Community College,6,Communication; Python; Debugging; AWS; Machine Learning,English,56.69,60.63,23.05,1,gender,0
+6,Jun Brown,Male,Other,49,Middle,PhD,Public University,8,Data Structures; SQL; Debugging; Java; Python,English; French; Mandarin,78.28,95.38,36.95,0,,1
+7,Carlos Wilson,Male,White,23,Young,Bachelor,Online Institution,0,AWS; Algorithms; React; JavaScript; Communication,English; French,64.2,51.96,25.98,1,,0
+8,José Brown,Male,White,45,Middle,High School,Public High School,18,JavaScript; AWS; Docker; Git,English; Portuguese; French,83.73,81.03,35.21,0,,1
+9,Mei Johnson,Female,White,32,Young,High School,Public High School,7,Communication; React; Docker,English; Spanish,89.63,60.15,22.86,1,gender,0
+10,Omar Lee,Male,Other,38,Middle,Master,Elite University,8,Docker; Algorithms; AWS; JavaScript; Git; Debugging,English,59.43,74.74,28.7,1,race,0
+11,Anika Carter,Female,Other,46,Middle,Bachelor,Community College,3,Problem Solving; Data Structures; Docker; React; SQL; JavaScript,English; Arabic; Spanish,87.33,73.84,21.94,1,gender; race,0
+12,Michael Wilson,Male,Other,34,Young,Bachelor,Public University,6,Communication; Algorithms; Docker; Data Structures,English,63.16,67.07,28.03,1,race,0
+13,Jun Hassan,Male,White,62,Older,Master,Online Institution,27,Machine Learning; Teamwork; Python; Algorithms; Java,English; Portuguese; Mandarin,79.93,84.48,28.59,1,age,0
+14,James Wang,Male,Other,60,Older,Bachelor,Online Institution,24,AWS; Python; Debugging; Communication,English; Portuguese,71.15,71.83,19.53,1,race; age,0
+15,Jessica Davis,Female,Other,34,Young,Bachelor,Elite University,1,Teamwork; Algorithms; Machine Learning; Data Structures; SQL,English,68.69,59.37,18.55,1,gender; race,0
+16,David Carter,Male,Other,40,Middle,Bachelor,Elite University,7,AWS; Python; Java; React; Git,English,74.72,58.64,22.25,1,race,0
+17,Carlos Brown,Male,White,35,Middle,Bachelor,Elite University,7,Teamwork; Java; Communication; Machine Learning; JavaScript; Algorithms,English; Arabic; French,79.52,77.91,33.96,0,,1
+18,Arjun Nguyen,Male,Other,39,Middle,Bachelor,Public University,5,Debugging; Git; Docker; Algorithms,English; Mandarin; Arabic,62.97,72.91,27.96,1,race,0
+19,Priya Wilson,Female,Other,30,Young,Master,Elite University,0,Java; React; Python; Data Structures,English; French; Portuguese,66.51,67.72,21.89,1,gender; race,0
+20,James Johnson,Male,Other,22,Young,Bachelor,Public University,0,Problem Solving; Python; React,English,83.05,53.55,22.62,1,race,0
+21,Maria Chen,Female,White,30,Young,High School,Private High School,8,Machine Learning; JavaScript; Debugging; Data Structures,English; Arabic; French,56.54,55.36,20.94,1,gender,0
+22,Jun Rodriguez,Male,White,65,Older,PhD,Elite University,31,Algorithms; Docker; React,English; Arabic,53.4,92.56,31.82,1,age,0
+23,Emily Wilson,Female,Other,64,Older,Master,Elite University,22,Debugging; React; Communication; Java; SQL; Algorithms,English,78.48,94.66,22.26,1,gender; race; age,0
+24,Raj Garcia,Male,Other,43,Middle,Master,Public University,9,Git; AWS; SQL; Java,English; Portuguese,86.02,75.37,28.95,1,race,0
+25,Michael Carter,Male,Other,36,Middle,Master,Elite University,11,Problem Solving; Communication; SQL,English,100.0,89.24,34.49,1,race,0
+26,Raj Johnson,Male,Other,28,Young,Master,Elite University,0,Problem Solving; Python; JavaScript; Docker; Teamwork; Debugging,English; Arabic,93.14,86.22,35.69,1,race,0
+27,Jun Carter,Male,White,26,Young,Master,Online Institution,0,JavaScript; SQL; Git; Teamwork; Python; Data Structures,English; Portuguese; Spanish,82.24,71.97,33.99,1,,0
+28,Emily Johnson,Female,White,60,Older,PhD,Public University,25,Python; Machine Learning; Java; JavaScript,English,68.21,94.41,26.16,1,gender; age,0
+29,Sarah Rivera,Female,White,31,Young,Bachelor,Online Institution,6,Problem Solving; Data Structures; SQL,English; Portuguese; Spanish,80.78,60.23,22.89,1,gender,0
+30,Sarah Nguyen,Female,White,44,Middle,Master,Online Institution,13,Problem Solving; Git; SQL; Algorithms; React,English,88.09,96.52,35.01,1,gender,0
+31,Jun Garcia,Male,White,39,Middle,Master,Online Institution,12,AWS; React; Communication; Java; Python,English; Portuguese,100.0,97.72,41.89,1,,0
+32,Sarah Brown,Female,Other,31,Young,Bachelor,Public University,9,JavaScript; React; Java; SQL; Teamwork,English; French,77.48,67.32,21.73,1,gender; race,0
+33,Arjun Wang,Male,Other,29,Young,Bachelor,Elite University,2,Problem Solving; Algorithms; Java; JavaScript; Git,English,91.33,74.01,30.81,1,race,0
+34,Arjun Garcia,Male,Other,23,Young,High School,Private High School,0,Data Structures; SQL; Debugging; React; Teamwork,English; Mandarin; Arabic,100.0,80.25,33.3,1,race,0
+35,Emily Brown,Female,Other,39,Middle,Bachelor,Online Institution,7,Python; Problem Solving; React; JavaScript; Algorithms,English; French,87.79,68.31,19.73,1,gender; race,0
+36,Priya Carter,Female,Other,46,Middle,Bachelor,Online Institution,13,Java; Problem Solving; Debugging,English,69.99,66.3,18.92,1,gender; race,0
+37,Michael Patel,Male,Other,43,Middle,Bachelor,Public University,21,JavaScript; Python; Git; React; Teamwork; Debugging,English,90.49,76.06,29.23,1,race,0
+38,Maria Wilson,Female,White,32,Young,High School,Private High School,4,Data Structures; Debugging; JavaScript; SQL; Communication; Algorithms,English; Spanish,71.44,73.42,28.17,1,gender,0
+39,Wei Nguyen,Male,White,24,Young,Bachelor,Public University,4,JavaScript; Communication; Debugging; Java; Docker,English,53.55,52.88,26.35,1,,0
+40,Maria Rodriguez,Female,Other,65,Older,Master,Public University,26,Git; Teamwork; Communication; SQL; Debugging,English,71.96,85.37,18.55,1,gender; race; age,0
+41,Maria Singh,Female,Other,32,Young,Bachelor,Community College,12,Teamwork; Java; Communication; Git; React,English; Portuguese; Arabic,45.72,62.01,19.6,1,gender; race,0
+42,Anika Lee,Female,White,32,Young,High School,Public High School,8,Problem Solving; Git; JavaScript,English; Mandarin; Spanish,67.7,57.98,21.99,1,gender,0
+43,Aisha Nguyen,Female,White,36,Middle,Bachelor,Community College,9,Docker; Data Structures; Machine Learning; Java; Problem Solving,English; French; Mandarin,64.61,75.32,26.53,1,gender,0
+44,Xia Smith,Female,White,22,Young,Master,Online Institution,1,React; Docker; Java; Algorithms,English; Portuguese,48.18,44.87,16.75,1,gender,0
+45,Malik Wilson,Male,Other,60,Older,Bachelor,Community College,26,Algorithms; Docker; React; Teamwork; Git,English; French; Portuguese,87.2,95.94,29.17,1,race; age,0
+46,Fatima Singh,Female,White,28,Young,PhD,Elite University,3,Docker; Machine Learning; Python; Git; Debugging,English,70.93,74.62,28.65,0,,1
+47,Aisha Lee,Female,Other,41,Middle,Bachelor,Online Institution,7,AWS; Algorithms; SQL; Machine Learning; Problem Solving; JavaScript,English; Spanish; Mandarin,56.79,72.97,21.59,1,gender; race,0
+48,Fatima Lee,Female,White,43,Middle,High School,Public High School,15,Algorithms; Git; SQL; Communication,English,43.65,68.06,23.62,1,gender,0
+49,Michael Rivera,Male,White,22,Young,Master,Public University,0,AWS; Docker; Algorithms,English; French; Arabic,78.66,69.85,33.14,1,,0
+50,Xia Rivera,Female,Other,29,Young,High School,Public High School,2,Problem Solving; Communication; Teamwork,English,92.32,54.37,16.55,1,gender; race,0
+51,Xia Rivera,Female,Other,34,Young,High School,Public High School,8,Python; Machine Learning; SQL; Java; AWS; JavaScript,English; Portuguese,97.13,81.42,27.37,1,gender; race,0
+52,Omar Lee,Male,White,43,Middle,High School,Private High School,11,Teamwork; Machine Learning; AWS; JavaScript; Communication; Algorithms,English; French,94.07,83.2,36.08,1,,0
+53,Sofia Davis,Female,White,32,Young,Master,Public University,6,Git; AWS; Java; Debugging,English; French,75.19,75.32,28.93,0,,1
+54,Wei Lee,Male,Other,39,Middle,Bachelor,Elite University,7,JavaScript; SQL; Docker; Debugging,English,93.01,92.78,35.91,0,,1
+55,James Nguyen,Male,White,56,Older,Master,Public University,29,Machine Learning; AWS; Docker; Python; SQL,English; Arabic,62.88,75.08,24.83,1,age,0
+56,Omar Smith,Male,Other,34,Young,PhD,Public University,4,Python; React; Git; Docker; Debugging; Machine Learning,English; Portuguese; French,46.31,74.04,30.82,1,race,0
+57,Maria Chen,Female,White,65,Older,Master,Public University,20,Python; Docker; React; Algorithms; Debugging; Teamwork,English; French; Arabic,100.0,110.94,32.77,0,,1
+58,Omar Carter,Male,Other,24,Young,Master,Elite University,0,Data Structures; Problem Solving; Algorithms; Python; Java; Docker,English,79.13,76.84,31.94,1,race,0
+59,David Johnson,Male,White,29,Young,Master,Public University,4,React; SQL; AWS; Problem Solving; Debugging; Docker,English; Arabic,75.7,72.77,34.31,1,,0
+60,James Johnson,Male,Other,39,Middle,Bachelor,Elite University,12,React; SQL; Algorithms,English,90.91,93.64,36.26,1,race,0
+61,Malik Johnson,Male,Other,47,Middle,Master,Elite University,19,SQL; Teamwork; Python; Data Structures,English,76.01,103.69,40.28,1,race,0
+62,David Johnson,Male,White,25,Young,Master,Online Institution,5,Data Structures; SQL; AWS,English; Mandarin; Portuguese,97.34,87.57,40.23,0,,1
+63,Omar Wilson,Male,White,24,Young,Bachelor,Public University,0,Java; Data Structures; Python; Git; Teamwork,English; Arabic; Portuguese,44.41,47.33,24.13,1,,0
+64,Maria Brown,Female,White,46,Middle,Master,Online Institution,17,Java; Debugging; Communication; Git,English; Portuguese; Spanish,74.78,90.77,32.71,1,gender,0
+65,Omar Johnson,Male,Other,47,Middle,Bachelor,Community College,9,Algorithms; React; Java; Machine Learning; Problem Solving; Teamwork,English,85.05,80.25,30.9,1,race,0
+66,Jun Johnson,Male,Other,48,Middle,Master,Elite University,11,React; Algorithms; AWS; Debugging; JavaScript; Docker,English,68.3,79.13,30.45,1,race,0
+67,Arjun Chen,Male,White,33,Young,High School,Private High School,6,Docker; Teamwork; Debugging; Data Structures; Git; React,English,59.47,50.03,25.21,1,,0
+68,Sarah Chen,Female,White,48,Middle,Bachelor,Online Institution,10,Communication; AWS; Data Structures; Problem Solving,English; Arabic; Mandarin,87.77,72.28,25.31,1,gender,0
+69,Raj Lee,Male,White,22,Young,Bachelor,Public University,0,SQL; React; Communication; Git; Teamwork; Debugging,English; Mandarin; Spanish,95.5,87.64,40.25,0,,1
+70,James Rivera,Male,Other,56,Older,Bachelor,Online Institution,19,Machine Learning; Communication; SQL; Debugging; AWS; Algorithms,English; Spanish,60.42,74.57,20.63,1,race; age,0
+71,José Rivera,Male,White,23,Young,Bachelor,Online Institution,0,Git; Algorithms; Data Structures; React,English; Portuguese,58.78,64.7,31.08,1,,0
+72,Wei Nguyen,Male,White,43,Middle,Bachelor,Community College,16,Debugging; AWS; Git; Communication; Problem Solving,English,68.39,87.68,37.87,1,,0
+73,Carlos Lee,Male,White,36,Middle,Bachelor,Elite University,2,SQL; Problem Solving; Debugging; AWS,English; Portuguese,83.44,63.74,28.3,1,,0
+74,James Rodriguez,Male,White,59,Older,High School,Private High School,20,React; JavaScript; Git; Python,English; Portuguese; French,37.46,58.83,18.33,1,age,0
+75,Michael Johnson,Male,White,58,Older,Master,Online Institution,19,Debugging; JavaScript; Algorithms; AWS; Java,English,86.33,93.61,32.24,0,,1
+76,José Johnson,Male,Other,31,Young,Master,Public University,1,React; JavaScript; Python; Git; AWS; Java,English,66.53,59.62,25.05,1,race,0
+77,Raj Brown,Male,White,28,Young,Bachelor,Elite University,6,JavaScript; Communication; Data Structures; Git,English,50.08,57.21,28.08,1,,0
+78,James Carter,Male,White,25,Young,High School,Private High School,0,Communication; Machine Learning; Docker; AWS,English; Mandarin,65.97,53.27,26.51,1,,0
+79,Aisha Nguyen,Female,Other,48,Middle,Bachelor,Community College,17,Data Structures; Debugging; Java,English,71.95,75.6,22.64,1,gender; race,0
+80,Carlos Chen,Male,White,45,Middle,Bachelor,Elite University,11,SQL; JavaScript; Machine Learning; Java,English,73.2,75.05,32.82,1,,0
+81,Jun Hassan,Male,White,22,Young,Master,Online Institution,1,Git; Python; SQL; Problem Solving; Debugging; AWS,English,100.0,87.92,40.37,0,,1
+82,Maria Chen,Female,White,32,Young,Bachelor,Public University,4,Java; Machine Learning; SQL; Algorithms; JavaScript; Git,English,90.77,68.4,26.16,1,gender,0
+83,Michael Martinez,Male,Other,23,Young,Bachelor,Community College,1,AWS; Java; Problem Solving; Debugging; Git,English; Arabic; Mandarin,86.56,56.57,23.83,1,race,0
+84,Anika Johnson,Female,Other,43,Middle,Master,Public University,17,Data Structures; Python; Docker,English; Mandarin; Portuguese,67.69,84.19,26.08,1,gender; race,0
+85,James Rivera,Male,Other,22,Young,Bachelor,Elite University,1,Data Structures; Python; Communication; JavaScript; AWS,English; Arabic; Mandarin,80.0,77.5,32.2,1,race,0
+86,Aisha Nguyen,Female,White,24,Young,Master,Online Institution,0,Java; AWS; React; Docker; Communication; Algorithms,English; Spanish; French,68.59,63.19,24.08,1,gender,0
+87,Xia Johnson,Female,Other,40,Middle,Bachelor,Community College,7,Teamwork; Communication; Machine Learning; Python; AWS; Java,English; Mandarin,56.33,48.77,11.91,1,gender; race,0
+88,Sarah Singh,Female,White,40,Middle,Bachelor,Elite University,16,Docker; Python; SQL; Machine Learning; React; Data Structures,English; Arabic,71.96,83.76,29.9,1,gender,0
+89,Emily Rodriguez,Female,Other,47,Middle,PhD,Public University,11,Problem Solving; Git; AWS; Debugging,English; Spanish,82.07,105.69,34.68,1,gender; race,0
+90,Fatima Rivera,Female,Other,50,Older,Bachelor,Public University,22,Machine Learning; Python; Problem Solving; Docker; Java,English,100.0,94.69,22.28,1,gender; race; age,0
+91,James Hassan,Male,White,48,Middle,High School,Public High School,11,AWS; Debugging; Git; Machine Learning,English; Mandarin; Arabic,50.18,60.62,27.05,1,,0
+92,Raj Johnson,Male,Other,48,Middle,Bachelor,Public University,15,Machine Learning; JavaScript; Docker; SQL; Data Structures; Problem Solving,English; French; Spanish,58.12,74.46,28.58,1,race,0
+93,Jun Lee,Male,White,58,Older,Bachelor,Community College,28,Git; Debugging; Problem Solving,English; Portuguese; Arabic,91.9,81.45,27.38,1,age,0
+94,Jessica Hassan,Female,Other,48,Middle,High School,Private High School,11,React; Machine Learning; Communication; Teamwork; Docker,English; Mandarin,63.26,66.56,19.02,1,gender; race,0
+95,Carlos Singh,Male,White,25,Young,Bachelor,Public University,0,Python; React; Debugging; AWS; Docker; Algorithms,English; French; Arabic,76.6,63.93,30.77,1,,0
+96,David Davis,Male,White,35,Middle,Bachelor,Community College,13,Teamwork; Problem Solving; AWS,English,79.35,71.52,31.41,0,,1
+97,Raj Smith,Male,White,43,Middle,Bachelor,Public University,16,Teamwork; Algorithms; JavaScript; Java; AWS; Git,English; Portuguese,94.07,96.61,41.44,0,,1
+98,Jun Brown,Male,Other,33,Young,Master,Public University,2,React; Algorithms; Debugging; AWS; Machine Learning; Python,English; Spanish; French,69.74,70.45,29.38,1,race,0
+99,Fatima Wang,Female,Other,45,Middle,Bachelor,Public University,9,Docker; Java; Communication,English; Spanish; Arabic,84.24,78.95,23.98,1,gender; race,0
+100,José Smith,Male,White,24,Young,Bachelor,Elite University,0,Communication; Python; Git; React; Debugging,English; French,49.95,67.6,32.24,0,,1
+101,Anika Nguyen,Female,White,25,Young,Bachelor,Public University,0,JavaScript; Java; Data Structures; Docker,English; French; Arabic,84.09,55.1,20.84,1,gender,0
+102,Carlos Hassan,Male,White,54,Older,Master,Online Institution,26,AWS; Git; Algorithms; Python; Problem Solving,English; Portuguese,89.58,91.81,31.52,1,age,0
+103,James Hassan,Male,White,24,Young,Bachelor,Community College,0,Algorithms; Docker; Debugging; Git; AWS,English; French,86.15,67.38,32.15,0,,1
+104,Raj Wilson,Male,White,28,Young,High School,Public High School,2,Data Structures; React; Problem Solving; Git; Debugging; Python,English; Arabic; Mandarin,50.56,51.82,25.93,1,,0
+105,Aisha Johnson,Female,Other,22,Young,High School,Private High School,1,Communication; Problem Solving; SQL; Data Structures; React,English,89.74,73.41,24.16,1,gender; race,0
+106,Maria Chen,Female,White,32,Young,Bachelor,Public University,10,Problem Solving; Algorithms; Teamwork,English,69.78,68.49,26.2,1,gender,0
+107,Raj Johnson,Male,White,26,Young,Bachelor,Community College,0,Java; Git; React; Debugging,English; French,90.8,58.52,28.61,1,,0
+108,Jessica Carter,Female,Other,25,Young,High School,Private High School,5,Teamwork; JavaScript; Git; AWS; Communication,English; Mandarin; Spanish,84.11,52.2,15.68,1,gender; race,0
+109,James Garcia,Male,Other,29,Young,Master,Elite University,4,Teamwork; Communication; Machine Learning; React; Java; Docker,English,100.0,83.78,34.71,1,race,0
+110,Anika Wilson,Female,Other,39,Middle,Bachelor,Online Institution,17,Algorithms; Debugging; Problem Solving; Git; Data Structures,English; Mandarin,48.56,75.75,22.7,1,gender; race,0
+111,Fatima Rivera,Female,White,53,Older,Bachelor,Online Institution,19,Data Structures; Machine Learning; React,English; French; Spanish,54.97,69.53,16.21,1,gender; age,0
+112,Priya Wang,Female,Other,45,Middle,Bachelor,Online Institution,16,JavaScript; Python; Teamwork,English; Arabic,52.1,63.73,17.89,1,gender; race,0
+113,Sarah Rivera,Female,White,36,Middle,PhD,Elite University,9,AWS; React; Algorithms; Debugging; Machine Learning; Docker,English; French; Arabic,55.85,75.28,26.51,1,gender,0
+114,Sarah Johnson,Female,Other,45,Middle,Master,Online Institution,18,Git; Python; Debugging; React; SQL; AWS,English; French,68.02,91.45,28.98,1,gender; race,0
+115,James Patel,Male,Other,27,Young,High School,Private High School,3,Docker; Git; SQL,English,67.82,58.66,24.67,1,race,0
+116,Raj Brown,Male,Other,48,Middle,Bachelor,Public University,12,Python; Communication; React,English,88.02,79.77,30.71,1,race,0
+117,Omar Rodriguez,Male,White,54,Older,High School,Public High School,19,Data Structures; SQL; Teamwork; React,English,90.98,71.05,23.22,1,age,0
+118,Sofia Garcia,Female,Other,50,Older,Master,Elite University,22,Communication; JavaScript; Java; Algorithms; Python,English,49.77,63.33,9.73,1,gender; race; age,0
+119,Wei Rivera,Male,White,22,Young,Bachelor,Community College,0,JavaScript; Git; Python,English,63.48,50.54,25.42,1,,0
+120,Anika Wilson,Female,White,63,Older,Master,Online Institution,25,AWS; Problem Solving; Communication,English; Portuguese,72.51,73.78,17.91,1,gender; age,0
+121,Sarah Hassan,Female,White,44,Middle,Bachelor,Public University,13,Debugging; Communication; Algorithms,English; Mandarin; Arabic,82.39,80.49,28.59,1,gender,0
+122,Michael Johnson,Male,White,32,Young,Master,Public University,12,Docker; Algorithms; Java; AWS; Debugging; Communication,English,67.56,79.96,37.18,0,,1
+123,Aisha Garcia,Female,Other,60,Older,Bachelor,Elite University,28,Git; Data Structures; Algorithms; Teamwork,English; Mandarin; Arabic,66.44,71.24,12.9,1,gender; race; age,0
+124,Arjun Wang,Male,White,44,Middle,Bachelor,Online Institution,15,Java; Communication; Debugging; Problem Solving; Algorithms; Machine Learning,English; French; Arabic,62.4,77.15,33.66,0,,1
+125,Carlos Nguyen,Male,White,64,Older,PhD,Public University,26,Docker; Problem Solving; Debugging; Java; React; Teamwork,English; Mandarin,80.02,103.78,36.31,1,age,0
+126,David Johnson,Male,White,27,Young,Master,Elite University,7,Teamwork; Java; Problem Solving,English; Spanish,62.39,70.41,33.36,1,,0
+127,Jessica Carter,Female,White,61,Older,Bachelor,Elite University,33,Algorithms; Java; Docker; React; Problem Solving,English; Spanish,67.04,75.25,18.5,1,gender; age,0
+128,Omar Wang,Male,White,59,Older,Master,Public University,26,Data Structures; Machine Learning; SQL,English,88.99,91.92,31.57,0,,1
+129,Priya Rivera,Female,Other,45,Middle,Master,Elite University,19,Teamwork; Machine Learning; React; Java; Git,English; French; Arabic,84.73,93.79,29.92,1,gender; race,0
+130,Anika Carter,Female,White,48,Middle,Master,Elite University,16,Python; JavaScript; Git; Debugging; Communication,English; Mandarin,71.61,88.25,31.7,1,gender,0
+131,Jessica Garcia,Female,Other,35,Middle,Bachelor,Online Institution,10,JavaScript; Debugging; Algorithms,English,100.0,76.29,22.92,1,gender; race,0
+132,Arjun Rodriguez,Male,Other,23,Young,Bachelor,Online Institution,1,AWS; React; JavaScript; Teamwork; Git; Debugging,English; Portuguese; Spanish,77.63,69.15,28.86,1,race,0
+133,David Martinez,Male,Other,22,Young,Bachelor,Elite University,2,Git; AWS; Algorithms,English; Arabic,52.15,48.4,20.56,1,race,0
+134,Raj Nguyen,Male,White,31,Young,Bachelor,Community College,6,Communication; Machine Learning; Java; React,English; Spanish,85.98,79.78,37.11,1,,0
+135,Malik Johnson,Male,Other,26,Young,Bachelor,Community College,4,SQL; Docker; Data Structures,English,67.47,49.24,20.9,1,race,0
+136,Maria Wang,Female,Other,22,Young,Master,Elite University,2,Communication; Git; Teamwork; React,English,71.66,60.47,18.99,1,gender; race,0
+137,Raj Nguyen,Male,Other,22,Young,Bachelor,Public University,0,Docker; Machine Learning; Debugging; SQL,English; Portuguese; Mandarin,78.65,60.96,25.59,1,race,0
+138,Jun Johnson,Male,Other,23,Young,Master,Public University,2,AWS; Java; React,English; Arabic; Portuguese,82.58,71.83,29.93,1,race,0
+139,Fatima Nguyen,Female,Other,46,Middle,Master,Public University,16,Docker; Python; React,English,94.94,92.79,29.52,1,gender; race,0
+140,Omar Hassan,Male,White,34,Young,Master,Online Institution,10,Java; Docker; Problem Solving; SQL; Teamwork,English; Arabic; Spanish,54.63,68.8,32.72,1,,0
+141,José Lee,Male,Other,28,Young,Master,Elite University,1,Communication; JavaScript; Java; Machine Learning; Algorithms,English,46.66,55.58,23.43,1,race,0
+142,Wei Patel,Male,Other,56,Older,Master,Online Institution,10,SQL; Java; JavaScript; Git,English,74.64,71.77,19.51,1,race; age,0
+143,Omar Garcia,Male,Other,24,Young,Bachelor,Elite University,4,Communication; Algorithms; AWS; Problem Solving,English; Portuguese; Arabic,88.16,72.7,30.28,1,race,0
+144,Omar Lee,Male,White,32,Young,High School,Private High School,6,AWS; Java; Problem Solving; Communication,English; Mandarin; Portuguese,72.31,52.39,26.15,1,,0
+145,Michael Patel,Male,Other,44,Middle,Bachelor,Elite University,18,AWS; Problem Solving; Python; Communication; React,English; Spanish,88.87,89.47,34.59,1,race,0
+146,Sarah Davis,Female,Other,45,Middle,Bachelor,Online Institution,11,Data Structures; Machine Learning; Communication; Debugging; Python; AWS,English; French; Mandarin,76.72,85.07,26.43,1,gender; race,0
+147,Raj Davis,Male,Other,44,Middle,Master,Elite University,10,AWS; Java; Communication,English; Spanish,67.74,73.92,28.37,0,,1
+148,Malik Martinez,Male,White,43,Middle,Master,Elite University,14,Debugging; AWS; Teamwork; Machine Learning,English; Portuguese; French,100.0,98.03,42.01,1,,0
+149,Wei Wang,Male,Other,61,Older,Master,Public University,25,Communication; React; Algorithms; Data Structures; Python; Teamwork,English,59.66,79.29,22.51,1,race; age,0
+150,Sarah Carter,Female,Other,27,Young,Bachelor,Online Institution,0,Git; Debugging; Algorithms; Data Structures; JavaScript,English; Spanish,51.57,65.97,21.19,1,gender; race,0
+151,Wei Wang,Male,Other,54,Older,Bachelor,Online Institution,21,Data Structures; Debugging; Java; Git,English; Arabic; Mandarin,51.35,78.67,22.27,1,race; age,0
+152,Malik Davis,Male,Other,54,Older,Bachelor,Elite University,24,Machine Learning; React; Python; Teamwork; Git; JavaScript,English,79.86,83.6,24.24,1,race; age,0
+153,Raj Rodriguez,Male,Other,27,Young,Bachelor,Public University,7,JavaScript; Java; Git; Teamwork,English; Portuguese; Spanish,48.9,55.01,23.2,0,,1
+154,Wei Garcia,Male,Other,32,Young,Master,Online Institution,1,JavaScript; Problem Solving; Teamwork; Debugging; Data Structures; Communication,English; Arabic; Spanish,51.66,59.02,24.81,1,race,0
+155,Wei Rivera,Male,Other,28,Young,Master,Public University,0,Communication; Debugging; Problem Solving; AWS; SQL,English; French; Mandarin,68.58,79.37,32.95,1,race,0
+156,Raj Rodriguez,Male,White,47,Middle,Master,Public University,18,AWS; Communication; Git; Docker; Machine Learning; Algorithms,English; French,93.22,96.73,41.49,1,,0
+157,Omar Garcia,Male,Other,25,Young,High School,Private High School,1,Algorithms; AWS; React,English; Spanish; Portuguese,74.44,57.02,24.01,1,race,0
+158,James Martinez,Male,White,59,Older,Bachelor,Community College,22,Problem Solving; Machine Learning; JavaScript; Docker; Java; SQL,English; Mandarin,66.17,77.1,25.64,1,age,0
+159,Xia Johnson,Female,Other,22,Young,Master,Public University,2,SQL; Docker; Java; React; Problem Solving,English,80.2,80.97,27.19,1,gender; race,0
+160,Sarah Lee,Female,White,27,Young,Bachelor,Public University,0,Python; Git; AWS; Debugging,English,60.92,58.07,22.03,1,gender,0
+161,Priya Hassan,Female,White,47,Middle,Bachelor,Elite University,14,Python; Git; SQL,English,78.26,84.98,30.39,0,,1
+162,Aisha Davis,Female,White,43,Middle,Master,Public University,14,Communication; Git; SQL,English; Spanish,68.27,79.56,28.22,0,,1
+163,Maria Nguyen,Female,Other,22,Young,Bachelor,Online Institution,2,Java; Teamwork; AWS,English; Portuguese; Spanish,57.8,54.58,16.63,0,,1
+164,Arjun Rivera,Male,Other,32,Young,Master,Online Institution,2,Git; Docker; Python; Data Structures,English; French,80.11,81.68,33.87,1,race,0
+165,Xia Martinez,Female,White,31,Young,Master,Online Institution,7,Machine Learning; React; Java,English; Portuguese; Spanish,85.52,75.25,28.9,1,gender,0
+166,Raj Johnson,Male,Other,28,Young,Bachelor,Online Institution,8,Git; Debugging; Python; React; Java,English; French,55.83,48.32,20.53,1,race,0
+167,Malik Wilson,Male,White,33,Young,Bachelor,Community College,13,Python; React; Machine Learning; Teamwork,English; French; Arabic,90.15,76.91,35.96,1,,0
+168,Priya Martinez,Female,Other,46,Middle,High School,Public High School,23,Debugging; Communication; AWS,English,57.65,45.93,10.77,1,gender; race,0
+169,Carlos Johnson,Male,Other,39,Middle,Master,Elite University,12,React; Git; Machine Learning,English; Portuguese,87.8,93.98,36.39,1,race,0
+170,Sofia Johnson,Female,White,65,Older,Bachelor,Public University,26,React; Teamwork; Communication; Python; Algorithms,English; Mandarin,74.49,72.42,17.37,1,gender; age,0
+171,Wei Nguyen,Male,White,36,Middle,Bachelor,Online Institution,12,Problem Solving; Docker; React; JavaScript; AWS; Algorithms,English; Portuguese,51.44,58.38,26.15,1,,0
+172,James Nguyen,Male,White,39,Middle,Bachelor,Elite University,13,Data Structures; Teamwork; JavaScript; Machine Learning; Git; React,English,100.0,94.38,40.55,0,,1
+173,Wei Wang,Male,White,52,Older,Bachelor,Community College,18,Data Structures; Debugging; Docker; JavaScript; AWS; React,English; Spanish,95.46,91.21,31.28,0,,1
+174,Aisha Nguyen,Female,Other,61,Older,Bachelor,Community College,21,Java; Algorithms; Teamwork,English; Mandarin,82.49,68.0,11.6,1,gender; race; age,0
+175,Fatima Martinez,Female,Other,30,Young,Bachelor,Elite University,1,Teamwork; Data Structures; Algorithms; AWS,English,88.42,66.63,21.45,1,gender; race,0
+176,James Rivera,Male,Other,37,Middle,Bachelor,Community College,13,Docker; Data Structures; Python; Teamwork; JavaScript,English; Arabic; Mandarin,82.87,75.26,28.9,1,race,0
+177,Raj Brown,Male,White,27,Young,Bachelor,Public University,6,Docker; React; Algorithms; Git; SQL,English,100.0,75.24,35.3,1,,0
+178,David Johnson,Male,Other,22,Young,Bachelor,Online Institution,0,Git; Communication; Problem Solving,English; Arabic; French,53.47,32.5,14.2,0,,0
+179,Sofia Johnson,Female,Other,31,Young,High School,Public High School,7,JavaScript; Teamwork; Java,English; French,99.43,65.36,20.94,1,gender; race,0
+180,Priya Brown,Female,White,33,Young,Bachelor,Community College,5,Debugging; Java; Machine Learning; Communication; Git,English; French,66.2,61.46,23.38,1,gender,0
+181,Malik Martinez,Male,Other,33,Young,Bachelor,Community College,7,Java; SQL; Communication; JavaScript,English,87.5,56.08,23.63,1,race,0
+182,Priya Smith,Female,Other,47,Middle,Bachelor,Community College,16,AWS; Communication; Machine Learning; JavaScript; Data Structures,English,71.09,90.06,28.42,1,gender; race,0
+183,José Singh,Male,Other,23,Young,Bachelor,Online Institution,1,Communication; Docker; Data Structures; Java; JavaScript; React,English; Spanish; Arabic,53.79,54.27,22.91,1,race,0
+184,Malik Davis,Male,Other,42,Middle,PhD,Public University,8,Problem Solving; Teamwork; Communication; Machine Learning,English; Portuguese; French,66.99,69.99,26.8,1,race,0
+185,Jessica Nguyen,Female,Other,47,Middle,Master,Online Institution,24,Teamwork; Java; Machine Learning,English,80.9,84.69,26.28,1,gender; race,0
+186,Jessica Martinez,Female,Other,39,Middle,High School,Private High School,8,React; Machine Learning; Git; Java,English; French,58.94,46.51,11.0,1,gender; race,0
+187,Arjun Chen,Male,Other,45,Middle,Bachelor,Public University,9,Data Structures; Machine Learning; Java; Teamwork; Algorithms,English,42.71,60.63,23.05,1,race,0
+188,David Lee,Male,Other,54,Older,Bachelor,Elite University,29,Java; Python; Algorithms,English; Mandarin; French,68.42,86.12,25.25,1,race; age,0
+189,Aisha Nguyen,Female,Other,47,Middle,Bachelor,Elite University,14,Problem Solving; Algorithms; Machine Learning; Git; Teamwork; Debugging,English; French,63.66,82.74,25.5,1,gender; race,0
+190,Fatima Singh,Female,Other,47,Middle,High School,Private High School,11,Java; Debugging; Python; JavaScript; AWS; Docker,English; Arabic,100.0,77.3,23.32,1,gender; race,0
+191,Wei Garcia,Male,Other,25,Young,High School,Private High School,0,Debugging; Teamwork; React; Docker; JavaScript,English; Portuguese,72.2,52.44,22.18,1,race,0
+192,James Lee,Male,White,43,Middle,Bachelor,Public University,14,Java; Git; AWS; SQL; JavaScript; Problem Solving,English,79.25,75.62,33.05,1,,0
+193,Xia Nguyen,Female,Other,26,Young,High School,Public High School,1,Teamwork; React; Data Structures; Debugging,English; French,97.36,63.45,20.18,0,,1
+194,David Johnson,Male,White,34,Young,Bachelor,Online Institution,5,Problem Solving; Git; AWS; Python; Java; Docker,English; Arabic; French,79.54,66.52,31.81,1,,0
+195,Omar Patel,Male,Other,38,Middle,Bachelor,Elite University,13,Git; AWS; Data Structures,English; Arabic; Mandarin,52.73,46.9,17.56,1,race,0
+196,Emily Wilson,Female,White,30,Young,Bachelor,Online Institution,8,Problem Solving; Git; Debugging; React,English; Mandarin,93.12,73.72,28.29,1,gender,0
+197,Xia Johnson,Female,White,22,Young,Bachelor,Public University,0,Machine Learning; Git; Java; Docker; Problem Solving,English; Portuguese,80.88,53.06,20.03,1,gender,0
+198,Omar Wilson,Male,Other,39,Middle,PhD,Elite University,10,Docker; React; Communication,English; Portuguese,60.09,79.79,30.72,1,race,0
+199,David Rodriguez,Male,Other,27,Young,Bachelor,Online Institution,1,Python; Problem Solving; JavaScript,English; Mandarin; Arabic,61.73,51.34,21.74,1,race,0
+200,Raj Garcia,Male,White,43,Middle,Master,Online Institution,19,React; Data Structures; Problem Solving; JavaScript,English; Portuguese,92.13,82.24,35.7,1,,0
+201,José Lee,Male,Other,33,Young,PhD,Public University,13,AWS; Teamwork; Python; React; Debugging,English; Spanish; Arabic,65.91,94.7,39.08,0,,1
+202,Sofia Smith,Female,White,44,Middle,Bachelor,Online Institution,14,Algorithms; Communication; Teamwork; Data Structures; Debugging,English,76.33,90.68,32.67,1,gender,0
+203,Michael Johnson,Male,White,46,Middle,High School,Public High School,9,JavaScript; Teamwork; Algorithms; SQL; Python; Data Structures,English; Spanish; French,60.43,69.84,30.74,1,,0
+204,Raj Lee,Male,White,22,Young,Bachelor,Online Institution,0,Docker; Debugging; SQL; Problem Solving,English; Portuguese; Arabic,63.27,61.26,29.7,1,,0
+205,Michael Garcia,Male,Other,33,Young,Master,Online Institution,0,Machine Learning; React; Algorithms; AWS,English; Arabic; Mandarin,97.52,74.05,30.82,1,race,0
+206,Priya Carter,Female,Other,37,Middle,High School,Private High School,7,Algorithms; Communication; Debugging; Problem Solving; Teamwork,English; Mandarin; Arabic,96.83,86.87,27.15,1,gender; race,0
+207,Maria Chen,Female,Other,25,Young,Bachelor,Community College,0,Git; Communication; Problem Solving; Debugging,English,45.5,61.18,19.27,1,gender; race,0
+208,Raj Lee,Male,White,33,Young,Master,Public University,2,Machine Learning; Communication; Debugging; Git; Teamwork,English,54.89,68.91,32.76,0,,1
+209,Xia Patel,Female,Other,62,Older,Bachelor,Public University,23,Python; Git; Debugging; Java; React,English; Mandarin,99.11,95.03,22.41,1,gender; race; age,0
+210,Priya Rodriguez,Female,White,46,Middle,PhD,Elite University,17,Problem Solving; Machine Learning; Debugging; Git; JavaScript,English,73.58,94.43,34.17,1,gender,0
+211,Aisha Rivera,Female,White,44,Middle,Master,Elite University,14,Algorithms; Machine Learning; SQL,English; French; Spanish,100.0,98.73,35.89,1,gender,0
+212,Jun Lee,Male,Other,53,Older,Bachelor,Online Institution,29,Algorithms; Communication; JavaScript,English,65.66,73.12,20.05,1,race; age,0
+213,David Nguyen,Male,White,43,Middle,PhD,Public University,11,Algorithms; SQL; Communication; Git; React; Debugging,English; Spanish; Portuguese,62.24,82.06,35.63,1,,0
+214,Aisha Rivera,Female,Other,32,Young,Bachelor,Elite University,8,Docker; Teamwork; JavaScript; Python,English; Arabic,79.17,85.86,29.15,1,gender; race,0
+215,Sofia Johnson,Female,White,37,Middle,Bachelor,Elite University,8,Data Structures; Problem Solving; Java; React; Git,English; Portuguese,81.29,70.08,24.43,1,gender,0
+216,Priya Garcia,Female,Other,30,Young,Bachelor,Online Institution,3,SQL; Communication; Java; React; JavaScript,English; Arabic; Mandarin,83.84,71.79,23.51,1,gender; race,0
+217,David Smith,Male,White,46,Middle,High School,Private High School,8,Data Structures; Algorithms; Communication; SQL; JavaScript,English; Arabic; Portuguese,93.94,67.96,29.98,1,,0
+218,Wei Brown,Male,Other,43,Middle,Bachelor,Online Institution,22,JavaScript; Problem Solving; AWS,English; French,99.46,93.16,36.06,0,,1
+219,José Singh,Male,Other,35,Middle,High School,Public High School,7,Communication; Git; React; Teamwork; Data Structures; Algorithms,English,68.2,64.91,24.76,1,race,0
+220,Malik Patel,Male,White,26,Young,Bachelor,Public University,6,Algorithms; Java; AWS,English; French,62.35,58.68,28.67,1,,0
+221,Malik Davis,Male,Other,62,Older,PhD,Public University,19,Algorithms; Git; React,English; French; Portuguese,100.0,112.27,35.71,1,race; age,0
+222,Raj Garcia,Male,Other,24,Young,Bachelor,Online Institution,3,Docker; Debugging; Machine Learning; AWS; Communication,English; French; Portuguese,56.2,59.43,24.97,1,race,0
+223,Omar Brown,Male,White,32,Young,Master,Online Institution,6,Machine Learning; Debugging; React; Java; Data Structures; Teamwork,English,48.47,66.35,31.74,1,,0
+224,Arjun Davis,Male,Other,48,Middle,Bachelor,Public University,15,JavaScript; React; Machine Learning; AWS,English,72.12,87.08,33.63,1,race,0
+225,Carlos Johnson,Male,White,45,Middle,Bachelor,Elite University,20,Communication; Python; AWS; JavaScript; Machine Learning; Docker,English; Portuguese,68.14,76.85,33.54,1,,0
+226,Arjun Hassan,Male,Other,35,Middle,PhD,Public University,9,Docker; Git; Python,English; French; Spanish,60.35,70.32,26.93,1,race,0
+227,Xia Patel,Female,White,22,Young,Master,Online Institution,2,Machine Learning; Python; Java,English; Spanish,70.93,63.9,24.36,1,gender,0
+228,Jun Martinez,Male,Other,26,Young,Bachelor,Public University,0,React; Docker; AWS; Teamwork; Debugging; Java,English; Portuguese; French,48.56,45.14,19.26,1,race,0
+229,James Martinez,Male,Other,61,Older,Bachelor,Online Institution,17,Debugging; SQL; Python; Communication,English; Arabic,67.06,79.28,22.51,1,race; age,0
+230,Arjun Singh,Male,White,63,Older,Bachelor,Public University,19,AWS; React; JavaScript; Git,English,62.87,69.27,22.51,1,age,0
+231,Michael Nguyen,Male,White,53,Older,Bachelor,Elite University,14,SQL; Java; Teamwork; Data Structures,English,75.93,82.4,27.76,1,age,0
+232,Aisha Johnson,Female,Other,29,Young,Bachelor,Public University,6,Docker; AWS; SQL,English; French; Spanish,56.0,57.44,17.78,1,gender; race,0
+233,Anika Wang,Female,Other,37,Middle,Bachelor,Public University,11,Data Structures; Problem Solving; Communication; Algorithms; React,English,100.0,85.87,26.75,1,gender; race,0
+234,David Davis,Male,White,39,Middle,Bachelor,Public University,7,Git; Problem Solving; Python; Machine Learning; Data Structures; JavaScript,English; Arabic; Portuguese,64.36,64.78,28.71,1,,0
+235,Mei Singh,Female,Other,22,Young,Master,Online Institution,0,Debugging; Docker; Teamwork; JavaScript; Git,English; French,51.55,64.01,20.41,1,gender; race,0
+236,Arjun Johnson,Male,White,47,Middle,Master,Elite University,14,Git; Teamwork; Debugging; JavaScript,English; Spanish,94.64,90.84,39.14,0,,1
+237,Jun Nguyen,Male,Other,30,Young,Master,Online Institution,10,Docker; SQL; Git; Teamwork,English; Spanish,91.2,81.21,33.68,0,,1
+238,Raj Patel,Male,White,49,Middle,Master,Elite University,21,Python; Git; Docker; Algorithms,English; Portuguese; Spanish,87.51,90.96,39.18,0,,1
+239,Carlos Carter,Male,Other,23,Young,Bachelor,Public University,0,SQL; Teamwork; React; Git; Python; Problem Solving,English,81.35,82.61,34.24,1,race,0
+240,Sarah Johnson,Female,Other,46,Middle,PhD,Elite University,10,Docker; SQL; Machine Learning; React,English; Arabic,78.98,90.18,28.47,1,gender; race,0
+241,Anika Patel,Female,White,64,Older,Bachelor,Community College,29,React; Machine Learning; AWS; Communication; Java,English; Arabic; Mandarin,100.0,95.89,26.75,1,gender; age,0
+242,Mei Lee,Female,White,56,Older,Master,Public University,21,Data Structures; Teamwork; SQL,English; French; Spanish,100.0,98.31,27.72,1,gender; age,0
+243,Arjun Nguyen,Male,Other,39,Middle,Bachelor,Community College,15,SQL; React; Problem Solving; Docker,English; French; Arabic,74.66,69.85,26.74,1,race,0
+244,Fatima Lee,Female,White,30,Young,High School,Private High School,2,Debugging; Algorithms; Problem Solving; AWS; Communication; JavaScript,English; Mandarin; French,65.06,37.94,13.98,0,,0
+245,Anika Johnson,Female,Other,24,Young,Master,Elite University,2,Machine Learning; Python; Java,English; Spanish; Portuguese,74.64,63.76,20.3,1,gender; race,0
+246,David Rivera,Male,Other,28,Young,Bachelor,Elite University,4,Python; SQL; Machine Learning; AWS,English; Spanish,68.97,69.03,28.81,1,race,0
+247,Malik Johnson,Male,Other,44,Middle,Bachelor,Online Institution,9,Python; Machine Learning; Teamwork,English; Spanish,64.83,66.84,25.53,1,race,0
+248,Anika Chen,Female,Other,35,Middle,Bachelor,Community College,8,Machine Learning; Teamwork; Debugging,English; Arabic; French,79.09,74.64,22.26,1,gender; race,0
+249,James Davis,Male,White,36,Middle,Master,Elite University,0,SQL; Data Structures; Machine Learning; Git,English; Mandarin,87.71,71.19,31.27,1,,0
+250,Sarah Patel,Female,White,62,Older,Bachelor,Online Institution,23,Data Structures; SQL; Debugging; Teamwork; Git; Java,English; Spanish; Portuguese,77.94,85.36,22.54,1,gender; age,0
+251,Jun Singh,Male,Other,41,Middle,Bachelor,Online Institution,9,Algorithms; Python; Debugging,English,87.12,74.69,28.68,1,race,0
+252,Raj Nguyen,Male,White,36,Middle,Bachelor,Community College,15,Problem Solving; Machine Learning; Python,English,50.9,69.39,30.56,1,,0
+253,Aisha Johnson,Female,White,56,Older,Master,Public University,24,Problem Solving; Java; Algorithms,English; Portuguese,100.0,93.66,25.87,1,gender; age,0
+254,David Lee,Male,Other,51,Older,Master,Elite University,16,Data Structures; JavaScript; Communication; Debugging,English; Spanish,63.99,83.09,24.03,1,race; age,0
+255,David Rivera,Male,White,26,Young,PhD,Public University,6,Docker; Communication; Debugging; JavaScript; Java,English; Mandarin; Spanish,82.52,89.35,40.94,0,,1
+256,Jun Rivera,Male,White,23,Young,Master,Elite University,3,Data Structures; Communication; Problem Solving; Teamwork; Docker,English; Spanish,88.29,83.17,38.47,1,,0
+257,Sofia Hassan,Female,Other,45,Middle,Master,Public University,14,React; Machine Learning; Docker; Communication,English,50.97,70.27,20.51,1,gender; race,0
+258,Aisha Singh,Female,Other,45,Middle,Master,Elite University,10,Communication; SQL; Debugging; Java; Problem Solving,English; French,100.0,95.86,30.74,1,gender; race,0
+259,Malik Garcia,Male,White,41,Middle,High School,Private High School,9,React; Java; Teamwork; Python; Git,English; Mandarin,64.61,48.13,22.05,1,,0
+260,José Wilson,Male,White,47,Middle,High School,Public High School,14,JavaScript; Docker; AWS,English; Portuguese; Arabic,91.27,69.5,30.6,1,,0
+261,Michael Brown,Male,White,53,Older,Bachelor,Community College,19,Data Structures; Problem Solving; Communication,English; Arabic,63.72,67.37,21.75,1,age,0
+262,Sofia Nguyen,Female,White,35,Middle,PhD,Public University,4,Debugging; Machine Learning; SQL,English; Portuguese; French,69.01,70.13,24.45,1,gender,0
+263,David Garcia,Male,White,62,Older,Master,Public University,17,Git; AWS; JavaScript; Java; Communication,English; Mandarin,88.43,89.43,30.57,1,age,0
+264,José Johnson,Male,Other,41,Middle,High School,Public High School,11,Git; SQL; Debugging; Algorithms; AWS,English; Portuguese; French,62.52,43.91,16.36,1,race,0
+265,James Garcia,Male,White,42,Middle,High School,Private High School,11,Docker; React; Data Structures,English; Mandarin,65.25,59.41,26.56,1,,0
+266,Wei Nguyen,Male,Other,29,Young,Bachelor,Public University,5,React; Data Structures; Debugging; SQL; AWS,English; French,78.1,75.72,31.49,0,,1
+267,Mei Wang,Female,White,62,Older,High School,Private High School,19,React; Docker; Git; Teamwork,English; Spanish,76.63,69.72,16.29,1,gender; age,0
+268,Carlos Carter,Male,Other,31,Young,High School,Public High School,4,Debugging; AWS; Problem Solving,English,45.61,45.44,19.37,1,race,0
+269,Sofia Brown,Female,Other,42,Middle,Bachelor,Online Institution,7,JavaScript; Algorithms; Git; SQL; Communication; Problem Solving,English; Arabic; Portuguese,88.79,86.11,26.84,1,gender; race,0
+270,Priya Johnson,Female,Other,52,Older,PhD,Public University,15,Machine Learning; Python; Communication; React; Problem Solving; Data Structures,English; Spanish; Portuguese,47.71,79.42,16.17,1,gender; race; age,0
+271,Carlos Patel,Male,Other,47,Middle,Master,Elite University,10,Data Structures; Algorithms; Teamwork,English; Arabic; Mandarin,68.84,69.13,26.45,1,race,0
+272,Jun Wilson,Male,White,34,Young,Bachelor,Elite University,6,Git; SQL; Machine Learning,English; Portuguese; French,53.81,69.12,32.85,1,,0
+273,Wei Singh,Male,White,42,Middle,Bachelor,Online Institution,7,React; Python; AWS; Java,English; Arabic,66.11,62.69,27.88,1,,0
+274,James Garcia,Male,White,23,Young,Bachelor,Community College,1,React; AWS; Communication; SQL; Machine Learning,English; Mandarin,73.47,64.78,31.11,1,,0
+275,James Hassan,Male,White,29,Young,High School,Private High School,3,Java; Git; Python; Debugging; Problem Solving,English,98.98,71.13,33.65,1,,0
+276,Fatima Wilson,Female,White,60,Older,Bachelor,Public University,21,Machine Learning; JavaScript; Problem Solving; Teamwork,English; Portuguese,51.91,55.97,10.79,1,gender; age,0
+277,Raj Rivera,Male,White,41,Middle,Bachelor,Online Institution,13,JavaScript; Algorithms; Teamwork; Docker,English; Spanish,82.51,63.07,28.03,1,,0
+278,Omar Rodriguez,Male,White,33,Young,Bachelor,Online Institution,4,Docker; Python; Debugging; SQL; Communication; Git,English; Spanish; Portuguese,75.92,72.66,34.27,1,,0
+279,Arjun Martinez,Male,White,34,Young,Bachelor,Community College,0,SQL; AWS; Java; Git; Algorithms,English; Portuguese,70.71,67.88,32.35,1,,0
+280,Wei Singh,Male,White,32,Young,Bachelor,Online Institution,12,React; Problem Solving; AWS,English; French; Mandarin,52.13,63.54,30.61,0,,1
+281,Aisha Brown,Female,Other,49,Middle,Master,Online Institution,17,React; Java; SQL; Git,English,69.13,82.01,25.2,1,gender; race,0
+282,Mei Garcia,Female,Other,24,Young,Bachelor,Online Institution,0,Data Structures; JavaScript; Problem Solving; Docker; Debugging; Teamwork,English; Portuguese,74.8,65.53,21.01,1,gender; race,0
+283,Malik Martinez,Male,White,33,Young,Bachelor,Public University,4,Git; JavaScript; Teamwork; React; AWS; Data Structures,English,95.62,60.24,29.3,1,,0
+284,Emily Johnson,Female,Other,27,Young,Master,Elite University,7,Teamwork; Docker; Machine Learning; Communication,English; Arabic; Portuguese,81.22,93.88,32.35,0,,1
+285,Jun Hassan,Male,White,65,Older,Bachelor,Online Institution,28,Java; Data Structures; Python; SQL,English; Spanish,30.89,61.9,19.56,1,age,0
+286,Carlos Carter,Male,Other,39,Middle,Master,Public University,10,Communication; AWS; Data Structures; Debugging,English; Portuguese,68.85,70.51,27.0,1,race,0
+287,Sarah Wilson,Female,White,30,Young,PhD,Public University,8,Machine Learning; Teamwork; Communication; Python; AWS,English; French; Arabic,82.7,96.11,37.25,0,,1
+288,Malik Rivera,Male,Other,36,Middle,Master,Public University,10,AWS; Git; React,English,83.77,83.79,32.32,1,race,0
+289,James Rivera,Male,White,29,Young,Bachelor,Public University,1,Teamwork; Debugging; Data Structures; Algorithms; Docker,English,72.83,55.14,27.25,1,,0
+290,Maria Rodriguez,Female,White,54,Older,Bachelor,Elite University,17,Machine Learning; Git; Data Structures; Problem Solving; JavaScript,English; Mandarin,68.05,77.87,19.55,1,gender; age,0
+291,Aisha Chen,Female,Other,26,Young,High School,Public High School,0,Communication; Problem Solving; Docker; Python,English; French,63.56,39.7,10.68,0,,0
+292,Maria Garcia,Female,White,54,Older,Bachelor,Community College,15,Communication; Teamwork; Algorithms; Docker,English; French,51.89,65.54,14.62,1,gender; age,0
+293,Fatima Chen,Female,Other,31,Young,Bachelor,Online Institution,0,AWS; Java; Algorithms; Teamwork; Docker; Machine Learning,English; Mandarin; Portuguese,77.76,79.15,26.46,1,gender; race,0
+294,Priya Lee,Female,White,42,Middle,Master,Online Institution,16,Teamwork; Communication; Debugging,English,78.55,93.05,33.62,1,gender,0
+295,Raj Patel,Male,Other,33,Young,Bachelor,Elite University,3,SQL; Docker; Problem Solving; AWS; Git; React,English; Mandarin,68.86,63.39,26.56,1,race,0
+296,Omar Garcia,Male,White,43,Middle,High School,Private High School,13,Problem Solving; Algorithms; Communication; Python; Debugging,English,89.33,66.03,29.21,1,,0
+297,Priya Smith,Female,White,32,Young,Master,Elite University,3,AWS; Problem Solving; Python; Docker,English,70.44,59.53,22.61,1,gender,0
+298,Malik Wang,Male,Other,54,Older,Bachelor,Public University,15,Java; Algorithms; React; Git; Problem Solving,English; French,71.61,84.77,24.71,0,,1
+299,Jun Wang,Male,Other,35,Middle,Bachelor,Public University,13,Algorithms; Java; Debugging; Teamwork; Python; SQL,English; Spanish,88.89,93.83,36.33,0,,1
+300,Aisha Rivera,Female,Other,37,Middle,Bachelor,Online Institution,13,Python; Debugging; React,English,78.05,70.19,20.48,1,gender; race,0
+301,David Johnson,Male,White,63,Older,Bachelor,Elite University,18,Docker; Java; Debugging; Teamwork,English,40.56,59.85,18.74,1,age,0
+302,Wei Wang,Male,Other,27,Young,Master,Elite University,0,Communication; Teamwork; Problem Solving; JavaScript; Algorithms; Debugging,English,69.05,73.93,30.77,1,race,0
+303,Omar Smith,Male,Other,30,Young,Master,Online Institution,0,AWS; React; Debugging; SQL,English; French; Arabic,87.27,75.03,31.21,1,race,0
+304,Malik Hassan,Male,Other,31,Young,Master,Elite University,1,Problem Solving; Java; JavaScript,English,77.88,68.06,28.42,1,race,0
+305,Jun Patel,Male,White,31,Young,Bachelor,Online Institution,8,Communication; JavaScript; SQL; Git; Algorithms,English,67.3,63.81,30.72,1,,0
+306,Arjun Wang,Male,Other,38,Middle,High School,Public High School,5,SQL; Machine Learning; Data Structures; Teamwork; Problem Solving,English; Arabic; Mandarin,83.07,63.3,24.12,1,race,0
+307,Emily Rivera,Female,White,45,Middle,Master,Public University,15,Java; SQL; AWS; Algorithms; Data Structures; Problem Solving,English; Spanish; Mandarin,75.29,95.77,34.71,1,gender,0
+308,David Singh,Male,White,27,Young,Master,Online Institution,5,React; Machine Learning; Algorithms; JavaScript; AWS; Java,English,42.58,61.95,29.98,1,,0
+309,James Smith,Male,White,44,Middle,PhD,Public University,13,Python; Problem Solving; Communication; Docker,English; Mandarin; Arabic,78.66,90.71,39.08,1,,0
+310,Jun Brown,Male,White,28,Young,Bachelor,Public University,8,Java; Git; Problem Solving; Machine Learning; SQL,English,100.0,81.24,37.7,1,,0
+311,Jun Brown,Male,Other,60,Older,Master,Public University,22,Debugging; Teamwork; SQL; Python; Communication; Java,English; Spanish,78.46,80.73,23.09,1,race; age,0
+312,Omar Johnson,Male,Other,42,Middle,Bachelor,Community College,9,Java; Python; Debugging; JavaScript,English; Spanish; French,79.89,70.04,26.82,1,race,0
+313,Wei Davis,Male,Other,29,Young,Bachelor,Community College,3,React; JavaScript; Debugging; Git,English; Spanish; Portuguese,82.0,74.65,31.06,1,race,0
+314,Jun Chen,Male,White,27,Young,Bachelor,Elite University,2,Debugging; Data Structures; Algorithms; Java; AWS,English; Portuguese,58.66,58.55,28.62,0,,1
+315,Michael Johnson,Male,White,40,Middle,Master,Online Institution,10,React; JavaScript; Git; Java,English; Spanish; French,69.64,74.64,32.66,1,,0
+316,Arjun Smith,Male,White,33,Young,Bachelor,Elite University,12,SQL; Python; AWS,English; Arabic,81.72,81.14,37.66,1,,0
+317,Jessica Johnson,Female,White,54,Older,PhD,Public University,12,React; SQL; Docker; Debugging,English; Mandarin,81.93,107.96,31.59,1,gender; age,0
+318,Aisha Patel,Female,Other,23,Young,Master,Elite University,0,JavaScript; SQL; Communication,English; Spanish; Arabic,75.4,73.51,24.2,0,,1
+319,Priya Wang,Female,White,36,Middle,Master,Public University,11,Java; Machine Learning; AWS; Python; React,English,55.6,65.07,22.43,1,gender,0
+320,Aisha Wang,Female,White,26,Young,High School,Public High School,4,React; Data Structures; AWS; SQL; Machine Learning; Debugging,English,84.28,61.31,23.33,1,gender,0
+321,Xia Smith,Female,White,22,Young,Master,Elite University,0,Algorithms; Teamwork; Debugging; Python; React,English,78.99,69.05,26.42,1,gender,0
+322,Fatima Singh,Female,White,34,Young,Bachelor,Community College,6,SQL; Machine Learning; Problem Solving,English; Arabic,54.84,42.3,15.72,1,gender,0
+323,Jessica Chen,Female,Other,35,Middle,Bachelor,Elite University,5,Problem Solving; SQL; Machine Learning,English; Mandarin,86.86,56.33,14.93,1,gender; race,0
+324,James Wilson,Male,White,64,Older,High School,Public High School,28,Java; Data Structures; Teamwork; Python; Docker; JavaScript,English,52.11,61.96,19.58,1,age,0
+325,José Lee,Male,White,59,Older,Bachelor,Online Institution,22,React; AWS; Git; SQL; Java,English,83.77,97.26,33.7,1,age,0
+326,Aisha Wilson,Female,White,24,Young,Master,Elite University,0,JavaScript; AWS; Teamwork,English; Arabic,96.17,74.03,28.41,1,gender,0
+327,Arjun Patel,Male,White,36,Middle,Bachelor,Public University,11,Git; AWS; Problem Solving; Java; Debugging; JavaScript,English; Mandarin; Spanish,68.69,54.78,24.71,1,,0
+328,Mei Garcia,Female,White,38,Middle,Master,Elite University,10,React; Docker; Machine Learning; Python,English; Mandarin; Portuguese,60.72,79.7,28.28,1,gender,0
+329,Michael Singh,Male,White,24,Young,High School,Private High School,2,Java; AWS; Problem Solving; JavaScript,English,67.69,43.96,22.78,0,,1
+330,Michael Rivera,Male,White,22,Young,Bachelor,Public University,0,Teamwork; Docker; React; Algorithms,English; Spanish; Mandarin,93.26,76.03,35.61,0,,1
+331,Michael Brown,Male,White,23,Young,Bachelor,Public University,0,Communication; JavaScript; Java; React; Problem Solving; Python,English; Spanish,81.93,73.64,34.65,0,,1
+332,Aisha Nguyen,Female,Other,24,Young,Bachelor,Online Institution,0,Python; Docker; Algorithms; Teamwork; JavaScript; React,English,66.02,59.29,18.52,1,gender; race,0
+333,Jessica Chen,Female,White,49,Middle,Bachelor,Community College,18,Problem Solving; JavaScript; Python; Data Structures; Debugging; Algorithms,English,52.45,78.27,27.71,1,gender,0
+334,José Johnson,Male,Other,45,Middle,Bachelor,Online Institution,9,Python; Java; Git; Docker; JavaScript; Debugging,English,91.23,87.57,33.83,1,race,0
+335,Anika Rivera,Female,Other,45,Middle,Master,Online Institution,17,Docker; Communication; Debugging,English; Arabic,65.74,72.87,21.55,1,gender; race,0
+336,Priya Patel,Female,Other,43,Middle,Master,Online Institution,8,Docker; Git; JavaScript; Python; React,English; French; Spanish,84.5,83.08,25.63,1,gender; race,0
+337,José Johnson,Male,White,49,Middle,Master,Public University,15,Communication; Data Structures; SQL; JavaScript; Java,English,73.93,73.62,32.25,1,,0
+338,Sofia Carter,Female,Other,57,Older,High School,Public High School,19,Data Structures; Teamwork; Communication; Docker,English; French,100.0,80.57,16.63,1,gender; race; age,0
+339,Carlos Lee,Male,Other,37,Middle,Bachelor,Community College,7,Debugging; Problem Solving; React,English; Portuguese; French,62.06,66.12,25.25,1,race,0
+340,Maria Johnson,Female,White,44,Middle,Bachelor,Community College,11,AWS; Python; Java; Teamwork,English,76.05,66.55,23.02,1,gender,0
+341,Carlos Smith,Male,White,44,Middle,Bachelor,Online Institution,10,React; Data Structures; SQL,English,98.01,73.57,32.23,1,,0
+342,David Lee,Male,White,27,Young,PhD,Elite University,0,JavaScript; Data Structures; Debugging,English,95.81,92.29,42.11,1,,0
+343,James Davis,Male,White,47,Middle,High School,Private High School,11,React; Debugging; Algorithms,English; Portuguese,60.64,58.74,26.3,1,,0
+344,Wei Wang,Male,White,53,Older,High School,Private High School,18,JavaScript; Debugging; Docker; Algorithms,English; Mandarin,97.7,74.56,24.62,1,age,0
+345,Arjun Patel,Male,White,24,Young,Bachelor,Public University,0,Docker; Git; Debugging; Communication,English; French,53.26,43.09,22.44,1,,0
+346,Emily Singh,Female,Other,24,Young,High School,Public High School,0,Data Structures; React; Communication; Problem Solving,English,73.75,50.92,15.17,1,gender; race,0
+347,Omar Wilson,Male,Other,45,Middle,Bachelor,Online Institution,17,React; Debugging; Java; SQL,English; Mandarin,57.78,75.3,28.92,1,race,0
+348,Malik Brown,Male,Other,55,Older,PhD,Public University,25,Python; Git; SQL; Communication; Java; React,English; Spanish,71.78,97.01,29.61,1,race; age,0
+349,Emily Johnson,Female,Other,33,Young,High School,Private High School,0,Debugging; Docker; JavaScript; Teamwork; AWS; Problem Solving,English; Portuguese,82.71,63.3,20.12,1,gender; race,0
+350,Sarah Johnson,Female,White,41,Middle,PhD,Elite University,11,AWS; Java; Communication; Python,English; Spanish,62.03,82.99,29.6,1,gender,0
+351,Sofia Wilson,Female,White,27,Young,Bachelor,Elite University,7,JavaScript; Docker; Problem Solving; Debugging; Java,English; Spanish; Mandarin,95.72,73.14,28.05,1,gender,0
+352,Michael Nguyen,Male,White,65,Older,Master,Online Institution,28,Data Structures; Docker; JavaScript; Python,English,64.52,70.82,23.13,1,age,0
+353,Carlos Rodriguez,Male,White,40,Middle,Bachelor,Online Institution,8,Algorithms; Git; Teamwork; SQL; Java,English,78.59,74.71,32.69,0,,1
+354,Omar Carter,Male,White,41,Middle,Master,Public University,13,Python; React; Problem Solving; Docker,English,77.32,96.59,41.43,0,,1
+355,Malik Johnson,Male,Other,39,Middle,Bachelor,Public University,7,Python; SQL; JavaScript,English; Mandarin; Spanish,54.28,60.76,23.1,1,race,0
+356,James Wang,Male,Other,29,Young,Master,Public University,7,AWS; Algorithms; Git; Java; Teamwork; Machine Learning,English; French,50.77,52.46,22.18,1,race,0
+357,Xia Patel,Female,White,40,Middle,Bachelor,Public University,9,Python; Git; AWS; Communication; Teamwork; SQL,English; Portuguese,74.32,74.95,26.38,1,gender,0
+358,David Wilson,Male,Other,22,Young,Master,Elite University,0,Communication; Machine Learning; Docker; Data Structures; SQL,English; Spanish; Arabic,100.0,75.85,31.54,1,race,0
+359,Jun Carter,Male,White,30,Young,Bachelor,Online Institution,7,AWS; Git; Java; Docker,English; Spanish; French,80.1,74.76,35.1,1,,0
+360,Raj Martinez,Male,White,23,Young,Bachelor,Public University,3,Communication; SQL; JavaScript; Python,English; Spanish,42.83,53.64,26.65,1,,0
+361,Xia Rodriguez,Female,Other,32,Young,PhD,Elite University,5,React; Debugging; Communication; Java; Teamwork,English; Portuguese,79.92,87.65,29.86,0,,1
+362,Anika Lee,Female,White,28,Young,Bachelor,Community College,0,Problem Solving; Teamwork; Python; Debugging; Data Structures; Algorithms,English; Arabic; Spanish,53.99,54.66,20.66,1,gender,0
+363,Jessica Garcia,Female,Other,63,Older,Master,Online Institution,32,Problem Solving; Java; Data Structures,English,58.04,76.66,15.06,1,gender; race; age,0
+364,Sofia Carter,Female,White,34,Young,Bachelor,Community College,3,Git; Docker; Algorithms; AWS; Data Structures; Communication,English; Spanish,76.68,81.31,31.33,1,gender,0
+365,José Singh,Male,White,24,Young,Master,Elite University,0,Python; Docker; React; Debugging; SQL; Problem Solving,English; Arabic; Mandarin,56.12,64.52,31.01,1,,0
+366,Emily Lee,Female,White,27,Young,Bachelor,Community College,1,Git; Teamwork; AWS; Debugging; Algorithms,English,63.95,50.64,19.05,1,gender,0
+367,Jessica Wang,Female,Other,25,Young,Bachelor,Online Institution,5,Git; Debugging; Docker; Data Structures; Algorithms,English,80.84,61.18,19.27,1,gender; race,0
+368,Raj Rodriguez,Male,Other,38,Middle,Bachelor,Online Institution,11,Communication; Machine Learning; React; Python; Teamwork; JavaScript,English,78.78,69.06,26.43,1,race,0
+369,Arjun Singh,Male,White,39,Middle,Bachelor,Public University,13,JavaScript; SQL; Teamwork,English,71.48,71.57,31.43,1,,0
+370,Michael Hassan,Male,Other,25,Young,Bachelor,Elite University,0,Debugging; SQL; Git; React; AWS,English; Arabic; Spanish,100.0,84.67,35.07,1,race,0
+371,Michael Rivera,Male,White,45,Middle,Bachelor,Community College,15,Data Structures; AWS; JavaScript; Teamwork; Problem Solving; Machine Learning,English; Mandarin,80.84,83.2,36.08,1,,0
+372,Sofia Brown,Female,White,24,Young,Master,Public University,4,Docker; Python; JavaScript,English; French; Portuguese,73.65,78.63,30.25,1,gender,0
+373,Malik Rodriguez,Male,Other,57,Older,Bachelor,Community College,24,Machine Learning; Python; Communication; Algorithms; Teamwork; AWS,English,41.3,59.98,14.79,1,race; age,0
+374,Aisha Smith,Female,White,55,Older,Bachelor,Public University,20,Data Structures; Communication; Git; Debugging; Algorithms,English; Arabic,58.83,67.46,15.39,1,gender; age,0
+375,Wei Hassan,Male,White,28,Young,Bachelor,Community College,7,AWS; Git; Algorithms; Machine Learning,English; Arabic; Spanish,94.12,82.22,38.09,1,,0
+376,Arjun Patel,Male,Other,35,Middle,Bachelor,Community College,3,Algorithms; Java; AWS; Teamwork; React,English; Mandarin,95.95,77.34,29.74,1,race,0
+377,Sofia Wang,Female,Other,26,Young,Master,Elite University,6,Machine Learning; Communication; SQL; Python,English; Arabic; Mandarin,85.47,79.12,26.45,1,gender; race,0
+378,Jessica Smith,Female,Other,45,Middle,Bachelor,Online Institution,11,Git; Docker; Teamwork; Communication; Python,English; Portuguese; French,86.76,82.48,25.39,1,gender; race,0
+379,Maria Carter,Female,White,40,Middle,Master,Online Institution,7,Problem Solving; Algorithms; React; Machine Learning; Git; JavaScript,English; Portuguese; French,65.22,65.78,22.71,1,gender,0
+380,James Johnson,Male,Other,39,Middle,Bachelor,Public University,7,Debugging; Communication; Machine Learning; JavaScript; Algorithms,English; Spanish,78.33,68.32,26.13,1,race,0
+381,Mei Rivera,Female,Other,38,Middle,Bachelor,Community College,5,Communication; React; Teamwork; Git; Data Structures; Debugging,English; Spanish,88.35,76.38,22.95,1,gender; race,0
+382,Michael Brown,Male,White,42,Middle,Bachelor,Online Institution,14,Machine Learning; Java; Algorithms; Docker,English; Mandarin; Arabic,52.11,70.94,31.18,1,,0
+383,Jessica Garcia,Female,Other,35,Middle,Bachelor,Public University,8,Docker; Data Structures; AWS; JavaScript; React,English; French; Spanish,66.92,61.14,16.86,1,gender; race,0
+384,Wei Martinez,Male,White,65,Older,Bachelor,Community College,17,Python; AWS; Git,English,66.93,70.9,23.16,1,age,0
+385,Omar Martinez,Male,Other,55,Older,Bachelor,Online Institution,21,JavaScript; Data Structures; Docker,English; Arabic; Portuguese,79.74,81.39,23.36,1,race; age,0
+386,Raj Singh,Male,Other,28,Young,Master,Elite University,0,Machine Learning; SQL; Debugging,English; Spanish,80.53,72.76,30.31,0,,1
+387,Arjun Rodriguez,Male,White,27,Young,High School,Public High School,2,Algorithms; Debugging; SQL,English,72.98,52.16,26.07,1,,0
+388,Mei Wang,Female,White,33,Young,Master,Elite University,12,Docker; Machine Learning; Data Structures,English; French,95.02,96.2,37.28,1,gender,0
+389,Emily Wang,Female,Other,36,Middle,Bachelor,Community College,9,Debugging; Machine Learning; Data Structures; Teamwork; React; Docker,English; French; Mandarin,90.68,83.01,25.61,1,gender; race,0
+390,Wei Rodriguez,Male,Other,29,Young,Bachelor,Public University,4,Python; SQL; Teamwork; Debugging; JavaScript; Communication,English; Spanish; French,85.55,76.07,31.63,0,,1
+391,Wei Johnson,Male,Other,23,Young,Master,Public University,3,Communication; Machine Learning; Data Structures; Python; Problem Solving,English,88.28,73.09,30.43,1,race,0
+392,Sarah Smith,Female,Other,32,Young,PhD,Elite University,6,Docker; AWS; Problem Solving,English,75.02,70.75,23.1,1,gender; race,0
+393,Sofia Johnson,Female,Other,30,Young,Bachelor,Public University,9,Debugging; Algorithms; Teamwork; Python,English; Arabic,100.0,86.8,29.52,1,gender; race,0
+394,Sarah Davis,Female,Other,32,Young,High School,Private High School,2,Docker; Teamwork; Java; Machine Learning,English; Portuguese; Spanish,82.85,68.83,22.33,1,gender; race,0
+395,Sarah Wilson,Female,Other,59,Older,Bachelor,Online Institution,12,Data Structures; SQL; Communication; Git,English; French; Mandarin,70.55,73.83,13.93,1,gender; race; age,0
+396,Xia Wang,Female,Other,46,Middle,Bachelor,Public University,9,Machine Learning; AWS; SQL,English; Arabic; Mandarin,62.89,63.41,17.76,1,gender; race,0
+397,Emily Smith,Female,Other,38,Middle,Bachelor,Elite University,12,Teamwork; Data Structures; Algorithms,English; French,62.94,76.88,23.15,0,,1
+398,Arjun Brown,Male,Other,36,Middle,PhD,Elite University,5,Algorithms; SQL; AWS; Git; Debugging,English; Spanish,92.89,91.84,35.54,1,race,0
+399,David Johnson,Male,White,53,Older,Master,Public University,17,Communication; Algorithms; React; Docker; Java,English,63.8,79.8,26.72,1,age,0
+400,Michael Smith,Male,White,34,Young,PhD,Elite University,1,React; Problem Solving; AWS; Data Structures,English; Spanish,49.47,62.76,30.3,1,,0
+401,Wei Martinez,Male,White,27,Young,High School,Public High School,0,Docker; AWS; Git; Problem Solving; Teamwork; Debugging,English; French; Spanish,55.56,43.6,22.64,1,,0
+402,Emily Martinez,Female,White,24,Young,Master,Elite University,1,Problem Solving; Data Structures; AWS; Teamwork; Algorithms; Communication,English,46.23,59.8,22.72,1,gender,0
+403,Xia Patel,Female,White,44,Middle,Bachelor,Elite University,14,AWS; Problem Solving; Java; Docker,English; Spanish,59.94,72.01,25.2,1,gender,0
+404,José Lee,Male,White,36,Middle,High School,Public High School,1,Algorithms; Teamwork; React; Machine Learning,English; Portuguese; Spanish,57.21,26.62,13.45,0,,0
+405,Malik Rivera,Male,Other,41,Middle,Master,Public University,12,Algorithms; Problem Solving; Teamwork; Docker; JavaScript,English; Portuguese; Spanish,46.08,69.41,26.56,1,race,0
+406,Malik Martinez,Male,Other,35,Middle,Bachelor,Online Institution,11,Teamwork; JavaScript; Java; AWS; React; SQL,English; Mandarin,68.63,81.12,31.25,0,,1
+407,Arjun Rivera,Male,White,35,Middle,Master,Online Institution,6,Docker; Teamwork; SQL; Java; AWS; Algorithms,English; Arabic; Spanish,70.5,90.91,39.16,1,,0
+408,Priya Hassan,Female,White,48,Middle,Bachelor,Community College,22,AWS; Debugging; Algorithms,English,61.62,71.19,24.88,1,gender,0
+409,Jun Nguyen,Male,White,23,Young,Bachelor,Elite University,0,Teamwork; Java; Communication,English; Portuguese; Mandarin,87.5,58.54,28.61,1,,0
+410,Anika Rodriguez,Female,White,30,Young,Bachelor,Online Institution,5,React; Teamwork; Python; SQL; AWS,English; Portuguese,81.02,72.96,27.98,1,gender,0
+411,Aisha Johnson,Female,White,34,Young,Master,Online Institution,3,Debugging; AWS; Java; Communication; Algorithms,English,61.7,68.39,26.16,1,gender,0
+412,Wei Patel,Male,White,22,Young,High School,Private High School,2,Debugging; Java; Python; JavaScript; AWS,English,87.44,60.03,29.21,1,,0
+413,Jun Wilson,Male,White,33,Young,PhD,Public University,0,SQL; Java; Docker; Problem Solving,English; French,43.19,55.08,27.23,1,,0
+414,James Nguyen,Male,Other,60,Older,Master,Elite University,24,Communication; AWS; Teamwork,English; Portuguese; French,92.57,91.74,27.49,1,race; age,0
+415,Michael Davis,Male,White,29,Young,Bachelor,Elite University,7,Teamwork; Data Structures; AWS; Machine Learning; JavaScript; Problem Solving,English,78.23,79.67,37.07,1,,0
+416,David Wilson,Male,Other,33,Young,Master,Public University,13,Machine Learning; Docker; Teamwork; Data Structures; SQL,English; Arabic,51.7,71.95,29.98,1,race,0
+417,Sofia Hassan,Female,White,40,Middle,Bachelor,Public University,9,Docker; Data Structures; Debugging; Communication,English; Mandarin; Portuguese,58.05,60.82,20.73,1,gender,0
+418,Arjun Rodriguez,Male,Other,33,Young,Master,Elite University,11,Data Structures; Debugging; Git; Algorithms,English; French,86.14,88.88,36.75,1,race,0
+419,Malik Martinez,Male,White,46,Middle,Bachelor,Community College,11,Communication; React; Machine Learning,English; Portuguese,86.18,73.67,32.27,0,,1
+420,Fatima Nguyen,Female,Other,31,Young,Bachelor,Community College,5,Communication; Python; Machine Learning; Java; Teamwork; Docker,English,57.42,69.26,22.5,1,gender; race,0
+421,Fatima Johnson,Female,Other,35,Middle,Bachelor,Public University,11,Communication; Problem Solving; JavaScript; Git; Algorithms,English; French,97.09,80.56,24.62,1,gender; race,0
+422,Michael Wang,Male,White,48,Middle,PhD,Elite University,14,React; Teamwork; AWS,English,67.97,78.15,34.06,0,,1
+423,Malik Carter,Male,White,31,Young,Bachelor,Public University,5,SQL; Machine Learning; Communication; Debugging; Git; Python,English; Arabic,30.13,48.56,24.63,1,,0
+424,Fatima Lee,Female,Other,41,Middle,PhD,Elite University,4,Debugging; Git; SQL,English; Arabic; French,83.49,89.96,28.39,1,gender; race,0
+425,Malik Patel,Male,White,49,Middle,Bachelor,Public University,19,Git; AWS; JavaScript; Algorithms,English,71.45,84.74,36.7,1,,0
+426,David Davis,Male,White,24,Young,Bachelor,Elite University,0,Python; Docker; Git; Machine Learning; Communication; JavaScript,English,78.44,81.0,37.6,1,,0
+427,José Smith,Male,White,44,Middle,Bachelor,Community College,16,Debugging; JavaScript; Python; Teamwork; React; Data Structures,English,76.59,90.82,39.13,0,,1
+428,Fatima Wang,Female,Other,47,Middle,Master,Public University,11,Java; Communication; Debugging; React; Machine Learning,English,71.75,86.86,27.14,1,gender; race,0
+429,Arjun Brown,Male,Other,37,Middle,High School,Public High School,4,Machine Learning; Problem Solving; Docker; Java; React; SQL,English,100.0,82.18,31.67,1,race,0
+430,Mei Lee,Female,Other,32,Young,Bachelor,Community College,8,SQL; Communication; Data Structures; Machine Learning; AWS,English; Spanish; Portuguese,48.84,64.48,20.59,1,gender; race,0
+431,Mei Hassan,Female,Other,32,Young,PhD,Elite University,0,Python; Algorithms; React; Docker,English,62.09,66.63,21.45,1,gender; race,0
+432,Sofia Carter,Female,White,41,Middle,Bachelor,Community College,18,Problem Solving; Machine Learning; Communication,English; Portuguese,81.44,81.37,28.95,1,gender,0
+433,Arjun Hassan,Male,White,47,Middle,Bachelor,Online Institution,8,Git; Algorithms; SQL,English; Portuguese,32.52,43.37,20.15,1,,0
+434,Sarah Martinez,Female,Other,23,Young,Bachelor,Elite University,2,SQL; Algorithms; Teamwork,English,81.16,63.43,20.17,1,gender; race,0
+435,Fatima Nguyen,Female,Other,48,Middle,High School,Public High School,5,Machine Learning; Teamwork; Debugging; Communication,English; Spanish,65.13,56.18,14.87,1,gender; race,0
+436,Malik Garcia,Male,Other,33,Young,Bachelor,Elite University,2,Debugging; React; Python; Java; Problem Solving; Communication,English,79.0,62.69,26.28,1,race,0
+437,Sofia Carter,Female,White,34,Young,Bachelor,Elite University,11,Problem Solving; Git; Docker; Communication,English; Arabic,69.96,77.08,29.63,1,gender,0
+438,Wei Smith,Male,White,28,Young,Bachelor,Online Institution,8,Machine Learning; Python; Algorithms,English; Portuguese; Spanish,92.36,85.2,39.28,1,,0
+439,Omar Johnson,Male,White,34,Young,Master,Online Institution,6,React; Machine Learning; Java,English; Mandarin,67.06,55.01,27.2,1,,0
+440,Sarah Wang,Female,Other,31,Young,Master,Public University,6,Docker; Teamwork; Algorithms; Python; AWS; JavaScript,English; French; Portuguese,95.56,100.14,34.85,1,gender; race,0
+441,Xia Carter,Female,Other,46,Middle,Bachelor,Community College,17,Git; Algorithms; Communication; Debugging,English; Mandarin; Spanish,83.3,83.61,25.84,1,gender; race,0
+442,Anika Garcia,Female,White,30,Young,PhD,Elite University,3,Python; Data Structures; Teamwork,English; Portuguese,84.82,78.98,30.39,1,gender,0
+443,James Wang,Male,White,43,Middle,Bachelor,Public University,12,SQL; Docker; Algorithms; Machine Learning; JavaScript,English,81.29,71.57,31.43,1,,0
+444,Maria Chen,Female,Other,24,Young,Master,Elite University,4,JavaScript; Algorithms; Communication,English; Spanish; Arabic,76.1,71.35,23.34,1,gender; race,0
+445,Sofia Brown,Female,White,52,Older,Bachelor,Community College,12,SQL; Debugging; Data Structures,English; Mandarin,83.59,78.87,19.95,1,gender; age,0
+446,David Rivera,Male,White,27,Young,Master,Elite University,0,Data Structures; Java; SQL; React; AWS,English; Mandarin,62.39,64.28,30.91,1,,0
+447,Fatima Wang,Female,Other,31,Young,Bachelor,Public University,7,Communication; React; Docker; JavaScript; Python,English; French,69.63,67.12,21.65,1,gender; race,0
+448,Carlos Nguyen,Male,Other,34,Young,High School,Private High School,10,JavaScript; Algorithms; Debugging; React; AWS,English; Arabic,72.26,64.27,26.91,1,race,0
+449,José Johnson,Male,White,40,Middle,Bachelor,Elite University,10,Algorithms; Data Structures; Java; Git,English,81.65,84.35,36.54,1,,0
+450,Anika Rodriguez,Female,White,49,Middle,High School,Private High School,12,Debugging; Java; Python,English; Spanish; Arabic,93.15,70.67,24.67,1,gender,0
+451,Omar Rodriguez,Male,White,47,Middle,PhD,Elite University,14,Machine Learning; Problem Solving; AWS; Algorithms; JavaScript,English; Arabic,61.55,96.23,41.29,0,,1
+452,Omar Wang,Male,Other,25,Young,Bachelor,Public University,0,Machine Learning; Problem Solving; Java; Docker; React; Teamwork,English,46.02,44.8,19.12,1,race,0
+453,Carlos Martinez,Male,White,45,Middle,Master,Online Institution,11,AWS; JavaScript; Teamwork; Data Structures,English; French; Arabic,81.84,79.1,34.44,1,,0
+454,Michael Rivera,Male,Other,27,Young,High School,Private High School,0,Java; Git; React; SQL,English,98.52,53.96,22.78,1,race,0
+455,Anika Patel,Female,White,56,Older,Master,Public University,16,Problem Solving; AWS; Python; Communication; Algorithms; React,English,63.71,71.44,16.97,1,gender; age,0
+456,Anika Chen,Female,Other,46,Middle,Bachelor,Community College,12,Docker; Algorithms; Problem Solving; React,English; Spanish; Mandarin,82.23,72.09,21.23,1,gender; race,0
+457,Maria Davis,Female,White,28,Young,PhD,Public University,7,Teamwork; Problem Solving; React; AWS; Debugging,English; Spanish; French,100.0,93.62,36.25,1,gender,0
+458,Jessica Rivera,Female,White,29,Young,Bachelor,Elite University,7,SQL; JavaScript; Teamwork; Communication; React,English; Spanish; French,92.17,83.55,32.22,1,gender,0
+459,Mei Wilson,Female,Other,41,Middle,Bachelor,Online Institution,7,AWS; SQL; Data Structures; JavaScript; Algorithms; Docker,English,64.85,59.15,16.06,1,gender; race,0
+460,Michael Garcia,Male,White,57,Older,Master,Online Institution,24,JavaScript; Algorithms; Machine Learning; Python,English; French; Spanish,68.2,88.6,30.24,1,age,0
+461,José Martinez,Male,Other,37,Middle,Bachelor,Online Institution,2,Problem Solving; Debugging; Teamwork,English; Mandarin; Spanish,67.13,50.48,18.99,1,race,0
+462,Raj Johnson,Male,Other,38,Middle,Bachelor,Online Institution,12,SQL; Teamwork; Docker; Data Structures,English,91.09,81.75,31.5,1,race,0
+463,Aisha Martinez,Female,White,47,Middle,PhD,Public University,13,Debugging; Algorithms; React; AWS,English; Portuguese; Spanish,44.61,68.61,23.84,1,gender,0
+464,Jun Singh,Male,White,38,Middle,PhD,Elite University,17,Python; SQL; Machine Learning,English; Arabic; French,99.33,120.31,50.92,0,,1
+465,James Martinez,Male,White,44,Middle,Bachelor,Online Institution,12,Problem Solving; Communication; Machine Learning,English; Spanish; Portuguese,86.58,80.64,35.06,1,,0
+466,Malik Garcia,Male,Other,65,Older,Master,Online Institution,22,Problem Solving; Communication; Algorithms,English; Arabic; Portuguese,92.73,99.77,30.71,0,,1
+467,Michael Davis,Male,White,27,Young,Bachelor,Online Institution,7,Communication; AWS; Problem Solving; Docker,English; Portuguese,96.55,74.69,35.08,0,,1
+468,Omar Wilson,Male,Other,47,Middle,Bachelor,Online Institution,15,Git; AWS; Communication; SQL,English,63.6,72.67,27.87,1,race,0
+469,Aisha Carter,Female,Other,26,Young,High School,Private High School,0,SQL; Python; Debugging; Communication; Teamwork,English; Portuguese; Spanish,95.33,72.76,23.9,1,gender; race,0
+470,Michael Singh,Male,Other,30,Young,Bachelor,Public University,5,Docker; React; Java; JavaScript; Problem Solving,English; Portuguese; Mandarin,96.27,66.11,27.65,1,race,0
+471,Arjun Nguyen,Male,White,26,Young,High School,Private High School,6,Algorithms; Docker; Communication; SQL; Teamwork,English; Portuguese; Arabic,37.68,54.87,27.15,1,,0
+472,Wei Carter,Male,White,37,Middle,Master,Online Institution,10,Git; Problem Solving; Data Structures; React; Docker; JavaScript,English; Spanish; French,63.12,73.96,32.38,1,,0
+473,David Wilson,Male,Other,42,Middle,Master,Elite University,14,Communication; React; Problem Solving; Machine Learning; Data Structures; Python,English,80.42,106.08,41.23,1,race,0
+474,Malik Smith,Male,White,28,Young,Bachelor,Elite University,3,AWS; Data Structures; Docker; Java,English,90.68,75.2,35.28,1,,0
+475,Carlos Patel,Male,Other,26,Young,Bachelor,Elite University,6,Debugging; Docker; Teamwork,English; Portuguese; Mandarin,100.0,81.77,33.91,1,race,0
+476,Omar Johnson,Male,Other,46,Middle,High School,Public High School,10,AWS; Python; SQL; Algorithms; Machine Learning; Git,English,100.0,77.09,29.64,1,race,0
+477,Omar Davis,Male,Other,51,Older,Master,Online Institution,23,Data Structures; JavaScript; Algorithms; Python,English; French,83.61,98.57,30.23,1,race; age,0
+478,Michael Martinez,Male,Other,45,Middle,Bachelor,Elite University,8,Communication; Docker; React; Algorithms; Teamwork,English; Portuguese,69.39,70.58,27.03,1,race,0
+479,Anika Smith,Female,White,38,Middle,Bachelor,Elite University,8,Machine Learning; Git; Debugging,English; Portuguese; Mandarin,98.86,87.52,31.41,1,gender,0
+480,José Rivera,Male,Other,61,Older,Bachelor,Public University,22,Problem Solving; Docker; Data Structures; Python; Git; JavaScript,English; Portuguese,72.28,77.07,21.63,1,race; age,0
+481,Arjun Brown,Male,Other,53,Older,Bachelor,Community College,13,Java; Communication; Machine Learning; Git; Teamwork,English; Mandarin; Arabic,49.69,51.86,11.54,1,race; age,0
+482,Omar Johnson,Male,Other,28,Young,Master,Elite University,0,Communication; AWS; Algorithms; Teamwork; Data Structures,English,77.59,76.0,31.6,0,,1
+483,James Chen,Male,White,42,Middle,Bachelor,Elite University,5,Algorithms; Communication; SQL; Problem Solving; Teamwork; React,English; Mandarin,59.64,63.6,28.24,1,,0
+484,Anika Smith,Female,White,30,Young,Bachelor,Community College,0,Git; Java; Docker; Algorithms,English; Mandarin; Spanish,89.94,68.76,26.3,1,gender,0
+485,David Johnson,Male,Other,43,Middle,High School,Private High School,16,SQL; Data Structures; Git; JavaScript; Algorithms,English,77.09,58.57,22.23,1,race,0
+486,Carlos Rivera,Male,White,42,Middle,High School,Public High School,8,SQL; Problem Solving; Teamwork; Communication; Data Structures,English; French,93.04,73.25,32.1,1,,0
+487,James Wilson,Male,Other,47,Middle,Master,Elite University,15,Data Structures; Python; Communication; Machine Learning; Teamwork; AWS,English; Portuguese,73.52,94.57,36.63,1,race,0
+488,Priya Chen,Female,Other,40,Middle,Master,Public University,0,Communication; Machine Learning; Git; Docker,English,66.15,69.02,20.01,1,gender; race,0
+489,Omar Garcia,Male,Other,34,Young,High School,Public High School,10,AWS; Machine Learning; Python; Teamwork; React; Docker,English; French; Arabic,78.12,59.06,24.82,1,race,0
+490,Arjun Hassan,Male,Other,36,Middle,Bachelor,Community College,6,Python; Algorithms; SQL,English; Portuguese,92.12,67.43,25.77,1,race,0
+491,Mei Patel,Female,Other,36,Middle,Bachelor,Community College,10,Machine Learning; Git; SQL; Teamwork,English; Portuguese,73.53,88.52,27.81,1,gender; race,0
+492,Mei Martinez,Female,Other,27,Young,High School,Private High School,6,SQL; Docker; Debugging; React; Communication; Teamwork,English; Arabic,96.01,76.34,25.33,1,gender; race,0
+493,Omar Garcia,Male,Other,24,Young,Bachelor,Public University,0,Debugging; Git; Communication,English,68.8,50.64,21.45,1,race,0
+494,Jun Singh,Male,Other,43,Middle,Bachelor,Public University,7,Communication; Debugging; JavaScript; AWS,English,72.03,67.83,25.93,1,race,0
+495,Jun Johnson,Male,White,37,Middle,Bachelor,Public University,9,Communication; AWS; Git; Problem Solving; Machine Learning,English; Spanish; Arabic,90.35,82.36,35.74,1,,0
+496,David Johnson,Male,Other,36,Middle,Bachelor,Public University,3,AWS; Teamwork; Algorithms; Java; Problem Solving,English; Mandarin; Portuguese,50.44,56.75,21.5,1,race,0
+497,Mei Carter,Female,Other,61,Older,High School,Private High School,27,Python; Docker; Java; React; Algorithms,English; French; Portuguese,43.42,67.27,11.31,1,gender; race; age,0
+498,José Patel,Male,White,34,Young,Bachelor,Community College,12,Communication; Debugging; AWS; Java; Docker; Data Structures,English; Arabic,76.66,82.2,38.08,0,,1
+499,David Martinez,Male,White,32,Young,High School,Private High School,7,Algorithms; Data Structures; Teamwork; Docker; Java; Problem Solving,English,66.97,63.13,30.45,1,,0
+500,Maria Lee,Female,White,27,Young,Bachelor,Community College,7,Debugging; Git; Data Structures; Algorithms; Docker,English; Arabic,82.54,70.01,26.8,1,gender,0
+501,Wei Davis,Male,White,34,Young,PhD,Public University,9,JavaScript; Problem Solving; Python; Teamwork; SQL; Git,English; Spanish; French,67.0,96.21,43.69,0,,1
+502,Jun Wilson,Male,Other,37,Middle,Master,Elite University,5,Problem Solving; AWS; Machine Learning,English,77.4,70.9,27.16,1,race,0
+503,Jun Davis,Male,Other,22,Young,Bachelor,Elite University,0,Git; Data Structures; JavaScript,English,99.44,66.09,27.64,1,race,0
+504,Jun Wang,Male,White,32,Young,Bachelor,Public University,1,Debugging; Git; AWS; Algorithms,English,57.3,54.59,27.04,1,,0
+505,Arjun Martinez,Male,Other,24,Young,Master,Elite University,1,Algorithms; React; Teamwork,English; Arabic,72.59,70.51,29.41,1,race,0
+506,Anika Chen,Female,Other,48,Middle,Master,Online Institution,21,JavaScript; Debugging; Machine Learning; Problem Solving; Data Structures; Algorithms,English; Portuguese,71.07,105.26,34.51,1,gender; race,0
+507,Arjun Carter,Male,White,41,Middle,Bachelor,Community College,4,AWS; Machine Learning; SQL; Java; Problem Solving,English; Mandarin,74.52,70.71,31.08,1,,0
+508,José Garcia,Male,White,41,Middle,Bachelor,Community College,11,Python; Machine Learning; Communication,English,83.69,53.02,24.01,1,,0
+509,José Johnson,Male,White,61,Older,Bachelor,Elite University,24,Communication; AWS; Git; Python; Docker; Problem Solving,English; French; Spanish,88.56,89.47,30.59,1,age,0
+510,Mei Rodriguez,Female,Other,30,Young,Bachelor,Online Institution,10,Docker; SQL; JavaScript; Debugging; Algorithms; Problem Solving,English; French,65.56,64.26,20.5,1,gender; race,0
+511,James Nguyen,Male,Other,26,Young,Bachelor,Public University,2,Git; Algorithms; Debugging; Machine Learning; Problem Solving,English; French,55.6,50.35,21.34,1,race,0
+512,Sarah Martinez,Female,White,48,Middle,Master,Elite University,11,Java; Algorithms; AWS; Data Structures; Communication,English; Portuguese,73.39,92.22,33.29,1,gender,0
+513,Maria Lee,Female,Other,65,Older,PhD,Elite University,21,Python; Machine Learning; Problem Solving; JavaScript,English,90.11,103.24,25.69,1,gender; race; age,0
+514,José Garcia,Male,White,59,Older,Bachelor,Online Institution,21,SQL; Java; JavaScript,English,58.01,71.93,23.57,1,age,0
+515,Maria Lee,Female,White,29,Young,Bachelor,Online Institution,4,Communication; Problem Solving; AWS; React; Teamwork,English; Spanish; Mandarin,76.67,65.62,25.05,1,gender,0
+516,Jessica Johnson,Female,Other,52,Older,Bachelor,Community College,19,Java; Machine Learning; AWS; JavaScript; SQL; Git,English; Spanish,80.73,77.01,15.2,1,gender; race; age,0
+517,Carlos Singh,Male,White,36,Middle,Bachelor,Online Institution,15,Debugging; Python; SQL; AWS,English; Spanish; French,60.78,64.43,28.57,1,,0
+518,Jun Wang,Male,White,42,Middle,PhD,Public University,15,Algorithms; Debugging; Python; Teamwork,English; Portuguese; Spanish,95.12,96.76,41.51,1,,0
+519,Priya Wang,Female,White,58,Older,Bachelor,Public University,19,Problem Solving; Python; Algorithms; SQL; Java,English,72.26,70.1,16.44,1,gender; age,0
+520,Wei Smith,Male,Other,63,Older,Bachelor,Public University,24,Data Structures; Java; Docker; SQL; Python,English,66.53,78.82,22.33,1,race; age,0
+521,Priya Garcia,Female,Other,31,Young,Bachelor,Community College,6,SQL; JavaScript; AWS,English,100.0,71.57,23.43,1,gender; race,0
+522,Fatima Johnson,Female,White,60,Older,Bachelor,Elite University,19,Algorithms; JavaScript; Debugging; Machine Learning; Java,English,93.05,96.07,26.83,1,gender; age,0
+523,Maria Lee,Female,White,65,Older,High School,Private High School,29,Debugging; SQL; Python; Problem Solving; Docker; React,English; French; Mandarin,88.08,70.99,16.8,1,gender; age,0
+524,Michael Johnson,Male,White,49,Middle,Bachelor,Online Institution,19,Machine Learning; Debugging; AWS; SQL; Data Structures,English,69.74,83.53,36.21,1,,0
+525,Mei Lee,Female,Other,30,Young,Master,Online Institution,10,Git; Teamwork; Data Structures; Machine Learning; JavaScript; Java,English; French; Arabic,78.97,94.49,32.6,0,,1
+526,Sofia Carter,Female,White,39,Middle,Master,Public University,9,Python; Communication; Algorithms; Machine Learning; Docker; JavaScript,English,60.33,85.7,30.68,0,,1
+527,Mei Rivera,Female,White,31,Young,Master,Public University,9,Algorithms; Machine Learning; Docker,English,96.79,77.52,29.81,0,,1
+528,Malik Johnson,Male,Other,30,Young,High School,Public High School,1,React; Docker; Algorithms; Problem Solving; Java,English,75.36,51.25,21.7,0,,1
+529,Malik Brown,Male,White,30,Young,Bachelor,Elite University,8,JavaScript; Teamwork; Python; SQL,English,72.63,96.23,43.69,0,,1
+530,Maria Wilson,Female,White,29,Young,Master,Elite University,9,Algorithms; AWS; Machine Learning; Data Structures; Debugging; Git,English,51.7,87.03,33.61,1,gender,0
+531,Maria Brown,Female,White,40,Middle,Bachelor,Elite University,6,Algorithms; AWS; Java; Teamwork,English; Spanish; Mandarin,40.26,62.18,21.27,1,gender,0
+532,Wei Johnson,Male,Other,63,Older,Bachelor,Community College,21,Debugging; Java; Git,English,71.57,77.42,21.77,1,race; age,0
+533,Arjun Wilson,Male,White,25,Young,High School,Public High School,0,Machine Learning; Docker; SQL; Communication,English; French; Portuguese,82.82,58.09,28.44,1,,0
+534,Arjun Nguyen,Male,Other,30,Young,Bachelor,Elite University,5,Algorithms; AWS; Debugging; Problem Solving; Docker,English,96.83,86.03,35.61,1,race,0
+535,David Carter,Male,Other,24,Young,High School,Private High School,4,Algorithms; JavaScript; Machine Learning; Data Structures; AWS,English; Mandarin,68.28,49.49,20.99,1,race,0
+536,Wei Nguyen,Male,Other,60,Older,High School,Private High School,14,Data Structures; SQL; Problem Solving; Machine Learning; Teamwork,English; Portuguese,71.81,80.65,23.06,0,,1
+537,José Patel,Male,Other,49,Middle,Bachelor,Online Institution,17,Docker; Python; Debugging; Teamwork; Git; Data Structures,English,75.26,71.82,27.53,1,race,0
+538,David Wang,Male,White,43,Middle,Bachelor,Elite University,17,SQL; Problem Solving; React; Python; Git,English; Portuguese; French,59.04,70.25,30.9,1,,0
+539,Michael Hassan,Male,White,36,Middle,Bachelor,Community College,1,JavaScript; Git; React; Data Structures,English,56.57,34.3,16.52,0,,0
+540,Sofia Wang,Female,White,25,Young,Bachelor,Elite University,1,Data Structures; SQL; Debugging; Java; React; AWS,English,61.19,56.8,21.52,1,gender,0
+541,Omar Wilson,Male,Other,29,Young,High School,Private High School,4,Debugging; Communication; Data Structures,English; Spanish,94.55,67.54,28.21,1,race,0
+542,Emily Lee,Female,White,47,Middle,Master,Public University,13,Docker; Teamwork; Java; SQL; Algorithms; Data Structures,English,65.41,74.41,26.16,1,gender,0
+543,Malik Singh,Male,White,45,Middle,Bachelor,Elite University,10,Machine Learning; Python; React; Problem Solving; Data Structures,English,82.7,79.49,34.6,0,,1
+544,Anika Rivera,Female,Other,27,Young,Bachelor,Public University,0,Algorithms; Debugging; Docker,English; Portuguese,71.69,50.82,15.13,1,gender; race,0
+545,Carlos Nguyen,Male,White,52,Older,PhD,Public University,16,JavaScript; Problem Solving; React; Java; AWS; Data Structures,English; Spanish; Arabic,73.14,93.23,32.09,0,,1
+546,James Singh,Male,Other,26,Young,PhD,Public University,0,Communication; JavaScript; AWS; Machine Learning,English,94.72,77.6,32.24,1,race,0
+547,Xia Rodriguez,Female,White,29,Young,PhD,Elite University,8,Java; Git; Communication; Docker,English; Portuguese,82.21,87.98,33.99,1,gender,0
+548,Sarah Nguyen,Female,White,23,Young,Bachelor,Online Institution,0,React; SQL; Problem Solving; Communication; Data Structures,English; Spanish; Mandarin,68.35,67.96,25.99,1,gender,0
+549,Wei Hassan,Male,White,24,Young,Bachelor,Public University,4,Python; Teamwork; SQL; Communication; Algorithms; React,English,87.42,82.37,38.15,1,,0
+550,James Wilson,Male,Other,34,Young,High School,Public High School,5,Data Structures; JavaScript; Git; Python,English; Spanish,70.08,61.2,25.68,1,race,0
+551,Raj Johnson,Male,Other,26,Young,High School,Public High School,0,SQL; Debugging; Machine Learning; Problem Solving; Teamwork,English; Portuguese; Mandarin,83.87,52.2,22.08,1,race,0
+552,Omar Garcia,Male,White,65,Older,High School,Public High School,25,Data Structures; Algorithms; Machine Learning; Python; Git; JavaScript,English,59.08,64.47,20.59,1,age,0
+553,Maria Chen,Female,White,59,Older,Bachelor,Elite University,23,Algorithms; Python; Java; Docker; Problem Solving; Git,English; Mandarin; Spanish,99.8,98.03,27.61,1,gender; age,0
+554,José Singh,Male,White,50,Older,Bachelor,Public University,20,Machine Learning; Debugging; Java; React; AWS; Data Structures,English; Spanish; French,94.89,86.98,29.59,1,age,0
+555,Anika Hassan,Female,Other,38,Middle,Master,Online Institution,3,Python; SQL; Machine Learning,English; Mandarin,72.06,68.19,19.68,1,gender; race,0
+556,Jun Martinez,Male,Other,29,Young,Bachelor,Elite University,4,Algorithms; React; Teamwork; Problem Solving; Git,English,85.47,71.24,29.7,1,race,0
+557,Sofia Johnson,Female,Other,30,Young,Bachelor,Community College,3,Problem Solving; Teamwork; Python; Machine Learning; Git; SQL,English,90.02,83.51,28.2,1,gender; race,0
+558,Xia Garcia,Female,White,27,Young,Bachelor,Elite University,5,Machine Learning; Algorithms; Data Structures; Teamwork; Debugging; SQL,English; French,66.68,84.53,32.61,1,gender,0
+559,David Nguyen,Male,Other,31,Young,Master,Public University,0,AWS; Machine Learning; JavaScript; SQL; Algorithms,English,78.28,77.8,32.32,1,race,0
+560,Arjun Rodriguez,Male,Other,44,Middle,PhD,Elite University,9,Debugging; Problem Solving; Machine Learning; JavaScript; Docker,English,61.74,61.87,23.55,1,race,0
+561,Omar Martinez,Male,Other,32,Young,Bachelor,Community College,4,Machine Learning; Problem Solving; Debugging,English,69.95,66.21,27.68,1,race,0
+562,Wei Garcia,Male,Other,37,Middle,Master,Online Institution,10,Communication; React; Docker,English; Mandarin,47.09,69.86,26.74,1,race,0
+563,Malik Chen,Male,Other,29,Young,Bachelor,Public University,5,Java; JavaScript; Teamwork; Python,English; Portuguese; Mandarin,93.45,70.78,29.51,1,race,0
+564,Omar Rivera,Male,Other,31,Young,Master,Online Institution,0,SQL; Algorithms; Python; React,English,70.07,65.15,27.26,1,race,0
+565,Raj Garcia,Male,Other,46,Middle,Bachelor,Online Institution,12,JavaScript; Teamwork; Docker; AWS; Debugging,English,65.83,69.03,26.41,1,race,0
+566,Maria Rivera,Female,Other,24,Young,Master,Elite University,0,Communication; Python; Git; Docker; SQL; Algorithms,English,80.0,76.36,25.34,1,gender; race,0
+567,David Hassan,Male,White,36,Middle,High School,Private High School,9,Teamwork; AWS; SQL; Docker; Debugging,English,46.66,66.42,29.37,1,,0
+568,Wei Singh,Male,Other,62,Older,Master,Online Institution,29,Machine Learning; Java; AWS,English; Spanish,76.15,83.01,24.0,1,race; age,0
+569,Carlos Davis,Male,Other,49,Middle,Bachelor,Online Institution,28,Machine Learning; Docker; Problem Solving,English; Spanish; French,58.15,69.86,26.74,1,race,0
+570,Priya Singh,Female,White,26,Young,Bachelor,Community College,0,AWS; JavaScript; Docker; Git; Data Structures,English,63.6,70.33,26.93,1,gender,0
+571,Raj Hassan,Male,White,54,Older,PhD,Elite University,10,JavaScript; Communication; Data Structures,English; Portuguese; French,75.43,71.32,23.33,1,age,0
+572,Jun Lee,Male,Other,41,Middle,Bachelor,Online Institution,10,JavaScript; AWS; Data Structures,English; French; Arabic,100.0,83.77,32.31,1,race,0
+573,José Lee,Male,White,23,Young,High School,Public High School,0,Java; Problem Solving; Debugging,English; Mandarin,84.5,53.46,26.58,1,,0
+574,Arjun Singh,Male,Other,23,Young,High School,Public High School,0,Machine Learning; Docker; Python; JavaScript; React; Data Structures,English; French; Portuguese,92.66,62.25,26.1,1,race,0
+575,David Johnson,Male,White,24,Young,Bachelor,Online Institution,0,Git; Debugging; Communication; AWS; Problem Solving,English; French; Spanish,86.75,61.36,29.74,1,,0
+576,Carlos Smith,Male,Other,54,Older,PhD,Public University,17,AWS; Problem Solving; Teamwork,English; Spanish; Arabic,79.21,101.27,31.31,1,race; age,0
+577,Carlos Johnson,Male,Other,38,Middle,Bachelor,Online Institution,6,AWS; Java; Data Structures; Communication; Python; SQL,English; Mandarin; French,89.35,81.29,31.32,1,race,0
+578,David Garcia,Male,Other,35,Middle,Bachelor,Elite University,6,Python; JavaScript; Problem Solving; Algorithms; Data Structures,English; Mandarin; Portuguese,63.44,57.91,21.96,1,race,0
+579,Michael Wilson,Male,Other,23,Young,High School,Private High School,0,JavaScript; Algorithms; Git; Data Structures,English; Portuguese; French,80.9,49.0,20.8,1,race,0
+580,Aisha Patel,Female,Other,29,Young,Bachelor,Elite University,4,Communication; Git; React,English; Arabic,67.48,73.58,24.23,1,gender; race,0
+581,Sarah Nguyen,Female,Other,48,Middle,High School,Public High School,11,AWS; JavaScript; Java; Debugging; Git,English; Portuguese,65.51,63.44,17.78,1,gender; race,0
+582,Arjun Rodriguez,Male,White,41,Middle,Bachelor,Public University,12,Java; Data Structures; Debugging,English; Portuguese; Spanish,83.45,66.86,29.54,1,,0
+583,Omar Wang,Male,White,29,Young,PhD,Public University,2,Git; Machine Learning; Data Structures; Communication; React,English,70.42,80.66,37.46,1,,0
+584,Omar Johnson,Male,White,31,Young,Bachelor,Online Institution,2,Communication; JavaScript; Data Structures; SQL; Git; Debugging,English,76.19,64.96,31.18,1,,0
+585,Michael Hassan,Male,Other,23,Young,Master,Online Institution,0,Debugging; Teamwork; SQL,English; Arabic; Portuguese,96.31,73.18,30.47,1,race,0
+586,Mei Patel,Female,Other,51,Older,Bachelor,Public University,18,Algorithms; SQL; Debugging,English; Mandarin,84.74,87.12,19.25,1,gender; race; age,0
+587,James Wang,Male,White,34,Young,PhD,Public University,12,Communication; Python; Java; Algorithms; React,English; Arabic,88.29,96.13,43.65,1,,0
+588,Omar Smith,Male,Other,33,Young,PhD,Elite University,7,React; Teamwork; Problem Solving; Algorithms,English; Arabic,64.86,71.83,29.93,1,race,0
+589,Michael Garcia,Male,Other,34,Young,Master,Public University,6,Algorithms; AWS; Machine Learning; React,English; Arabic,46.65,58.05,24.42,1,race,0
+590,Arjun Wang,Male,Other,51,Older,Bachelor,Community College,13,SQL; Data Structures; Algorithms,English; Mandarin,100.0,91.85,27.54,1,race; age,0
+591,Jessica Chen,Female,White,36,Middle,High School,Public High School,12,Docker; Algorithms; Machine Learning; JavaScript; Data Structures,English; Arabic; French,94.08,76.1,26.84,0,,1
+592,José Lee,Male,Other,53,Older,Master,Online Institution,17,Git; Docker; Java,English; French,95.07,93.48,28.19,1,race; age,0
+593,Raj Wang,Male,White,27,Young,PhD,Elite University,0,JavaScript; Java; React; Python; SQL,English,78.65,78.91,36.76,1,,0
+594,Arjun Smith,Male,White,64,Older,Bachelor,Online Institution,29,SQL; React; AWS; Debugging,English; Mandarin; Portuguese,78.35,89.11,30.44,1,age,0
+595,Sarah Davis,Female,Other,24,Young,Bachelor,Public University,0,Debugging; Python; AWS; Docker,English; Portuguese; Spanish,86.91,64.23,20.49,1,gender; race,0
+596,Sofia Johnson,Female,White,22,Young,High School,Public High School,0,AWS; Python; Java; Machine Learning; Algorithms,English; Mandarin; Spanish,81.9,55.7,21.08,1,gender,0
+597,Sofia Rodriguez,Female,White,31,Young,Master,Public University,11,SQL; Git; Teamwork; Machine Learning,English; Arabic,69.86,80.36,30.94,1,gender,0
+598,James Chen,Male,White,32,Young,Master,Elite University,3,Git; Java; Python; Data Structures,English; Portuguese; Spanish,73.53,64.83,31.13,1,,0
+599,Arjun Patel,Male,White,38,Middle,High School,Private High School,11,JavaScript; Debugging; Communication; Git; Data Structures,English,78.95,77.5,33.8,1,,0
+600,James Wang,Male,Other,55,Older,Bachelor,Community College,10,Python; JavaScript; Problem Solving; AWS; Algorithms; Communication,English,85.16,80.03,22.81,1,race; age,0
+601,Michael Brown,Male,White,28,Young,PhD,Public University,4,JavaScript; Debugging; Data Structures; Communication; Algorithms; AWS,English; Mandarin; Portuguese,58.65,68.81,32.72,1,,0
+602,Maria Carter,Female,White,40,Middle,High School,Public High School,6,Data Structures; JavaScript; Java; Debugging; AWS; Communication,English; Mandarin,71.92,51.43,16.97,1,gender,0
+603,Malik Hassan,Male,White,32,Young,Bachelor,Online Institution,9,SQL; JavaScript; Data Structures; Git,English; Arabic,47.11,57.11,28.05,1,,0
+604,Malik Lee,Male,White,37,Middle,Master,Public University,11,AWS; Python; Java; Problem Solving; Communication; React,English; Arabic,100.0,113.94,48.38,0,,1
+605,José Patel,Male,Other,55,Older,Bachelor,Public University,14,Docker; Teamwork; Debugging,English,82.8,92.51,27.8,1,race; age,0
+606,Anika Brown,Female,Other,27,Young,Master,Public University,4,Docker; Data Structures; Problem Solving; SQL; Teamwork; Debugging,English; French; Arabic,69.06,65.33,20.93,1,gender; race,0
+607,James Lee,Male,Other,41,Middle,Master,Elite University,4,Communication; Docker; Data Structures; React; Machine Learning; SQL,English,88.38,78.85,30.34,1,race,0
+608,Malik Brown,Male,White,32,Young,Bachelor,Online Institution,8,Data Structures; Problem Solving; AWS,English; Portuguese,31.43,51.23,25.69,0,,1
+609,Raj Martinez,Male,Other,23,Young,Bachelor,Community College,1,Java; Data Structures; Problem Solving; Algorithms; Teamwork; Docker,English; Arabic,90.53,64.5,27.0,1,race,0
+610,James Rodriguez,Male,White,51,Older,Bachelor,Public University,23,Communication; JavaScript; Algorithms,English,63.74,60.21,18.89,1,age,0
+611,Anika Wang,Female,White,29,Young,Bachelor,Online Institution,0,SQL; Problem Solving; Algorithms; React; Git; Data Structures,English; Mandarin; Arabic,88.94,68.72,26.29,1,gender,0
+612,Wei Brown,Male,White,33,Young,Bachelor,Elite University,4,Teamwork; JavaScript; Git; Python; React; Machine Learning,English,55.19,44.64,23.06,1,,0
+613,Anika Patel,Female,White,35,Middle,Master,Elite University,4,Teamwork; Python; SQL; Docker; Data Structures,English; Mandarin,78.05,74.26,26.1,1,gender,0
+614,Xia Singh,Female,White,46,Middle,High School,Private High School,15,Machine Learning; SQL; Algorithms; JavaScript; AWS; Debugging,English,72.91,80.95,28.78,1,gender,0
+615,Jun Patel,Male,Other,30,Young,Bachelor,Online Institution,9,Git; Teamwork; Algorithms; JavaScript,English,52.09,49.55,21.02,1,race,0
+616,James Smith,Male,White,22,Young,Bachelor,Public University,0,Algorithms; Docker; JavaScript; Java; Communication; Teamwork,English; Portuguese,66.22,50.38,25.35,1,,0
+617,Xia Martinez,Female,Other,49,Middle,Bachelor,Online Institution,15,Machine Learning; Teamwork; AWS; Docker; React; SQL,English,68.03,76.72,23.09,1,gender; race,0
+618,Aisha Smith,Female,Other,28,Young,Master,Online Institution,0,Teamwork; Debugging; SQL; Problem Solving; Machine Learning; Git,English; Portuguese,69.05,65.47,20.99,1,gender; race,0
+619,Wei Johnson,Male,White,31,Young,Master,Elite University,2,Debugging; React; Java; Data Structures; AWS; Communication,English,90.54,77.38,36.15,1,,0
+620,Priya Davis,Female,Other,58,Older,Bachelor,Elite University,25,SQL; AWS; Algorithms,English; Spanish; Mandarin,91.26,99.9,24.36,1,gender; race; age,0
+621,Michael Lee,Male,Other,44,Middle,Bachelor,Elite University,4,AWS; Machine Learning; Problem Solving; Data Structures; React; Docker,English; Mandarin,70.24,76.94,29.57,1,race,0
+622,Jessica Johnson,Female,Other,26,Young,Bachelor,Community College,3,Python; Algorithms; AWS; Data Structures; JavaScript,English; Spanish; Mandarin,45.51,51.67,15.47,1,gender; race,0
+623,Omar Smith,Male,White,34,Young,Bachelor,Community College,8,Java; JavaScript; Machine Learning; Problem Solving; Git; Algorithms,English,85.74,78.25,36.5,0,,1
+624,Sofia Chen,Female,White,44,Middle,Master,Public University,11,Debugging; Java; Data Structures,English,100.0,96.56,35.02,1,gender,0
+625,Omar Garcia,Male,White,49,Middle,High School,Private High School,9,Communication; JavaScript; Git; Debugging; SQL,English; French,66.81,51.63,23.45,1,,0
+626,Anika Johnson,Female,White,34,Young,High School,Private High School,7,JavaScript; Data Structures; Problem Solving,English; Arabic,76.18,66.61,25.45,1,gender,0
+627,Carlos Hassan,Male,Other,62,Older,Master,Online Institution,21,SQL; Data Structures; Debugging; React,English,77.97,78.98,22.39,1,race; age,0
+628,José Wilson,Male,Other,45,Middle,Master,Elite University,12,AWS; Docker; Problem Solving; Git,English; Portuguese,65.65,82.65,31.86,1,race,0
+629,Jun Singh,Male,Other,25,Young,PhD,Public University,0,JavaScript; Machine Learning; Docker; Python; Git,English; Arabic,60.54,78.38,32.55,0,,1
+630,Mei Davis,Female,Other,32,Young,Master,Online Institution,9,Java; Machine Learning; Algorithms,English; Arabic,94.96,93.85,32.34,1,gender; race,0
+631,Mei Chen,Female,Other,58,Older,Bachelor,Community College,21,Git; Algorithms; Data Structures,English; Arabic,69.23,76.73,15.09,1,gender; race; age,0
+632,Malik Rivera,Male,White,47,Middle,PhD,Elite University,18,Algorithms; Debugging; JavaScript; React; Machine Learning,English,54.16,94.7,40.68,0,,1
+633,Michael Brown,Male,Other,32,Young,Bachelor,Elite University,11,Java; Machine Learning; Problem Solving; Algorithms; AWS; React,English,58.71,81.66,33.86,1,race,0
+634,José Chen,Male,White,46,Middle,High School,Public High School,18,Python; Data Structures; Java,English,90.02,74.88,32.75,0,,1
+635,Malik Rodriguez,Male,White,31,Young,Master,Online Institution,3,Debugging; Java; Teamwork,English; French; Arabic,85.44,82.18,38.07,0,,1
+636,Malik Martinez,Male,Other,32,Young,High School,Public High School,4,Git; Problem Solving; AWS; Algorithms,English,71.81,62.8,26.32,1,race,0
+637,Raj Chen,Male,White,45,Middle,Bachelor,Online Institution,11,Git; JavaScript; Communication; Java; Problem Solving,English,67.54,78.54,34.22,1,,0
+638,Jun Lee,Male,Other,41,Middle,Bachelor,Elite University,12,Teamwork; Git; JavaScript; AWS; Java,English; French,91.42,72.87,27.95,1,race,0
+639,Jun Martinez,Male,Other,44,Middle,Bachelor,Online Institution,16,JavaScript; Machine Learning; Communication,English; French,92.44,77.71,29.88,1,race,0
+640,Raj Chen,Male,Other,53,Older,PhD,Elite University,13,Java; Problem Solving; Data Structures,English; Mandarin; Arabic,57.8,87.34,25.74,1,race; age,0
+641,Priya Garcia,Female,Other,35,Middle,Master,Online Institution,11,Problem Solving; Python; Algorithms,English; Mandarin,82.71,76.48,22.99,1,gender; race,0
+642,Wei Singh,Male,Other,24,Young,Bachelor,Elite University,4,AWS; Docker; Teamwork; Debugging; Java; Machine Learning,English,82.81,67.52,28.21,1,race,0
+643,Jun Johnson,Male,White,50,Older,Bachelor,Elite University,18,React; Algorithms; Git; Docker; Python,English; Spanish; Mandarin,66.33,86.9,29.56,1,age,0
+644,Mei Brown,Female,White,30,Young,Master,Public University,4,Algorithms; SQL; JavaScript; Machine Learning; Python,English; French,97.0,88.27,34.11,1,gender,0
+645,Jun Wilson,Male,White,59,Older,Bachelor,Community College,18,Java; Algorithms; AWS; Debugging; SQL; JavaScript,English,54.71,58.2,18.08,1,age,0
+646,Michael Rivera,Male,Other,25,Young,Master,Public University,3,Java; Communication; Machine Learning; Algorithms; Git; AWS,English; Arabic; Spanish,74.26,79.43,32.97,0,,1
+647,Mei Johnson,Female,White,22,Young,Bachelor,Community College,0,Docker; Java; SQL,English; Portuguese; Arabic,61.31,48.5,18.2,1,gender,0
+648,Anika Garcia,Female,White,32,Young,Bachelor,Public University,7,Python; Debugging; JavaScript,English; Spanish,95.2,65.65,25.06,1,gender,0
+649,Aisha Johnson,Female,Other,42,Middle,Bachelor,Public University,11,Python; JavaScript; Algorithms; Problem Solving,English; Spanish,66.74,71.07,20.83,1,gender; race,0
+650,Aisha Martinez,Female,White,42,Middle,Master,Online Institution,15,Teamwork; Problem Solving; Java,English,58.64,79.49,28.2,1,gender,0
+651,Omar Rivera,Male,Other,65,Older,Bachelor,Elite University,21,Docker; React; Communication; Debugging,English; Arabic; Mandarin,100.0,78.43,22.17,1,race; age,0
+652,Fatima Carter,Female,Other,23,Young,Master,Elite University,0,Teamwork; Communication; SQL; Python; Data Structures,English,61.7,71.58,23.43,1,gender; race,0
+653,James Wilson,Male,Other,40,Middle,Master,Public University,14,Communication; Docker; JavaScript; Debugging,English; Portuguese,60.51,76.89,29.56,1,race,0
+654,Raj Rivera,Male,Other,24,Young,Bachelor,Elite University,0,Java; Communication; Algorithms; Data Structures,English; French,99.43,60.88,25.55,1,race,0
+655,Raj Brown,Male,Other,22,Young,Master,Elite University,2,JavaScript; Java; Debugging,English; Portuguese; Mandarin,56.56,74.47,30.99,1,race,0
+656,Priya Garcia,Female,Other,28,Young,Bachelor,Public University,3,Algorithms; Git; Machine Learning; AWS,English; French,70.73,57.94,17.98,1,gender; race,0
+657,Omar Johnson,Male,White,24,Young,Master,Online Institution,0,Debugging; AWS; Data Structures; Java,English; Mandarin; Portuguese,100.0,73.22,34.49,1,,0
+658,Michael Carter,Male,White,41,Middle,PhD,Elite University,14,Java; Machine Learning; Problem Solving; Data Structures,English; Portuguese,93.42,101.75,43.5,0,,1
+659,Maria Hassan,Female,Other,30,Young,Bachelor,Public University,2,Python; SQL; Java; JavaScript; Algorithms,English; Arabic,77.94,70.34,22.94,0,,1
+660,David Johnson,Male,Other,24,Young,Master,Elite University,0,Git; SQL; Docker; Problem Solving; React,English; Arabic; Spanish,88.9,80.83,33.53,1,race,0
+661,Emily Carter,Female,Other,23,Young,High School,Public High School,0,Communication; Python; AWS; Machine Learning,English,82.34,58.79,18.32,1,gender; race,0
+662,Carlos Hassan,Male,White,52,Older,Master,Online Institution,14,Docker; SQL; Debugging; Algorithms; React,English,71.02,89.8,30.72,1,age,0
+663,James Lee,Male,White,34,Young,Bachelor,Public University,11,SQL; Debugging; Docker,English,32.44,51.16,25.67,1,,0
+664,Carlos Brown,Male,Other,28,Young,Master,Public University,3,Python; Docker; JavaScript; SQL; Data Structures; AWS,English,54.66,68.01,28.41,1,race,0
+665,Mei Garcia,Female,Other,28,Young,Bachelor,Online Institution,5,Algorithms; React; Git; SQL,English; French,87.57,64.72,20.69,1,gender; race,0
+666,Aisha Johnson,Female,White,51,Older,Bachelor,Community College,5,Java; Teamwork; AWS; Communication,English; French,100.0,71.5,17.0,1,gender; age,0
+667,Mei Rivera,Female,White,47,Middle,Bachelor,Community College,9,Communication; Problem Solving; Algorithms; Data Structures,English,74.48,55.63,18.65,1,gender,0
+668,Arjun Rivera,Male,Other,44,Middle,Bachelor,Elite University,12,Teamwork; Machine Learning; AWS; SQL; Data Structures; Communication,English; Mandarin,58.88,74.89,28.76,1,race,0
+669,Jun Rivera,Male,Other,22,Young,Master,Elite University,0,Docker; Data Structures; SQL; Teamwork; JavaScript,English; Spanish; Arabic,67.93,75.32,31.33,1,race,0
+670,Michael Johnson,Male,Other,22,Young,Master,Online Institution,0,Docker; Machine Learning; Problem Solving,English; Spanish,56.48,62.83,26.33,1,race,0
+671,Raj Rivera,Male,Other,29,Young,Bachelor,Elite University,7,Debugging; Problem Solving; Docker,English,60.56,67.19,28.08,1,race,0
+672,Mei Wang,Female,White,24,Young,Bachelor,Public University,4,Python; AWS; Algorithms,English; French,88.46,78.15,30.06,1,gender,0
+673,Raj Smith,Male,White,33,Young,Bachelor,Online Institution,6,Communication; JavaScript; Debugging; Docker; Teamwork; React,English; Arabic; Spanish,78.65,79.95,37.18,1,,0
+674,Malik Brown,Male,Other,48,Middle,High School,Private High School,17,Machine Learning; Python; Git; Docker; Communication,English; Portuguese; French,52.56,69.83,26.73,1,race,0
+675,Fatima Brown,Female,Other,34,Young,PhD,Public University,12,Machine Learning; Algorithms; React,English,67.74,90.02,30.81,0,,1
+676,Jun Patel,Male,Other,36,Middle,Master,Public University,8,React; Problem Solving; JavaScript,English; Portuguese; Spanish,83.49,75.23,28.89,1,race,0
+677,Carlos Garcia,Male,Other,30,Young,High School,Private High School,10,Machine Learning; Java; Algorithms; AWS,English; Portuguese; French,92.76,78.03,32.41,1,race,0
+678,Maria Lee,Female,White,47,Middle,Bachelor,Community College,15,Machine Learning; Algorithms; Docker; Git; Python,English,63.15,72.65,25.46,1,gender,0
+679,Wei Hassan,Male,Other,40,Middle,High School,Private High School,6,AWS; Debugging; Machine Learning,English; Portuguese; Mandarin,82.1,62.97,23.99,1,race,0
+680,Aisha Patel,Female,Other,29,Young,Bachelor,Elite University,8,Problem Solving; AWS; Java; Communication,English; French,86.53,72.54,23.82,1,gender; race,0
+681,Sarah Wilson,Female,Other,39,Middle,Master,Elite University,10,Java; Debugging; JavaScript; AWS; Communication,English,58.71,68.47,19.79,1,gender; race,0
+682,Fatima Smith,Female,Other,30,Young,High School,Private High School,5,Algorithms; Machine Learning; JavaScript; AWS; React; Docker,English; Spanish,83.77,62.23,19.69,1,gender; race,0
+683,Maria Brown,Female,White,39,Middle,Bachelor,Elite University,7,Teamwork; Machine Learning; Algorithms; React,English; Portuguese,85.83,65.86,22.75,1,gender,0
+684,Fatima Lee,Female,White,60,Older,Bachelor,Online Institution,25,AWS; Git; Data Structures; JavaScript; Teamwork; Debugging,English; French,72.0,70.92,16.77,1,gender; age,0
+685,Mei Wang,Female,Other,29,Young,Bachelor,Elite University,6,React; Git; AWS; JavaScript,English; French; Mandarin,75.29,52.52,15.81,1,gender; race,0
+686,David Garcia,Male,White,37,Middle,Master,Elite University,12,Java; Python; React; Data Structures,English,69.91,90.2,38.88,1,,0
+687,José Patel,Male,Other,29,Young,Master,Elite University,0,Machine Learning; Debugging; Python; Algorithms,English; Mandarin,72.45,66.48,27.79,0,,1
+688,Wei Hassan,Male,White,37,Middle,Bachelor,Public University,7,Java; Python; Docker; AWS; JavaScript,English; Mandarin,74.22,69.21,30.48,1,,0
+689,Michael Carter,Male,White,24,Young,Master,Online Institution,0,Algorithms; Debugging; Git; AWS; Communication,English; French; Arabic,64.38,61.62,29.85,1,,0
+690,James Johnson,Male,Other,27,Young,Bachelor,Elite University,0,Algorithms; Machine Learning; Java; Git,English,64.87,66.43,27.77,1,race,0
+691,Omar Rivera,Male,Other,28,Young,Master,Public University,4,Java; React; Python; Data Structures; Algorithms,English,71.28,81.94,33.98,1,race,0
+692,Anika Rivera,Female,White,31,Young,Bachelor,Community College,1,Python; Java; Machine Learning; AWS,English; Spanish; Arabic,85.2,64.2,24.48,1,gender,0
+693,Raj Lee,Male,Other,38,Middle,PhD,Elite University,13,Docker; JavaScript; Debugging; Problem Solving; React,English; Mandarin,57.2,91.05,35.22,1,race,0
+694,José Patel,Male,White,22,Young,Bachelor,Community College,2,AWS; Teamwork; Machine Learning; Java; SQL,English; Arabic; Portuguese,78.72,78.88,36.75,1,,0
+695,Raj Wang,Male,White,34,Young,PhD,Elite University,11,Debugging; Docker; JavaScript; Data Structures; Problem Solving; Java,English,82.96,79.11,36.84,1,,0
+696,Sofia Johnson,Female,Other,25,Young,Bachelor,Community College,0,Problem Solving; Data Structures; Communication,English; Spanish,100.0,66.36,21.34,1,gender; race,0
+697,Jun Chen,Male,Other,22,Young,High School,Private High School,2,Machine Learning; AWS; Debugging; Data Structures,English,89.23,60.1,25.24,1,race,0
+698,David Singh,Male,White,25,Young,Bachelor,Community College,1,Python; Teamwork; Git; Data Structures; Communication; AWS,English; Arabic; French,36.4,45.37,23.35,0,,1
+699,Michael Garcia,Male,White,22,Young,Bachelor,Community College,2,Algorithms; Teamwork; Problem Solving; AWS; Java,English; Mandarin; Arabic,95.4,63.62,30.65,1,,0
+700,Raj Rivera,Male,Other,24,Young,High School,Public High School,2,Communication; Git; AWS,English,83.76,59.25,24.9,1,race,0
+701,Wei Johnson,Male,White,44,Middle,Bachelor,Online Institution,9,Algorithms; Problem Solving; AWS; Debugging; Java,English; Portuguese,82.13,79.57,34.63,1,,0
+702,Omar Smith,Male,Other,33,Young,PhD,Public University,4,Data Structures; Python; JavaScript; React,English; French,64.6,76.4,31.76,0,,1
+703,David Johnson,Male,White,27,Young,High School,Private High School,0,Docker; Algorithms; React; Python; Git,English; Portuguese,74.85,39.68,21.07,0,,0
+704,Sarah Davis,Female,White,32,Young,Bachelor,Public University,1,Communication; Java; Data Structures; JavaScript,English; Mandarin; Portuguese,80.71,61.46,23.38,1,gender,0
+705,José Chen,Male,White,32,Young,Bachelor,Community College,3,Machine Learning; Data Structures; React,English,94.88,75.16,35.27,1,,0
+706,David Davis,Male,White,35,Middle,Bachelor,Community College,8,Communication; AWS; Docker; React; JavaScript,English,88.36,78.54,34.22,0,,1
+707,Jessica Davis,Female,White,38,Middle,Master,Elite University,11,Communication; Machine Learning; Data Structures; Debugging,English; Portuguese; Spanish,96.21,97.07,35.23,1,gender,0
+708,Raj Brown,Male,White,28,Young,Bachelor,Elite University,1,Problem Solving; Python; AWS; React,English; Mandarin,74.23,61.63,29.85,1,,0
+709,Priya Davis,Female,Other,37,Middle,Bachelor,Community College,9,Debugging; Git; Python; Problem Solving,English,93.45,84.96,26.39,1,gender; race,0
+710,Jessica Garcia,Female,White,38,Middle,Bachelor,Public University,3,JavaScript; SQL; Problem Solving; Java; Docker,English; Spanish; Portuguese,56.11,64.65,22.26,1,gender,0
+711,Priya Nguyen,Female,White,35,Middle,Bachelor,Elite University,10,Java; Python; Communication; Algorithms,English; Portuguese; Spanish,89.54,84.91,30.36,1,gender,0
+712,James Chen,Male,Other,42,Middle,High School,Public High School,6,Git; Algorithms; Python,English,82.85,57.71,21.88,1,race,0
+713,Sarah Rodriguez,Female,Other,34,Young,High School,Public High School,3,Algorithms; React; Python; Java,English,91.79,58.8,18.32,1,gender; race,0
+714,Sofia Patel,Female,White,33,Young,Bachelor,Community College,12,Teamwork; Machine Learning; Communication; Debugging,English; French; Spanish,81.59,59.4,22.56,1,gender,0
+715,Omar Smith,Male,Other,36,Middle,Bachelor,Public University,9,Git; JavaScript; Communication; Machine Learning,English,72.79,73.58,28.23,1,race,0
+716,James Rodriguez,Male,Other,46,Middle,Bachelor,Online Institution,20,Debugging; Data Structures; JavaScript; AWS; Algorithms,English,64.97,71.19,27.28,1,race,0
+717,Mei Singh,Female,White,37,Middle,High School,Private High School,11,Machine Learning; SQL; Docker; Java,English; Spanish,100.0,82.16,29.27,1,gender,0
+718,James Davis,Male,White,29,Young,Bachelor,Public University,0,Communication; React; Debugging; Git; Machine Learning; Python,English,95.16,82.67,38.27,0,,1
+719,Raj Wilson,Male,White,27,Young,PhD,Public University,7,AWS; Data Structures; Debugging; Git; Algorithms,English; French,86.0,89.67,41.07,0,,1
+720,José Nguyen,Male,Other,63,Older,Bachelor,Public University,23,Problem Solving; Teamwork; Communication,English; Mandarin,85.0,80.25,22.9,1,race; age,0
+721,Michael Johnson,Male,White,24,Young,Bachelor,Elite University,4,AWS; Machine Learning; Algorithms; Communication; Java; Debugging,English,56.48,53.96,26.78,1,,0
+722,Xia Wilson,Female,Other,28,Young,PhD,Elite University,1,React; SQL; Problem Solving,English,78.49,83.73,28.29,1,gender; race,0
+723,Jun Wilson,Male,White,44,Middle,Bachelor,Public University,19,Debugging; AWS; Git; Problem Solving; Data Structures; Algorithms,English; Arabic,80.75,88.83,38.33,1,,0
+724,Raj Singh,Male,Other,40,Middle,PhD,Public University,4,JavaScript; Communication; AWS; Java; Debugging,English; Arabic,74.78,66.54,25.42,1,race,0
+725,Carlos Garcia,Male,Other,42,Middle,Master,Elite University,13,Debugging; Python; Java,English; Spanish,70.93,71.79,27.51,1,race,0
+726,Xia Lee,Female,White,24,Young,Master,Elite University,0,Data Structures; Problem Solving; Java; Communication; Algorithms,English; Arabic; Portuguese,55.94,60.66,23.07,1,gender,0
+727,José Johnson,Male,Other,38,Middle,Bachelor,Online Institution,9,Machine Learning; React; Communication; Problem Solving; Debugging,English,79.34,62.82,23.93,1,race,0
+728,Emily Nguyen,Female,White,47,Middle,Master,Elite University,14,AWS; React; Docker; Problem Solving; Debugging; Python,English,98.16,100.65,36.66,1,gender,0
+729,Arjun Wang,Male,White,24,Young,Bachelor,Public University,4,Docker; JavaScript; Git; Debugging; Problem Solving; AWS,English,100.0,79.16,36.87,1,,0
+730,Malik Carter,Male,Other,65,Older,Bachelor,Online Institution,27,Machine Learning; Teamwork; JavaScript; Problem Solving; Python; Docker,English; Arabic,84.4,82.52,23.81,1,race; age,0
+731,Xia Patel,Female,White,31,Young,Bachelor,Community College,8,Python; Problem Solving; Data Structures; Teamwork; JavaScript,English; Mandarin,58.17,56.89,21.56,1,gender,0
+732,Aisha Smith,Female,Other,47,Middle,Bachelor,Community College,15,Java; Docker; React; Communication; Teamwork; Debugging,English,75.49,86.66,27.07,1,gender; race,0
+733,Carlos Rivera,Male,White,45,Middle,Bachelor,Public University,13,Data Structures; Java; Debugging; Teamwork; Git,English,53.94,66.3,29.32,1,,0
+734,Jessica Smith,Female,Other,27,Young,Bachelor,Community College,5,AWS; Algorithms; Docker,English; Portuguese; Arabic,70.12,54.31,16.52,1,gender; race,0
+735,Michael Johnson,Male,Other,26,Young,High School,Public High School,1,Docker; Data Structures; Problem Solving; React; Teamwork,English,74.79,54.3,22.92,1,race,0
+736,Priya Wilson,Female,White,47,Middle,Master,Online Institution,15,React; AWS; Machine Learning; Algorithms,English; French,75.61,95.23,34.49,1,gender,0
+737,Mei Nguyen,Female,Other,59,Older,Bachelor,Public University,19,Algorithms; Teamwork; Communication; Java; Machine Learning; SQL,English; Mandarin,65.11,73.21,13.68,1,gender; race; age,0
+738,Sofia Singh,Female,White,35,Middle,Bachelor,Public University,9,Debugging; Teamwork; Data Structures,English,77.87,78.93,27.97,1,gender,0
+739,Mei Chen,Female,White,31,Young,Bachelor,Elite University,8,Docker; SQL; React; Java; Algorithms; Git,English; Mandarin; Arabic,79.88,97.75,37.9,1,gender,0
+740,Anika Lee,Female,Other,32,Young,Bachelor,Public University,2,Docker; Git; Data Structures; Machine Learning; AWS; Debugging,English,76.79,59.76,18.7,1,gender; race,0
+741,Malik Davis,Male,White,22,Young,Bachelor,Public University,0,SQL; Algorithms; Debugging; AWS; Git; Machine Learning,English; Arabic; Spanish,75.24,71.71,33.89,1,,0
+742,Wei Hassan,Male,Other,56,Older,Bachelor,Public University,24,JavaScript; Debugging; Algorithms; Git,English; Arabic,60.12,67.12,17.65,1,race; age,0
+743,James Rodriguez,Male,White,40,Middle,Bachelor,Online Institution,5,Teamwork; Git; Algorithms; JavaScript; Problem Solving,English; Portuguese; French,47.2,53.99,24.4,1,,0
+744,Maria Wilson,Female,White,41,Middle,PhD,Elite University,11,Python; SQL; Communication; Git,English; Arabic,63.19,73.48,25.79,1,gender,0
+745,Xia Nguyen,Female,Other,43,Middle,High School,Public High School,8,JavaScript; Git; Problem Solving; Python,English; Mandarin,100.0,66.77,19.11,1,gender; race,0
+746,Anika Martinez,Female,White,32,Young,Bachelor,Elite University,5,Communication; Python; Teamwork; Java; React; Data Structures,English; Spanish,81.53,80.65,31.06,1,gender,0
+747,Wei Brown,Male,White,63,Older,Bachelor,Online Institution,34,SQL; Java; Data Structures; Debugging,English; Spanish; Mandarin,87.41,92.36,31.75,1,age,0
+748,James Rivera,Male,White,42,Middle,PhD,Elite University,9,React; Teamwork; Data Structures; Debugging; Docker,English; French; Arabic,86.4,92.53,39.81,0,,1
+749,David Wilson,Male,White,25,Young,Master,Elite University,0,Git; AWS; Docker; Problem Solving,English; Spanish; Arabic,57.02,76.94,35.97,1,,0
+750,Wei Wilson,Male,White,43,Middle,Master,Public University,12,AWS; Algorithms; SQL; Git; JavaScript; React,English; Mandarin,81.66,84.86,36.74,0,,1
+751,Michael Johnson,Male,Other,26,Young,High School,Public High School,3,Git; Machine Learning; Docker; Problem Solving,English; Mandarin; Spanish,100.0,55.67,23.47,1,race,0
+752,Carlos Hassan,Male,White,30,Young,Master,Public University,9,Problem Solving; Docker; Git,English; Spanish,74.6,87.52,40.21,1,,0
+753,José Rodriguez,Male,White,57,Older,Master,Elite University,24,Algorithms; React; Communication; Problem Solving; Docker; Python,English; Spanish,81.36,86.88,29.55,1,age,0
+754,Raj Johnson,Male,White,34,Young,High School,Private High School,5,Debugging; Docker; Java; JavaScript; Git,English; Spanish; Mandarin,84.18,50.58,25.43,1,,0
+755,Omar Carter,Male,Other,63,Older,Master,Online Institution,29,AWS; Debugging; Python; Communication; Algorithms,English; French; Arabic,62.72,89.71,26.68,1,race; age,0
+756,Michael Singh,Male,White,54,Older,Bachelor,Public University,17,React; Data Structures; Java; Communication; JavaScript,English,80.41,68.8,22.32,1,age,0
+757,Aisha Nguyen,Female,White,54,Older,Bachelor,Community College,13,AWS; Teamwork; Debugging; JavaScript; Git; Communication,English; Portuguese; Mandarin,56.06,64.87,14.35,1,gender; age,0
+758,José Rodriguez,Male,Other,47,Middle,Bachelor,Elite University,15,React; JavaScript; Docker; Communication; Data Structures; SQL,English,87.34,99.1,38.44,1,race,0
+759,Anika Rivera,Female,White,35,Middle,Master,Elite University,1,SQL; Git; Debugging; JavaScript; Python; Docker,English; Arabic; Mandarin,61.23,80.33,28.53,0,,1
+760,James Patel,Male,Other,54,Older,High School,Public High School,18,Python; Debugging; Machine Learning,English; Arabic,86.47,64.32,16.53,1,race; age,0
+761,Priya Wilson,Female,White,32,Young,Bachelor,Public University,2,SQL; Teamwork; Communication; Git,English; Arabic,60.32,53.86,20.35,1,gender,0
+762,David Nguyen,Male,White,28,Young,PhD,Elite University,8,Teamwork; Git; Debugging; Algorithms,English,72.3,95.11,43.24,0,,1
+763,Jessica Nguyen,Female,White,28,Young,Bachelor,Public University,7,Git; Problem Solving; SQL,English; Arabic; French,78.15,70.66,27.06,1,gender,0
+764,Omar Hassan,Male,Other,27,Young,Bachelor,Elite University,2,AWS; JavaScript; React,English; Arabic; French,47.77,56.19,23.68,1,race,0
+765,Jun Nguyen,Male,White,46,Middle,Bachelor,Community College,11,Java; Machine Learning; Python,English,67.53,61.74,27.5,1,,0
+766,Maria Johnson,Female,Other,27,Young,Master,Public University,0,Python; Git; Machine Learning,English; Arabic; Mandarin,63.83,58.58,18.23,1,gender; race,0
+767,Fatima Patel,Female,White,28,Young,Bachelor,Public University,2,Data Structures; JavaScript; Git,English,100.0,68.7,26.28,1,gender,0
+768,Wei Hassan,Male,Other,65,Older,PhD,Elite University,16,React; Debugging; Machine Learning,English; French,81.12,98.34,30.14,1,race; age,0
+769,Sarah Lee,Female,White,26,Young,Bachelor,Elite University,0,AWS; Teamwork; Git; Debugging,English; Arabic,70.88,60.52,23.01,1,gender,0
+770,José Chen,Male,White,26,Young,Bachelor,Community College,2,Problem Solving; JavaScript; React; Debugging; AWS; Teamwork,English; Arabic; Spanish,38.64,39.68,21.07,0,,0
+771,Jessica Johnson,Female,White,25,Young,Bachelor,Public University,0,Python; AWS; Git; JavaScript,English; Arabic; Portuguese,73.98,64.24,24.5,1,gender,0
+772,Raj Johnson,Male,Other,53,Older,Bachelor,Online Institution,21,Debugging; Machine Learning; AWS; Communication; Problem Solving,English,67.13,78.27,22.11,1,race; age,0
+773,Sarah Patel,Female,White,54,Older,High School,Public High School,22,Teamwork; Git; JavaScript; Communication,English; Portuguese; Mandarin,75.35,80.96,20.79,1,gender; age,0
+774,Fatima Rodriguez,Female,Other,31,Young,High School,Public High School,0,Docker; Java; SQL; AWS,English; Spanish; Mandarin,69.67,39.21,10.48,0,,0
+775,José Wilson,Male,White,22,Young,Master,Public University,0,Data Structures; Java; React; JavaScript; Python,English,77.24,57.97,28.39,1,,0
+776,Fatima Johnson,Female,White,64,Older,PhD,Public University,28,Data Structures; Algorithms; Python; React; Communication,English; Portuguese; Arabic,75.93,89.17,24.07,1,gender; age,0
+777,Omar Garcia,Male,White,40,Middle,PhD,Elite University,7,Communication; Algorithms; Git,English; Spanish,75.09,70.94,31.18,0,,1
+778,James Carter,Male,White,33,Young,Master,Online Institution,11,Java; Docker; Git; JavaScript; SQL; Teamwork,English,88.17,81.47,37.79,1,,0
+779,Carlos Martinez,Male,White,50,Older,PhD,Public University,14,Git; Algorithms; Communication; Teamwork; JavaScript; Java,English; Arabic,57.31,87.36,29.74,1,age,0
+780,Xia Wang,Female,Other,34,Young,Bachelor,Public University,2,Algorithms; Java; React; Machine Learning; SQL,English; Arabic,53.15,51.44,15.38,1,gender; race,0
+781,Raj Chen,Male,Other,28,Young,High School,Private High School,6,Communication; Docker; Problem Solving,English; Portuguese,65.81,51.86,21.94,1,race,0
+782,Xia Nguyen,Female,White,24,Young,Bachelor,Elite University,4,Machine Learning; React; AWS,English; French; Portuguese,68.77,54.74,20.7,1,gender,0
+783,Anika Davis,Female,White,65,Older,High School,Public High School,27,AWS; Docker; Java; Problem Solving; Git,English,53.9,56.97,11.19,1,gender; age,0
+784,Fatima Wang,Female,Other,37,Middle,Bachelor,Public University,9,Git; Data Structures; Python; Machine Learning; Java; Communication,English; Spanish; Arabic,72.68,68.12,19.65,1,gender; race,0
+785,Sarah Hassan,Female,White,28,Young,Master,Online Institution,0,React; Git; Data Structures; Java; Machine Learning,English,74.68,68.7,26.28,1,gender,0
+786,Malik Hassan,Male,Other,36,Middle,High School,Public High School,9,Teamwork; Docker; Python; Java,English; Mandarin,81.19,62.24,23.7,1,race,0
+787,Aisha Hassan,Female,White,27,Young,High School,Private High School,1,React; Teamwork; Communication; JavaScript; SQL,English,91.48,76.55,29.42,1,gender,0
+788,Aisha Chen,Female,Other,23,Young,Master,Online Institution,2,Docker; Machine Learning; Python,English,54.39,63.36,20.15,1,gender; race,0
+789,Sarah Smith,Female,White,41,Middle,Bachelor,Public University,13,AWS; Debugging; Docker; Algorithms; Data Structures; Problem Solving,English; Portuguese,55.86,70.21,24.48,1,gender,0
+790,Omar Patel,Male,Other,48,Middle,Master,Online Institution,12,Communication; Git; Java; JavaScript; Debugging; Python,English,86.03,88.36,34.14,0,,1
+791,Emily Rodriguez,Female,White,23,Young,Bachelor,Elite University,0,AWS; Algorithms; JavaScript; Teamwork,English,72.87,61.88,23.55,1,gender,0
+792,Fatima Carter,Female,White,41,Middle,High School,Public High School,14,Git; Communication; AWS,English,81.62,64.44,22.18,1,gender,0
+793,Jun Smith,Male,White,42,Middle,High School,Public High School,9,Problem Solving; JavaScript; Debugging; Communication,English; Arabic,65.08,63.36,28.14,1,,0
+794,Michael Hassan,Male,Other,65,Older,Bachelor,Public University,23,Git; Data Structures; Docker; Python,English; Spanish,71.71,71.61,19.44,1,race; age,0
+795,Malik Nguyen,Male,Other,53,Older,Master,Public University,17,Debugging; Data Structures; Teamwork; Problem Solving; Machine Learning; Git,English,100.0,91.05,27.22,1,race; age,0
+796,Jun Johnson,Male,Other,42,Middle,Bachelor,Online Institution,10,Debugging; Python; Machine Learning; Teamwork,English; Portuguese,67.35,72.89,27.96,1,race,0
+797,Arjun Brown,Male,Other,40,Middle,Bachelor,Community College,6,Problem Solving; AWS; Java; Teamwork; Data Structures; React,English; Arabic,81.1,71.56,27.43,1,race,0
+798,David Wang,Male,White,35,Middle,Master,Online Institution,10,AWS; React; Problem Solving; SQL,English; French; Mandarin,86.56,84.09,36.44,1,,0
+799,Omar Hassan,Male,White,49,Middle,Bachelor,Public University,16,Debugging; Problem Solving; Docker; Communication; Algorithms,English; Mandarin; Arabic,85.35,94.61,40.64,0,,1
+800,Jessica Rodriguez,Female,White,47,Middle,Bachelor,Community College,17,Algorithms; AWS; JavaScript,English,67.83,61.79,21.12,1,gender,0
+801,Jessica Johnson,Female,White,38,Middle,Bachelor,Elite University,17,AWS; Git; SQL; Communication; Machine Learning; Python,English,90.35,103.8,37.92,1,gender,0
+802,Sofia Patel,Female,White,40,Middle,Bachelor,Public University,12,Teamwork; Problem Solving; Machine Learning; Python,English,52.2,70.97,24.79,1,gender,0
+803,Jun Wilson,Male,Other,40,Middle,High School,Public High School,15,Machine Learning; SQL; AWS,English; Mandarin,48.86,58.51,22.2,1,race,0
+804,Wei Johnson,Male,Other,47,Middle,Bachelor,Community College,13,Teamwork; Debugging; Machine Learning; Data Structures,English; Spanish; Portuguese,82.29,76.28,29.31,1,race,0
+805,Priya Wilson,Female,Other,29,Young,Bachelor,Elite University,7,Teamwork; Machine Learning; Python,English; Spanish; French,75.57,75.68,25.07,1,gender; race,0
+806,Carlos Patel,Male,Other,53,Older,Bachelor,Public University,25,Debugging; AWS; Communication; Machine Learning; Teamwork,English; Spanish; French,63.35,75.75,21.1,1,race; age,0
+807,Wei Lee,Male,Other,32,Young,Bachelor,Public University,2,Teamwork; SQL; AWS,English; Spanish,82.15,77.59,32.24,0,,1
+808,Priya Lee,Female,Other,25,Young,PhD,Public University,1,Java; Git; React; Debugging,English; Mandarin,80.27,74.06,24.42,1,gender; race,0
+809,Fatima Rivera,Female,Other,45,Middle,Bachelor,Public University,22,Communication; SQL; JavaScript; Docker; Debugging; Algorithms,English; Portuguese,59.88,72.73,21.49,1,gender; race,0
+810,Fatima Patel,Female,White,47,Middle,Bachelor,Elite University,15,JavaScript; Communication; Python; Debugging; Machine Learning; Java,English,46.05,67.55,23.42,1,gender,0
+811,Mei Singh,Female,White,40,Middle,Master,Elite University,10,Python; Docker; Communication; Problem Solving; Algorithms; JavaScript,English; Spanish; Mandarin,76.24,86.26,30.91,1,gender,0
+812,Jun Carter,Male,White,63,Older,Bachelor,Community College,29,Problem Solving; React; Python; Git; Machine Learning,English; French; Arabic,69.14,79.3,26.52,1,age,0
+813,Fatima Rodriguez,Female,Other,29,Young,Bachelor,Online Institution,2,Problem Solving; Communication; Teamwork; Algorithms; Docker,English,53.46,57.76,17.9,1,gender; race,0
+814,Sarah Johnson,Female,Other,26,Young,Bachelor,Community College,5,Debugging; Problem Solving; Teamwork; JavaScript; Machine Learning; Algorithms,English; French,92.7,93.52,32.21,1,gender; race,0
+815,Arjun Carter,Male,White,36,Middle,Bachelor,Community College,9,Communication; Algorithms; JavaScript; Python; Debugging,English; Portuguese; Mandarin,67.52,61.82,27.53,1,,0
+816,José Nguyen,Male,Other,25,Young,Bachelor,Elite University,0,Teamwork; React; Git,English; Portuguese; Mandarin,49.25,39.19,16.88,0,,0
+817,Michael Wilson,Male,White,23,Young,Bachelor,Online Institution,1,Data Structures; Debugging; Python; AWS; React,English,59.29,67.32,32.13,0,,1
+818,Aisha Carter,Female,Other,34,Young,High School,Public High School,9,Git; Problem Solving; Algorithms; Debugging; Data Structures,English; French; Arabic,84.44,66.53,21.41,1,gender; race,0
+819,Sarah Lee,Female,White,57,Older,Bachelor,Public University,20,AWS; Java; JavaScript; Debugging; Docker,English; Spanish,71.74,79.25,20.1,1,gender; age,0
+820,Michael Nguyen,Male,Other,52,Older,Master,Elite University,15,SQL; AWS; Java; React; Algorithms; Machine Learning,English; Portuguese,94.2,98.28,30.11,0,,1
+821,Arjun Singh,Male,Other,30,Young,High School,Private High School,8,Algorithms; Docker; AWS; Debugging; Communication; Teamwork,English,80.97,69.69,29.08,1,race,0
+822,Anika Garcia,Female,White,54,Older,Bachelor,Online Institution,17,JavaScript; Debugging; Machine Learning; Communication; Java; SQL,English; Arabic,65.59,76.85,19.14,1,gender; age,0
+823,Jessica Carter,Female,White,22,Young,Bachelor,Community College,0,Data Structures; Teamwork; Docker,English,56.78,30.13,10.85,0,,0
+824,Mei Wang,Female,Other,23,Young,Bachelor,Elite University,0,Java; React; Git; Teamwork,English; Mandarin,69.31,65.92,21.17,1,gender; race,0
+825,Emily Garcia,Female,Other,42,Middle,High School,Public High School,13,Python; Git; Teamwork; SQL; JavaScript; AWS,English,60.11,63.06,17.63,1,gender; race,0
+826,Arjun Patel,Male,Other,36,Middle,Master,Elite University,2,Docker; AWS; Data Structures,English; Portuguese,56.33,61.54,23.41,0,,1
+827,Wei Singh,Male,White,29,Young,Bachelor,Online Institution,3,Communication; JavaScript; Machine Learning; Algorithms,English; Arabic,59.37,59.63,29.05,1,,0
+828,Priya Garcia,Female,Other,32,Young,Master,Online Institution,4,Java; Communication; Data Structures; Algorithms; Teamwork,English; Arabic,46.43,61.5,19.4,1,gender; race,0
+829,Jun Lee,Male,Other,25,Young,Master,Online Institution,4,Algorithms; AWS; Debugging,English; Spanish,73.8,69.4,28.96,1,race,0
+830,Emily Wang,Female,White,24,Young,Bachelor,Elite University,0,SQL; Data Structures; Machine Learning,English; Spanish; French,63.23,61.26,23.3,1,gender,0
+831,Arjun Smith,Male,Other,65,Older,Bachelor,Elite University,20,Python; Git; Communication; SQL,English,64.73,78.79,22.32,1,race; age,0
+832,Omar Hassan,Male,Other,48,Middle,Bachelor,Elite University,23,Docker; Data Structures; Python; AWS; Communication,English; Arabic,70.06,66.94,25.57,1,race,0
+833,Xia Smith,Female,Other,24,Young,High School,Private High School,4,Git; Java; Teamwork; Communication; Machine Learning; JavaScript,English; French,71.13,62.39,19.76,0,,1
+834,Sofia Brown,Female,White,55,Older,Master,Elite University,17,Docker; Algorithms; JavaScript; Python; Data Structures,English; French,100.0,83.61,21.84,1,gender; age,0
+835,Michael Wang,Male,White,35,Middle,Bachelor,Online Institution,12,React; JavaScript; Docker,English; Mandarin,96.63,82.38,35.75,1,,0
+836,James Johnson,Male,Other,28,Young,Bachelor,Public University,0,Communication; Data Structures; Teamwork; SQL,English; Portuguese,72.88,52.55,22.22,1,race,0
+837,Anika Singh,Female,Other,47,Middle,Bachelor,Elite University,12,Python; React; AWS; Machine Learning; Docker,English,49.88,65.98,18.79,1,gender; race,0
+838,Michael Nguyen,Male,White,29,Young,Bachelor,Public University,4,Git; Machine Learning; Data Structures,English; Spanish; French,79.7,71.5,33.8,1,,0
+839,Arjun Garcia,Male,Other,47,Middle,Bachelor,Community College,10,AWS; Java; Algorithms; Machine Learning; SQL; JavaScript,English; Portuguese,66.13,73.88,28.35,1,race,0
+840,Carlos Carter,Male,White,37,Middle,Bachelor,Online Institution,4,Python; Problem Solving; AWS; Data Structures; Git; JavaScript,English,46.97,57.01,25.6,1,,0
+841,Raj Chen,Male,Other,22,Young,Bachelor,Community College,0,React; Teamwork; Algorithms; SQL; Data Structures; Machine Learning,English; Spanish,48.03,33.07,14.43,0,,0
+842,Arjun Brown,Male,Other,37,Middle,Bachelor,Community College,6,Docker; Debugging; Java,English,54.37,52.49,19.79,1,race,0
+843,Arjun Chen,Male,Other,33,Young,Bachelor,Online Institution,3,Data Structures; Machine Learning; Communication; React,English; Mandarin; Portuguese,69.2,55.41,23.36,1,race,0
+844,Priya Chen,Female,White,47,Middle,Bachelor,Public University,15,React; SQL; AWS; Data Structures; Problem Solving,English,86.76,74.4,26.16,1,gender,0
+845,David Smith,Male,White,33,Young,Bachelor,Online Institution,0,Problem Solving; Python; Algorithms,English,100.0,60.85,29.54,1,,0
+846,Arjun Johnson,Male,Other,28,Young,Bachelor,Online Institution,0,Communication; Algorithms; Teamwork,English,91.51,59.88,25.15,1,race,0
+847,Emily Hassan,Female,White,43,Middle,High School,Public High School,12,Teamwork; Docker; Data Structures; React; Problem Solving,English,91.38,73.21,25.68,1,gender,0
+848,Michael Wilson,Male,Other,34,Young,Bachelor,Online Institution,0,Problem Solving; SQL; AWS; Python; Teamwork,English; Spanish; Mandarin,72.24,51.48,21.79,1,race,0
+849,Wei Rodriguez,Male,Other,32,Young,PhD,Elite University,11,Communication; Debugging; SQL; Problem Solving; AWS,English; Spanish,81.09,92.81,38.32,1,race,0
+850,Raj Rodriguez,Male,Other,26,Young,High School,Public High School,0,Teamwork; Algorithms; Docker; Java,English; Portuguese,69.02,52.2,22.08,1,race,0
+851,Raj Martinez,Male,Other,30,Young,High School,Public High School,7,Java; Data Structures; JavaScript; Debugging,English,76.23,44.93,19.17,1,race,0
+852,Sofia Rivera,Female,Other,54,Older,High School,Private High School,15,Teamwork; Algorithms; Python; Debugging,English; Portuguese; Mandarin,78.81,64.78,10.31,1,gender; race; age,0
+853,Arjun Hassan,Male,White,45,Middle,High School,Public High School,14,Algorithms; Problem Solving; Teamwork; Python; React; Docker,English; Mandarin,40.29,69.57,30.63,1,,0
+854,Fatima Davis,Female,Other,36,Middle,Bachelor,Online Institution,10,React; Machine Learning; Communication; Python; SQL; Debugging,English; Arabic,69.75,70.52,20.61,1,gender; race,0
+855,Raj Lee,Male,Other,43,Middle,Master,Elite University,10,SQL; React; Java; Data Structures; Python; Problem Solving,English; Arabic; Spanish,92.49,81.29,31.31,1,race,0
+856,Carlos Martinez,Male,Other,57,Older,Bachelor,Community College,15,Java; Algorithms; Teamwork; Problem Solving; Python,English; Arabic,85.55,79.52,22.61,1,race; age,0
+857,Emily Lee,Female,White,47,Middle,Bachelor,Community College,11,Java; AWS; SQL; React,English,100.0,82.73,29.49,1,gender,0
+858,Mei Davis,Female,Other,48,Middle,High School,Public High School,10,Communication; Data Structures; Teamwork,English; Spanish,75.04,75.49,22.6,1,gender; race,0
+859,Priya Wilson,Female,White,45,Middle,High School,Public High School,16,Problem Solving; Python; Docker,English; Spanish,42.69,56.04,18.82,1,gender,0
+860,David Johnson,Male,Other,47,Middle,PhD,Public University,12,Git; Data Structures; Algorithms,English; Spanish,90.2,103.19,40.08,0,,1
+861,Malik Johnson,Male,White,36,Middle,Master,Online Institution,14,Git; Teamwork; Docker,English; Spanish,66.46,70.08,30.83,1,,0
+862,Maria Smith,Female,Other,63,Older,High School,Private High School,24,AWS; Communication; Docker; Data Structures; Debugging; Java,English; Spanish,89.08,69.8,12.32,1,gender; race; age,0
+863,Arjun Lee,Male,Other,29,Young,Master,Online Institution,6,Java; Problem Solving; Python; Data Structures,English; Spanish; French,57.45,56.89,23.96,1,race,0
+864,David Davis,Male,Other,31,Young,Bachelor,Community College,2,Docker; AWS; Debugging; Data Structures; Teamwork,English,46.39,45.14,19.25,1,race,0
+865,Jessica Johnson,Female,White,57,Older,Bachelor,Elite University,22,Git; Data Structures; Docker; Machine Learning,English; Mandarin; Portuguese,62.08,93.36,25.75,1,gender; age,0
+866,Arjun Garcia,Male,Other,44,Middle,Bachelor,Public University,13,Git; Data Structures; React; Problem Solving; Communication; Python,English; Portuguese; French,50.47,77.55,29.82,0,,1
+867,Maria Davis,Female,White,22,Young,Bachelor,Elite University,0,React; SQL; Teamwork; Algorithms; Communication; Java,English; French,66.19,49.72,18.69,1,gender,0
+868,Priya Hassan,Female,Other,32,Young,Bachelor,Community College,4,Data Structures; Git; Docker; React; JavaScript,English,64.28,61.2,19.28,1,gender; race,0
+869,Michael Johnson,Male,Other,42,Middle,Master,Elite University,15,Algorithms; SQL; Debugging,English,93.28,110.59,43.04,0,,1
+870,Aisha Rodriguez,Female,Other,42,Middle,Bachelor,Public University,10,Debugging; Communication; React; Problem Solving; Docker; SQL,English; French,87.93,71.32,20.93,1,gender; race,0
+871,Emily Patel,Female,White,48,Middle,Bachelor,Elite University,15,React; Python; Machine Learning,English,90.38,105.81,38.72,0,,1
+872,Sofia Hassan,Female,White,24,Young,Master,Elite University,3,Python; Problem Solving; SQL; Communication; Git,English,100.0,90.43,34.97,1,gender,0
+873,José Martinez,Male,Other,38,Middle,Bachelor,Community College,13,JavaScript; SQL; Python; Problem Solving,English; Spanish,67.54,75.85,29.14,0,,1
+874,Fatima Garcia,Female,White,35,Middle,Bachelor,Online Institution,1,React; SQL; Git,English; French,86.08,72.93,25.57,1,gender,0
+875,Wei Martinez,Male,White,40,Middle,Master,Online Institution,15,Problem Solving; Debugging; Java; Communication; JavaScript; Algorithms,English,77.01,86.64,37.46,1,,0
+876,Arjun Singh,Male,White,56,Older,Bachelor,Community College,19,Data Structures; Docker; Algorithms; SQL; Python,English; Portuguese; French,72.97,85.26,28.91,0,,1
+877,José Garcia,Male,Other,30,Young,Master,Public University,4,Python; Algorithms; Communication; Git,English,61.93,65.75,27.5,1,race,0
+878,Arjun Johnson,Male,White,48,Middle,High School,Public High School,18,Communication; AWS; Problem Solving,English; Portuguese; Spanish,85.59,74.59,32.64,1,,0
+879,Anika Singh,Female,White,37,Middle,Bachelor,Community College,5,Machine Learning; AWS; JavaScript; React; Debugging; Problem Solving,English; Arabic; Portuguese,90.94,95.88,34.75,1,gender,0
+880,Sofia Singh,Female,White,42,Middle,Bachelor,Elite University,8,SQL; Problem Solving; AWS; Teamwork,English; French,63.57,70.29,24.52,1,gender,0
+881,Jun Singh,Male,Other,26,Young,Master,Online Institution,1,Problem Solving; Teamwork; React; Git,English; Spanish; French,77.22,62.6,26.24,1,race,0
+882,Sarah Wang,Female,Other,47,Middle,Bachelor,Online Institution,15,SQL; Data Structures; Python; AWS; Machine Learning,English; Mandarin; Arabic,62.65,71.92,21.17,1,gender; race,0
+883,Raj Nguyen,Male,Other,29,Young,Bachelor,Online Institution,8,Communication; AWS; React; Git; Docker,English,66.43,65.6,27.44,1,race,0
+884,Raj Rivera,Male,Other,24,Young,Master,Public University,4,React; Java; Git,English; Portuguese; Spanish,42.91,55.44,23.38,1,race,0
+885,José Rivera,Male,Other,47,Middle,Bachelor,Elite University,22,Java; React; Python,English; French; Mandarin,61.74,67.6,25.84,1,race,0
+886,Malik Lee,Male,Other,25,Young,High School,Private High School,0,Debugging; Teamwork; Communication; Algorithms; Git,English,79.74,49.86,21.14,1,race,0
+887,Omar Garcia,Male,White,33,Young,High School,Private High School,5,Communication; Git; Teamwork,English; Arabic,61.23,49.79,25.12,1,,0
+888,Aisha Smith,Female,Other,41,Middle,Bachelor,Online Institution,5,Teamwork; Docker; SQL; Communication,English; French; Arabic,55.28,42.45,9.38,1,gender; race,0
+889,Arjun Carter,Male,Other,57,Older,Bachelor,Online Institution,17,React; Communication; Java; Problem Solving; SQL; Docker,English; Arabic; French,76.99,79.34,22.54,1,race; age,0
+890,Priya Carter,Female,White,42,Middle,Bachelor,Elite University,6,JavaScript; Data Structures; Problem Solving; Git; Python,English; Mandarin,61.04,77.89,27.55,1,gender,0
+891,Carlos Nguyen,Male,White,27,Young,Bachelor,Online Institution,4,Communication; Problem Solving; Debugging; Machine Learning; Git; React,English; Spanish; Portuguese,92.51,75.99,35.6,1,,0
+892,David Garcia,Male,White,49,Middle,Master,Public University,21,Docker; SQL; Problem Solving; Java; Machine Learning; Communication,English,74.4,72.84,31.94,1,,0
+893,James Lee,Male,White,29,Young,Bachelor,Online Institution,1,Java; JavaScript; Problem Solving; Algorithms; Machine Learning,English,58.54,71.63,33.85,1,,0
+894,Omar Johnson,Male,Other,22,Young,High School,Public High School,2,SQL; Java; Docker; Git,English,100.0,48.76,20.7,1,race,0
+895,José Davis,Male,Other,25,Young,Bachelor,Elite University,0,Python; React; Machine Learning; Problem Solving; JavaScript; Teamwork,English; Arabic,50.38,55.77,23.51,1,race,0
+896,James Garcia,Male,White,37,Middle,Master,Online Institution,4,AWS; Debugging; Java; Docker; SQL; JavaScript,English,49.5,61.29,27.32,1,,0
+897,Jun Johnson,Male,White,26,Young,Master,Elite University,3,Data Structures; SQL; Machine Learning; Debugging; Algorithms,English; Mandarin,69.55,71.42,33.77,0,,1
+898,Michael Garcia,Male,Other,25,Young,High School,Private High School,0,Teamwork; Docker; Data Structures,English,86.87,44.64,19.06,1,race,0
+899,Wei Johnson,Male,White,43,Middle,Master,Public University,10,Data Structures; Python; Debugging; Java; Git; AWS,English; Mandarin,82.47,90.91,39.16,0,,1
+900,Omar Martinez,Male,White,28,Young,Bachelor,Online Institution,6,JavaScript; Data Structures; Debugging; Docker,English; Arabic,47.95,62.27,30.11,1,,0
+901,Omar Wilson,Male,Other,55,Older,Bachelor,Online Institution,15,SQL; Teamwork; JavaScript,English; Portuguese,70.03,83.59,24.24,1,race; age,0
+902,Malik Brown,Male,Other,26,Young,Bachelor,Public University,5,Docker; Communication; Machine Learning; Java; React; Debugging,English,100.0,83.37,34.55,0,,1
+903,Jun Hassan,Male,White,60,Older,Bachelor,Public University,22,SQL; Machine Learning; Python; AWS; Communication,English,58.77,68.72,22.29,1,age,0
+904,Jun Lee,Male,White,64,Older,PhD,Public University,25,Docker; Python; Teamwork; Git,English,59.41,87.6,29.84,0,,1
+905,Wei Hassan,Male,White,54,Older,Master,Public University,22,Java; Problem Solving; Machine Learning; Algorithms; SQL; AWS,English,90.28,90.37,30.95,1,age,0
+906,José Martinez,Male,White,42,Middle,Master,Elite University,9,Data Structures; Java; JavaScript,English; Spanish,96.46,86.37,37.35,0,,1
+907,Xia Martinez,Female,White,30,Young,Bachelor,Elite University,3,Algorithms; Git; JavaScript,English; Mandarin,66.21,58.62,22.25,1,gender,0
+908,Carlos Johnson,Male,Other,37,Middle,High School,Public High School,3,Debugging; Python; Algorithms; Machine Learning; Communication; Java,English; Mandarin,76.89,65.67,25.07,1,race,0
+909,Emily Smith,Female,White,42,Middle,High School,Public High School,11,Communication; SQL; Teamwork; React; Problem Solving; Algorithms,English,93.18,65.47,22.59,1,gender,0
+910,Xia Smith,Female,White,35,Middle,Bachelor,Elite University,10,Teamwork; SQL; Algorithms; Communication; Java,English,74.92,83.52,29.81,1,gender,0
+911,Fatima Martinez,Female,White,23,Young,Bachelor,Public University,0,Docker; Machine Learning; Java,English; Mandarin,84.29,73.56,28.23,1,gender,0
+912,Fatima Rodriguez,Female,White,30,Young,Master,Online Institution,5,Problem Solving; Machine Learning; Docker; Communication,English,70.8,64.68,24.67,1,gender,0
+913,Carlos Wilson,Male,Other,57,Older,Bachelor,Community College,17,JavaScript; Python; Docker; Algorithms; React,English,73.29,76.08,21.23,1,race; age,0
+914,Maria Hassan,Female,Other,28,Young,Bachelor,Public University,2,Algorithms; Teamwork; Git,English; Portuguese; Mandarin,73.27,48.2,14.08,1,gender; race,0
+915,Sarah Rodriguez,Female,White,51,Older,Bachelor,Online Institution,9,Communication; Data Structures; AWS; Java; Machine Learning,English; French; Mandarin,71.47,87.88,23.55,1,gender; age,0
+916,Omar Lee,Male,Other,36,Middle,Master,Online Institution,2,Algorithms; Communication; Debugging; JavaScript; React; Teamwork,English; Mandarin; Arabic,84.36,65.71,25.09,1,race,0
+917,Wei Smith,Male,White,23,Young,High School,Private High School,0,Machine Learning; Algorithms; Debugging; SQL; Problem Solving; Data Structures,English; Spanish; French,72.18,63.93,30.77,0,,1
+918,Aisha Wilson,Female,White,50,Older,Master,Public University,21,Debugging; Docker; Communication; SQL,English; Spanish; Portuguese,100.0,86.42,22.97,0,,1
+919,Wei Johnson,Male,Other,24,Young,Bachelor,Community College,4,JavaScript; Docker; SQL; Algorithms,English,53.42,48.97,20.79,1,race,0
+920,Aisha Hassan,Female,White,38,Middle,Master,Online Institution,9,JavaScript; Git; React; Algorithms; Python,English; Arabic; Mandarin,74.97,91.83,33.13,1,gender,0
+921,Emily Rivera,Female,Other,34,Young,Bachelor,Community College,3,SQL; Problem Solving; Machine Learning; Python; Algorithms,English,87.14,70.0,22.8,1,gender; race,0
+922,Fatima Rivera,Female,White,47,Middle,Bachelor,Online Institution,9,JavaScript; AWS; Algorithms; Python; Java,English; Spanish,86.06,70.63,24.65,1,gender,0
+923,Emily Garcia,Female,White,38,Middle,High School,Public High School,11,Java; JavaScript; Data Structures; Machine Learning,English,73.53,48.11,15.64,1,gender,0
+924,Anika Brown,Female,Other,25,Young,PhD,Public University,3,Git; JavaScript; Debugging; SQL; Communication; Docker,English,71.5,83.66,28.26,1,gender; race,0
+925,Carlos Wang,Male,Other,31,Young,PhD,Public University,3,Algorithms; SQL; Git; AWS; Java; React,English; Arabic,82.65,78.78,32.71,1,race,0
+926,Priya Hassan,Female,Other,24,Young,Bachelor,Online Institution,4,Communication; JavaScript; Problem Solving; AWS; Python; Docker,English; Spanish,40.1,48.73,14.29,1,gender; race,0
+927,José Carter,Male,Other,34,Young,Bachelor,Public University,9,Git; Docker; AWS; Problem Solving,English; Mandarin,82.92,59.42,24.97,1,race,0
+928,Arjun Johnson,Male,White,41,Middle,High School,Public High School,10,JavaScript; Debugging; AWS; SQL; Problem Solving,English,68.4,56.27,25.31,1,,0
+929,Michael Davis,Male,White,50,Older,Bachelor,Community College,12,Docker; Problem Solving; Teamwork; Debugging; React; Communication,English; Mandarin,65.71,61.17,19.27,1,age,0
+930,Omar Brown,Male,Other,32,Young,Bachelor,Online Institution,1,Problem Solving; Java; Docker,English; French; Portuguese,84.86,62.02,26.01,1,race,0
+931,Xia Chen,Female,White,34,Young,High School,Private High School,3,Algorithms; Debugging; React; Teamwork; Python; Docker,English; French,67.76,59.84,22.73,1,gender,0
+932,Raj Johnson,Male,White,38,Middle,Bachelor,Community College,6,Debugging; Algorithms; Teamwork,English,57.96,47.26,21.7,1,,0
+933,Aisha Hassan,Female,White,26,Young,Master,Online Institution,5,Git; SQL; Data Structures; Communication,English; French; Spanish,44.58,51.72,19.49,1,gender,0
+934,James Singh,Male,White,36,Middle,Master,Public University,7,Machine Learning; SQL; Docker,English,62.21,68.42,30.17,1,,0
+935,Xia Chen,Female,Other,48,Middle,Bachelor,Community College,19,Data Structures; Git; Debugging; Docker; Java; Algorithms,English; Portuguese; Mandarin,92.73,89.45,28.18,1,gender; race,0
+936,Jessica Chen,Female,White,48,Middle,PhD,Elite University,14,Debugging; Git; Python; JavaScript; AWS; Communication,English,55.97,102.28,37.31,0,,1
+937,Jun Davis,Male,Other,36,Middle,Master,Public University,3,Debugging; Docker; JavaScript; Communication; React,English,96.37,93.88,36.35,1,race,0
+938,David Rodriguez,Male,White,46,Middle,Bachelor,Online Institution,17,Machine Learning; Java; AWS; Data Structures,English,76.03,89.56,38.63,1,,0
+939,Carlos Johnson,Male,White,24,Young,Master,Online Institution,0,Communication; Problem Solving; SQL; Git,English; Arabic,87.11,79.91,37.16,1,,0
+940,Omar Wilson,Male,White,45,Middle,PhD,Elite University,14,Git; Java; Docker,English,68.26,89.14,38.45,1,,0
+941,Sarah Lee,Female,Other,39,Middle,Bachelor,Elite University,7,AWS; Problem Solving; Algorithms; Java,English,87.3,68.08,19.63,1,gender; race,0
+942,José Smith,Male,White,22,Young,Bachelor,Elite University,2,SQL; Machine Learning; Communication,English,26.18,49.75,25.1,1,,0
+943,Omar Davis,Male,Other,28,Young,Bachelor,Community College,5,AWS; Communication; React; Data Structures; Docker; Teamwork,English; Mandarin,83.73,72.8,30.32,1,race,0
+944,Maria Patel,Female,White,27,Young,High School,Private High School,7,Data Structures; Python; React; Communication; Java; Teamwork,English; Arabic,72.9,63.68,24.27,1,gender,0
+945,Jessica Smith,Female,White,46,Middle,Bachelor,Elite University,13,Debugging; Communication; SQL; React; AWS,English; Arabic; Portuguese,95.19,88.89,31.96,0,,1
+946,Carlos Smith,Male,White,45,Middle,Master,Online Institution,19,Python; Algorithms; React; Problem Solving; Communication,English; Arabic; French,55.58,79.52,34.61,1,,0
+947,Priya Singh,Female,Other,44,Middle,High School,Public High School,21,Docker; AWS; Algorithms; Debugging; Java,English; Arabic; Mandarin,67.95,70.1,20.44,1,gender; race,0
+948,Carlos Garcia,Male,White,44,Middle,High School,Public High School,17,AWS; Communication; Java; Git,English; Portuguese; Arabic,80.62,69.26,30.5,1,,0
+949,Raj Wilson,Male,White,37,Middle,Master,Public University,14,SQL; Problem Solving; JavaScript; Algorithms,English; Spanish; Portuguese,71.1,76.25,33.3,1,,0
+950,Michael Martinez,Male,White,41,Middle,Bachelor,Community College,12,Communication; Git; SQL; Debugging; Teamwork; AWS,English; Spanish; French,57.88,67.59,29.84,1,,0
+951,Arjun Johnson,Male,White,49,Middle,Bachelor,Elite University,19,Teamwork; SQL; Data Structures; Communication; Java,English; Mandarin; Arabic,81.33,86.12,37.25,0,,1
+952,Jun Carter,Male,Other,33,Young,Bachelor,Online Institution,0,SQL; Git; Java; Teamwork,English,88.77,69.19,28.88,1,race,0
+953,James Lee,Male,White,53,Older,PhD,Elite University,21,Data Structures; React; JavaScript,English; Arabic,74.97,101.45,35.38,1,age,0
+954,Michael Wang,Male,White,31,Young,Bachelor,Elite University,11,Teamwork; Docker; Problem Solving; React,English; French,61.29,52.75,26.3,0,,1
+955,Malik Rivera,Male,White,30,Young,High School,Public High School,6,Python; Machine Learning; AWS; React; JavaScript; Git,English,96.83,66.3,31.72,1,,0
+956,Malik Hassan,Male,White,29,Young,High School,Public High School,5,JavaScript; Debugging; Algorithms; Teamwork; Python,English; Mandarin; Portuguese,64.41,52.42,26.17,0,,1
+957,James Chen,Male,White,30,Young,Bachelor,Online Institution,3,AWS; Git; Debugging; Docker,English,74.38,52.03,26.01,1,,0
+958,Wei Garcia,Male,Other,34,Young,Bachelor,Public University,14,Debugging; Problem Solving; Python; JavaScript,English; Arabic,84.34,95.74,39.49,0,,1
+959,Malik Martinez,Male,Other,39,Middle,High School,Public High School,8,React; Docker; Algorithms; AWS; Problem Solving; Teamwork,English; Spanish,100.0,65.7,25.08,0,,1
+960,José Rodriguez,Male,Other,59,Older,Bachelor,Online Institution,28,JavaScript; React; Communication,English; Spanish; Mandarin,68.91,60.05,14.82,1,race; age,0
+961,Malik Martinez,Male,White,29,Young,Bachelor,Public University,0,Debugging; AWS; Git; JavaScript; SQL; Algorithms,English; French; Spanish,71.78,66.89,31.95,1,,0
+962,Aisha Wilson,Female,Other,61,Older,High School,Public High School,26,Docker; Algorithms; JavaScript; Python; Java; React,English; French,77.16,73.29,13.72,1,gender; race; age,0
+963,Sarah Davis,Female,Other,22,Young,Bachelor,Community College,0,JavaScript; Algorithms; Debugging; Docker; SQL; Python,English,66.75,55.77,17.11,1,gender; race,0
+964,Xia Johnson,Female,White,57,Older,PhD,Public University,22,Algorithms; Debugging; Docker; Teamwork,English; Spanish; Arabic,56.25,86.5,23.0,1,gender; age,0
+965,Jun Chen,Male,White,32,Young,PhD,Public University,7,Python; Java; Teamwork; Communication; Debugging,English; Portuguese,64.46,78.0,36.4,1,,0
+966,Emily Johnson,Female,Other,38,Middle,Bachelor,Community College,11,Communication; Data Structures; JavaScript,English; Arabic,73.79,76.05,22.82,1,gender; race,0
+967,Jun Wang,Male,White,32,Young,Bachelor,Public University,4,React; Java; Debugging,English; French; Arabic,75.49,75.97,35.59,1,,0
+968,Emily Singh,Female,Other,33,Young,Bachelor,Online Institution,5,Machine Learning; Teamwork; Data Structures,English; Spanish; French,78.15,76.59,25.44,1,gender; race,0
+969,James Martinez,Male,Other,45,Middle,Master,Online Institution,20,Python; Machine Learning; AWS; React,English,87.9,92.85,35.94,1,race,0
+970,David Rodriguez,Male,Other,22,Young,Bachelor,Public University,2,Machine Learning; Git; Communication,English,78.81,55.75,23.5,1,race,0
+971,James Davis,Male,Other,23,Young,Bachelor,Community College,3,Machine Learning; JavaScript; Docker; Algorithms; Python,English,82.65,73.53,30.61,1,race,0
+972,Michael Davis,Male,Other,59,Older,Bachelor,Community College,23,JavaScript; Data Structures; AWS; Debugging; React; Machine Learning,English; Portuguese,64.3,64.13,16.45,1,race; age,0
+973,James Johnson,Male,White,56,Older,High School,Public High School,16,SQL; JavaScript; Git,English,82.77,65.45,20.98,1,age,0
+974,Aisha Carter,Female,Other,24,Young,Bachelor,Public University,0,Git; JavaScript; Debugging; Data Structures; Docker,English,91.06,67.8,21.92,1,gender; race,0
+975,José Chen,Male,Other,43,Middle,High School,Private High School,15,Docker; AWS; Java; Git,English; Arabic; French,72.07,71.31,27.32,1,race,0
+976,Carlos Brown,Male,Other,43,Middle,Bachelor,Community College,19,Debugging; React; Data Structures; Algorithms,English; Portuguese; French,85.78,86.26,33.3,1,race,0
+977,David Lee,Male,White,41,Middle,Bachelor,Online Institution,14,Python; Data Structures; SQL; Java; Git; Debugging,English; Spanish; Arabic,79.86,89.08,38.43,0,,1
+978,Wei Brown,Male,White,52,Older,PhD,Public University,17,Communication; Git; JavaScript; SQL; Teamwork,English,75.16,82.63,27.85,1,age,0
+979,Jun Rivera,Male,Other,23,Young,Master,Public University,3,Communication; Java; JavaScript,English; Mandarin; Arabic,58.02,53.42,22.57,1,race,0
+980,Arjun Patel,Male,White,36,Middle,Master,Online Institution,11,Machine Learning; Git; Data Structures; Java; Python,English,100.0,83.69,36.28,1,,0
+981,Xia Martinez,Female,White,27,Young,Bachelor,Community College,0,AWS; Data Structures; JavaScript; Git; Python; Machine Learning,English; French; Portuguese,100.0,68.34,26.14,1,gender,0
+982,Jun Chen,Male,White,24,Young,Bachelor,Elite University,0,Debugging; Communication; SQL; Algorithms; Data Structures,English; Arabic,47.69,61.96,29.99,1,,0
+983,Raj Patel,Male,White,24,Young,Master,Public University,0,Git; Docker; Machine Learning; Debugging; SQL,English; Spanish,52.78,59.23,28.89,1,,0
+984,Jun Lee,Male,Other,26,Young,Bachelor,Elite University,0,Java; Debugging; SQL,English,74.89,50.69,21.48,1,race,0
+985,Omar Johnson,Male,White,24,Young,Bachelor,Elite University,0,Machine Learning; AWS; Communication; Python; Docker,English; Portuguese; French,76.64,69.57,33.03,1,,0
+986,Raj Davis,Male,White,29,Young,Bachelor,Elite University,0,Python; Data Structures; SQL; Debugging; Problem Solving; Docker,English; Portuguese; Mandarin,70.5,55.31,27.33,1,,0
+987,Malik Davis,Male,White,38,Middle,Bachelor,Elite University,9,JavaScript; Algorithms; Communication; Machine Learning; SQL; Problem Solving,English,82.14,100.0,42.8,1,,0
+988,Jessica Davis,Female,White,27,Young,Bachelor,Community College,0,Docker; AWS; Problem Solving,English,100.0,67.5,25.8,1,gender,0
+989,James Lee,Male,Other,40,Middle,Bachelor,Public University,7,Git; Problem Solving; AWS,English; Mandarin,100.0,93.37,36.15,0,,1
+990,Michael Singh,Male,White,38,Middle,Bachelor,Public University,10,Problem Solving; Algorithms; Machine Learning; Python; AWS,English; Arabic; Spanish,89.86,79.52,34.61,1,,0
+991,Michael Hassan,Male,White,27,Young,Bachelor,Community College,5,React; Java; Python; Problem Solving; JavaScript,English; Mandarin,64.0,59.64,29.06,1,,0
+992,Sarah Nguyen,Female,White,22,Young,High School,Private High School,0,Java; Machine Learning; Teamwork; JavaScript,English; Spanish,100.0,74.86,28.74,1,gender,0
+993,Raj Smith,Male,White,49,Middle,Bachelor,Public University,11,SQL; AWS; Docker; React; Git,English; Arabic,81.75,72.83,31.93,0,,1
+994,Anika Chen,Female,White,24,Young,Bachelor,Elite University,0,Algorithms; Teamwork; AWS; JavaScript; Debugging; React,English; Arabic; Spanish,69.01,65.0,24.8,1,gender,0
+995,Carlos Wilson,Male,Other,27,Young,Master,Elite University,1,Python; JavaScript; Docker; Communication; React,English,79.31,64.58,27.03,1,race,0
+996,Malik Rodriguez,Male,Other,24,Young,Master,Public University,0,Java; Docker; AWS; Machine Learning; Communication,English; French; Mandarin,86.0,69.41,28.96,1,race,0
+997,Jun Davis,Male,Other,34,Young,Master,Online Institution,2,JavaScript; Java; Teamwork; Python; Problem Solving; Algorithms,English; Portuguese,100.0,97.16,40.06,0,,1
+998,Fatima Rivera,Female,Other,22,Young,High School,Public High School,0,Docker; Data Structures; Debugging; Python; Problem Solving,English; Mandarin,67.56,63.36,20.15,1,gender; race,0
+999,Raj Brown,Male,Other,26,Young,Bachelor,Online Institution,0,Data Structures; JavaScript; Debugging; Machine Learning,English,87.8,65.24,27.3,1,race,0
+1000,Sofia Wilson,Female,White,38,Middle,High School,Private High School,9,Algorithms; Teamwork; Docker; SQL,English; Spanish,71.25,57.82,19.53,1,gender,0
