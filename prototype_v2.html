@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIRE/PASS — Resume Screener</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">HIRE/PASS</div>
+  <div class="session-info">PROTOTYPE</div>
+</header>
+
+<main>
+  <div class="status-bar">
+    <span>APPLICANT <span class="counter" id="counterDisplay">— / —</span></span>
+    <span class="layout-badge" id="layoutBadge">LOADING</span>
+  </div>
+
+  <div class="card-stack" id="cardStack">
+    <div class="card-shadow s2"></div>
+    <div class="card-shadow s1"></div>
+    <div class="resume-card card-enter" id="resumeCard">
+      <div class="swipe-overlay accept" id="overlayAccept">
+        <div class="stamp accept">ADVANCE</div>
+      </div>
+      <div class="swipe-overlay reject" id="overlayReject">
+        <div class="stamp reject">REJECTED</div>
+      </div>
+      <div class="resume-inner" id="resumeContent"></div>
+    </div>
+  </div>
+
+  <div class="swipe-hint">
+    drag <span>←</span> reject &nbsp;|&nbsp; drag <span>→</span> advance
+  </div>
+
+  <div class="done-screen" id="doneScreen">
+    <div class="done-title">Session Complete</div>
+    <div class="done-stat" id="doneAcceptRate">—</div>
+    <div class="done-sub">acceptance rate</div>
+    <div class="done-breakdown">
+      <div class="d-item d-a">
+        <span class="d-num" id="doneAccepted">0</span>
+        <span class="d-lbl">advanced</span>
+      </div>
+      <div class="d-item d-r">
+        <span class="d-num" id="doneRejected">0</span>
+        <span class="d-lbl">rejected</span>
+      </div>
+    </div>
+    <button class="restart-btn" id="restartBtn">↺ Review Again</button>
+  </div>
+</main>
+
+<div class="controls" id="controls">
+  <button class="action-btn btn-reject" id="btnReject" aria-label="Reject">
+    <div class="btn-circle">✕</div>
+    <span class="btn-label">Reject</span>
+  </button>
+  <div class="score-display">
+    <div class="score-nums">
+      <span class="score-accept" id="scoreAccept">0 ✓</span>
+      <span class="score-reject" id="scoreReject">✕ 0</span>
+    </div>
+    <div class="score-label">decisions</div>
+  </div>
+  <button class="action-btn btn-accept" id="btnAccept" aria-label="Advance">
+    <div class="btn-circle">✓</div>
+    <span class="btn-label">Advance</span>
+  </button>
+</div>
+
+<!-- Socket.IO v4 client — matches python-socketio 5.x (protocol v5) -->
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script>
+// ── Socket.IO setup ────────────────────────────────────────────────────────
+const socket = io();
+
+socket.on('connect', () => {
+  console.log('Socket connected:', socket.id);
+});
+
+socket.on('vote_ack', (data) => {
+  console.log('Vote recorded:', data);
+});
+
+// ── Data loading ───────────────────────────────────────────────────────────
+const LAYOUTS = ['classic', 'chaos', 'sidebar', 'form'];
+const LAYOUT_NAMES = { classic: 'CLASSIC', chaos: 'UNSTRUCTURED', sidebar: 'TWO-COLUMN', form: 'FORM STYLE' };
+
+let queue = [];
+let current = 0;
+let accepted = 0;
+let rejected = 0;
+
+fetch('/api/applicants')
+  .then(r => r.json())
+  .then(data => {
+    buildQueue(data);
+    renderCard(0);
+  })
+  .catch(err => console.error('Failed to load applicants:', err));
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+function splitList(str) {
+  if (!str) return [];
+  return str.split(';').map(s => s.trim()).filter(Boolean);
+}
+
+function getInitials(name) {
+  return name.split(' ').map(p => p[0]).join('').toUpperCase();
+}
+
+function e(tag, cls, html) {
+  const el = document.createElement(tag);
+  if (cls) el.className = cls;
+  if (html !== undefined) el.innerHTML = html;
+  return el;
+}
+
+function scoreBar(score) {
+  const pct = Math.min(Math.max(parseFloat(score) || 0, 0), 100).toFixed(0);
+  return `<div style="margin-top:6px">
+    <div style="font-size:9px;color:#999;letter-spacing:1px;margin-bottom:3px">ASSESSMENT SCORE</div>
+    <div style="background:#eee;border-radius:3px;height:6px;overflow:hidden">
+      <div style="background:#333;height:100%;width:${pct}%"></div>
+    </div>
+    <div style="font-size:10px;color:#555;margin-top:2px">${pct} / 100</div>
+  </div>`;
+}
+
+// ── Queue builder ──────────────────────────────────────────────────────────
+function buildQueue(data) {
+  const shuffled = [...data].sort(() => Math.random() - 0.5);
+  queue = shuffled.map(a => ({
+    applicant: a,
+    layout: LAYOUTS[Math.floor(Math.random() * LAYOUTS.length)]
+  }));
+}
+
+// ── Layout renderers ───────────────────────────────────────────────────────
+function renderClassic(a) {
+  const skills = splitList(a.skills);
+  const langs  = splitList(a.languages);
+  const d = document.createElement('div');
+  d.className = 'layout-classic';
+
+  const header = e('div', 'resume-header');
+  header.innerHTML = `<div class="applicant-name">${a.name}</div>`;
+  d.appendChild(header);
+
+  const eduHtml = `<div class="edu-item">
+    <div class="edu-degree">${a.education_level}</div>
+    <div class="edu-school">${a.education_organization}</div>
+  </div>`;
+
+  const expHtml = `<div class="exp-item">
+    <div class="exp-desc">${a.years_experience} year${a.years_experience == 1 ? '' : 's'} of experience</div>
+  </div>`;
+
+  const skillsHtml = `<div class="skills-wrap">${skills.map(s => `<span class="skill-pill">${s}</span>`).join('')}</div>`;
+  const langHtml   = langs.join(', ');
+
+  const allSections = [
+    { title: 'Education',       content: eduHtml },
+    { title: 'Experience',      content: expHtml },
+    { title: 'Skills',          content: skillsHtml },
+    { title: 'Languages',       content: `<div class="section-content">${langHtml}</div>` },
+  ];
+
+  const reordered = Math.random() > 0.5
+    ? allSections
+    : [allSections[1], allSections[0], allSections[3], allSections[2]];
+
+  reordered.forEach(sec => {
+    const s = e('div', 'section');
+    s.innerHTML = `<div class="section-title">${sec.title}</div><div class="section-content">${sec.content}</div>`;
+    d.appendChild(s);
+  });
+
+  const scoreEl = e('div', 'section');
+  scoreEl.innerHTML = scoreBar(a.test_score);
+  d.appendChild(scoreEl);
+
+  return d;
+}
+
+function renderChaos(a) {
+  const skills = splitList(a.skills);
+  const langs  = splitList(a.languages);
+  const d = document.createElement('div');
+  d.className = 'layout-chaos';
+  const inner = e('div', 'resume-inner');
+
+  const chunks = [];
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Name</span><br>${a.name}</div><br>`);
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Education</span><br>${a.education_level}, ${a.education_organization}</div><br>`);
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Experience</span><br>${a.years_experience} years</div><br>`);
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Languages</span><br>${langs.join(', ')}</div><br>`);
+  chunks.push(`<div class="chaos-block"><span class="chaos-label">Skills</span><br>${skills.join(', ')}</div><br>`);
+  if (Math.random() > 0.4) {
+    chunks.push(`<div class="chaos-block"><span class="chaos-label">Assessment</span><br>${parseFloat(a.test_score).toFixed(1)} / 100</div><br>`);
+  }
+
+  inner.innerHTML = chunks.sort(() => Math.random() - 0.5).join('');
+  d.appendChild(inner);
+  return d;
+}
+
+function renderSidebar(a) {
+  const skills = splitList(a.skills);
+  const langs  = splitList(a.languages);
+  const d = document.createElement('div');
+  d.className = 'layout-sidebar';
+  const initials = getInitials(a.name);
+
+  d.innerHTML = `
+  <div class="sidebar-wrap">
+    <div class="sidebar-col">
+      <div class="sidebar-avatar">${initials}</div>
+      <div class="sidebar-name">${a.name}</div>
+      <div class="sidebar-section-title">Skills</div>
+      ${skills.map(s => `<div class="sidebar-skill">· ${s}</div>`).join('')}
+      <div class="sidebar-section-title">Languages</div>
+      ${langs.map(l => `<div class="sidebar-skill">${l}</div>`).join('')}
+    </div>
+    <div class="main-col">
+      <div class="main-section">
+        <div class="main-section-title">Education</div>
+        <div class="main-section-content">
+          <div class="edu-item">
+            <div class="edu-degree">${a.education_level}</div>
+            <div class="edu-school">${a.education_organization}</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="main-section-title">Experience</div>
+        <div class="main-section-content">
+          <div class="exp-item">
+            <div class="exp-desc">${a.years_experience} year${a.years_experience == 1 ? '' : 's'} of professional experience</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="main-section-title">Assessment Score</div>
+        <div class="main-section-content">${scoreBar(a.test_score)}</div>
+      </div>
+    </div>
+  </div>`;
+  return d;
+}
+
+function renderForm(a) {
+  const skills = splitList(a.skills);
+  const langs  = splitList(a.languages);
+  const d = document.createElement('div');
+  d.className = 'layout-form';
+  const inner = e('div', 'resume-inner');
+
+  inner.innerHTML = `
+  <div class="form-header">
+    <div>
+      <div style="font-size:9px;color:#999;letter-spacing:1px;margin-bottom:3px">APPLICANT NAME</div>
+      <div class="form-name">${a.name}</div>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Skills &amp; Languages</div>
+    <div class="form-field">
+      <div class="form-field-label">Skills</div>
+      ${skills.join(' / ')}
+    </div>
+    <div class="form-field">
+      <div class="form-field-label">Languages</div>
+      ${langs.join(', ')}
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Education</div>
+    <div class="form-field">
+      <div class="form-field-label">Level</div>
+      ${a.education_level}
+    </div>
+    <div class="form-field">
+      <div class="form-field-label">Institution</div>
+      ${a.education_organization}
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Experience</div>
+    <div class="form-field">
+      <div class="form-field-label">Years</div>
+      ${a.years_experience}
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-section-label">Assessment</div>
+    <div class="form-field">
+      ${scoreBar(a.test_score)}
+    </div>
+  </div>`;
+
+  d.appendChild(inner);
+  return d;
+}
+
+// ── Card rendering ─────────────────────────────────────────────────────────
+function renderCard(index) {
+  const { applicant, layout } = queue[index];
+  const content = document.getElementById('resumeContent');
+  content.innerHTML = '';
+
+  let rendered;
+  if (layout === 'classic')      rendered = renderClassic(applicant);
+  else if (layout === 'chaos')   rendered = renderChaos(applicant);
+  else if (layout === 'sidebar') rendered = renderSidebar(applicant);
+  else                           rendered = renderForm(applicant);
+
+  content.appendChild(rendered);
+
+  document.getElementById('counterDisplay').textContent = `${index + 1} / ${queue.length}`;
+  document.getElementById('layoutBadge').textContent = LAYOUT_NAMES[layout];
+
+  document.getElementById('overlayAccept').style.opacity = 0;
+  document.getElementById('overlayReject').style.opacity = 0;
+}
+
+// ── Scoring UI ─────────────────────────────────────────────────────────────
+function updateScore() {
+  document.getElementById('scoreAccept').textContent = `${accepted} ✓`;
+  document.getElementById('scoreReject').textContent = `✕ ${rejected}`;
+}
+
+function showDone() {
+  document.getElementById('cardStack').style.display = 'none';
+  document.querySelector('.swipe-hint').style.display = 'none';
+  const done = document.getElementById('doneScreen');
+  done.classList.add('visible');
+  const total = accepted + rejected;
+  const rate = total > 0 ? Math.round((accepted / total) * 100) : 0;
+  document.getElementById('doneAcceptRate').textContent = rate + '%';
+  document.getElementById('doneAccepted').textContent = accepted;
+  document.getElementById('doneRejected').textContent = rejected;
+}
+
+// ── Decision logic ─────────────────────────────────────────────────────────
+function submitVote(applicant, hired) {
+  socket.emit('vote', {
+    applicant_id: parseInt(applicant.id),
+    hired: hired ? 1 : 0
+  });
+}
+
+function flashStampThenDecide(accept) {
+  if (current >= queue.length) return;
+  const overlay = accept
+    ? document.getElementById('overlayAccept')
+    : document.getElementById('overlayReject');
+
+  overlay.style.transition = 'opacity 0.08s';
+  overlay.style.opacity = 1;
+
+  setTimeout(() => {
+    overlay.style.transition = 'opacity 0.15s';
+    overlay.style.opacity = 0;
+    decide(accept);
+  }, 280);
+}
+
+function decide(accept) {
+  if (current >= queue.length) return;
+  const card = document.getElementById('resumeCard');
+  const { applicant } = queue[current];
+
+  submitVote(applicant, accept);
+
+  if (accept) {
+    accepted++;
+    card.classList.add('card-exit-right');
+  } else {
+    rejected++;
+    card.classList.add('card-exit-left');
+  }
+
+  updateScore();
+
+  setTimeout(() => {
+    card.classList.remove('card-exit-left', 'card-exit-right', 'card-enter');
+    document.getElementById('overlayAccept').style.opacity = 0;
+    document.getElementById('overlayReject').style.opacity = 0;
+    current++;
+    if (current >= queue.length) {
+      showDone();
+      return;
+    }
+    renderCard(current);
+    void card.offsetWidth;
+    card.classList.add('card-enter');
+  }, 360);
+}
+
+// ── Drag / swipe ───────────────────────────────────────────────────────────
+let startX = 0, isDragging = false, curX = 0;
+const card = document.getElementById('resumeCard');
+const overlayA = document.getElementById('overlayAccept');
+const overlayR = document.getElementById('overlayReject');
+
+function onPointerDown(e) {
+  if (e.target.closest('a, button')) return;
+  isDragging = true;
+  startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+  card.classList.add('dragging');
+}
+
+function onPointerMove(e) {
+  if (!isDragging) return;
+  const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+  const y = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+  curX = x - startX;
+  const curY = y - (isDragging ? (e.type === 'touchmove' ? e.touches[0].clientY : e.clientY) : 0);
+
+  if (Math.abs(curX) < 10) return;
+
+  const rot = curX * 0.06;
+  card.style.transform = `translateX(${curX}px) rotate(${rot}deg)`;
+
+  const progress = Math.min(Math.abs(curX) / 120, 1);
+  if (curX > 0) {
+    overlayA.style.opacity = progress;
+    overlayR.style.opacity = 0;
+  } else {
+    overlayR.style.opacity = progress;
+    overlayA.style.opacity = 0;
+  }
+}
+
+function onPointerUp() {
+  if (!isDragging) return;
+  isDragging = false;
+  card.classList.remove('dragging');
+  card.style.transform = '';
+  overlayA.style.opacity = 0;
+  overlayR.style.opacity = 0;
+
+  if (curX > 90)       decide(true);
+  else if (curX < -90) decide(false);
+  curX = 0;
+}
+
+card.addEventListener('mousedown',  onPointerDown);
+card.addEventListener('touchstart', onPointerDown, { passive: true });
+document.addEventListener('mousemove',  onPointerMove);
+document.addEventListener('touchmove',  onPointerMove, { passive: true });
+document.addEventListener('mouseup',    onPointerUp);
+document.addEventListener('touchend',   onPointerUp);
+
+document.getElementById('btnAccept').addEventListener('click', () => flashStampThenDecide(true));
+document.getElementById('btnReject').addEventListener('click', () => flashStampThenDecide(false));
+
+document.getElementById('restartBtn').addEventListener('click', () => {
+  accepted = 0;
+  rejected = 0;
+  current = 0;
+  updateScore();
+  document.getElementById('doneScreen').classList.remove('visible');
+  document.getElementById('cardStack').style.display = '';
+  document.querySelector('.swipe-hint').style.display = '';
+  // Re-shuffle existing queue
+  queue = queue.sort(() => Math.random() - 0.5);
+  const c = document.getElementById('resumeCard');
+  c.classList.remove('card-enter');
+  void c.offsetWidth;
+  renderCard(0);
+  c.classList.add('card-enter');
+});
+</script>
+</body>
+</html>
