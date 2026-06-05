@@ -5,6 +5,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HIRE/PASS — Resume Screener</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+.survey-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 16px 40px;
+}
+.survey-card {
+  width: 100%;
+  max-width: 460px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 28px 24px 24px;
+}
+.survey-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.survey-subtitle {
+  font-size: 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+.survey-field { margin-bottom: 14px; }
+.survey-label {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.survey-field input,
+.survey-field select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #222;
+  box-sizing: border-box;
+  background: #fafafa;
+  appearance: auto;
+}
+.survey-field input:focus,
+.survey-field select:focus {
+  outline: none;
+  border-color: #333;
+  background: #fff;
+}
+.survey-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+}
+.survey-skip {
+  background: none;
+  border: none;
+  color: #bbb;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 8px 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.survey-skip:hover { color: #666; }
+.survey-submit {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 26px;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.survey-submit:hover { background: #444; }
+</style>
 </head>
 <body>
 
@@ -14,6 +104,111 @@
 </header>
 
 <main>
+  <!-- ── Pre-study survey ─────────────────────────────────────────────────── -->
+  <div class="survey-screen" id="surveyScreen">
+    <div class="survey-card">
+      <div class="survey-title">Before You Begin</div>
+      <div class="survey-subtitle">Optional — takes about 30 seconds</div>
+
+      <div class="survey-field">
+        <label class="survey-label" for="sAge">Age</label>
+        <input type="number" id="sAge" min="18" max="100" placeholder="e.g. 32">
+      </div>
+
+      <div class="survey-field">
+        <label class="survey-label" for="sRace">Race / Ethnicity</label>
+        <select id="sRace">
+          <option value="">— select —</option>
+          <option>White</option>
+          <option>Black or African American</option>
+          <option>Asian</option>
+          <option>Hispanic or Latino</option>
+          <option>American Indian or Alaska Native</option>
+          <option>Native Hawaiian or Pacific Islander</option>
+          <option>Two or more races</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="survey-field">
+        <label class="survey-label" for="sGender">Gender</label>
+        <select id="sGender">
+          <option value="">— select —</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Non-binary / Other</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="survey-field">
+        <label class="survey-label" for="sEducation">Highest Education Level</label>
+        <select id="sEducation">
+          <option value="">— select —</option>
+          <option>High School / GED</option>
+          <option>Some College</option>
+          <option>Bachelor's Degree</option>
+          <option>Master's Degree</option>
+          <option>PhD / Doctorate</option>
+          <option>Professional Degree (JD, MD, etc.)</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="survey-field">
+        <label class="survey-label" for="sOccupation">Occupation Background</label>
+        <select id="sOccupation">
+          <option value="">— select —</option>
+          <option>Management</option>
+          <option>Business &amp; Financial Operations</option>
+          <option>Computer &amp; Mathematical</option>
+          <option>Architecture &amp; Engineering</option>
+          <option>Life, Physical &amp; Social Science</option>
+          <option>Community &amp; Social Service</option>
+          <option>Legal</option>
+          <option>Educational Instruction &amp; Library</option>
+          <option>Arts, Design, Entertainment &amp; Media</option>
+          <option>Healthcare Practitioners &amp; Technical</option>
+          <option>Healthcare Support</option>
+          <option>Protective Service</option>
+          <option>Food Preparation &amp; Serving</option>
+          <option>Building &amp; Grounds Cleaning</option>
+          <option>Personal Care &amp; Service</option>
+          <option>Sales &amp; Related</option>
+          <option>Office &amp; Administrative Support</option>
+          <option>Farming, Fishing &amp; Forestry</option>
+          <option>Construction &amp; Extraction</option>
+          <option>Installation, Maintenance &amp; Repair</option>
+          <option>Production / Manufacturing</option>
+          <option>Transportation &amp; Material Moving</option>
+          <option>Military</option>
+          <option>Student</option>
+          <option>Other / Not listed</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="survey-field">
+        <label class="survey-label" for="sInterviews">Within the last 5 years, how many people have you interviewed for a position?</label>
+        <select id="sInterviews">
+          <option value="">— select —</option>
+          <option>0</option>
+          <option>1–5</option>
+          <option>6–10</option>
+          <option>11–20</option>
+          <option>More than 20</option>
+        </select>
+      </div>
+
+      <div class="survey-actions">
+        <button class="survey-skip" id="surveySkip">Skip</button>
+        <button class="survey-submit" id="surveySubmit">Continue →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Main app (shown after survey) ──────────────────────────────────── -->
+  <div id="appContent" style="display:none">
   <div class="status-bar">
     <span>APPLICANT <span class="counter" id="counterDisplay">— / —</span></span>
     <span class="layout-badge" id="layoutBadge">LOADING</span>
@@ -53,9 +248,10 @@
     </div>
     <button class="restart-btn" id="restartBtn">↺ Review Again</button>
   </div>
+  </div><!-- #appContent -->
 </main>
 
-<div class="controls" id="controls">
+<div class="controls" id="controls" style="display:none">
   <button class="action-btn btn-reject" id="btnReject" aria-label="Reject">
     <div class="btn-circle">✕</div>
     <span class="btn-label">Reject</span>
@@ -76,6 +272,15 @@
 <!-- Socket.IO v4 client — matches python-socketio 5.x (protocol v5) -->
 <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
 <script>
+
+/*
+
+TODO: 
+
+*/
+
+
+
 // ── Socket.IO setup ────────────────────────────────────────────────────────
 const socket = io();
 
@@ -88,21 +293,59 @@ socket.on('vote_ack', (data) => {
 });
 
 // ── Data loading ───────────────────────────────────────────────────────────
-const LAYOUTS = ['classic', 'chaos', 'sidebar', 'form'];
-const LAYOUT_NAMES = { classic: 'CLASSIC', chaos: 'UNSTRUCTURED', sidebar: 'TWO-COLUMN', form: 'FORM STYLE' };
+const LAYOUTS = ['classic','sidebar', 'form'];
+const LAYOUT_NAMES = { classic: 'CLASSIC', sidebar: 'TWO-COLUMN', form: 'FORM STYLE' };
+
+
 
 let queue = [];
 let current = 0;
 let accepted = 0;
 let rejected = 0;
+let prefetchedApplicants = null;
 
+// Pre-fetch in background while the user fills out the survey
 fetch('/api/applicants')
   .then(r => r.json())
-  .then(data => {
-    buildQueue(data);
-    renderCard(0);
-  })
+  .then(data => { prefetchedApplicants = data; })
   .catch(err => console.error('Failed to load applicants:', err));
+
+// ── Survey ─────────────────────────────────────────────────────────────────
+function startApp() {
+  document.getElementById('surveyScreen').style.display = 'none';
+  document.getElementById('appContent').style.display = '';
+  document.getElementById('controls').style.display = '';
+
+  const launch = (data) => { buildQueue(data); renderCard(0); };
+  if (prefetchedApplicants) {
+    launch(prefetchedApplicants);
+  } else {
+    fetch('/api/applicants')
+      .then(r => r.json())
+      .then(launch)
+      .catch(err => console.error('Failed to load applicants:', err));
+  }
+}
+
+document.getElementById('surveySkip').addEventListener('click', () => startApp());
+
+document.getElementById('surveySubmit').addEventListener('click', () => {
+  const payload = {
+    session_id:     socket.id || '',
+    age:            document.getElementById('sAge').value.trim(),
+    race_ethnicity: document.getElementById('sRace').value,
+    gender:         document.getElementById('sGender').value,
+    education_level:document.getElementById('sEducation').value,
+    occupation:     document.getElementById('sOccupation').value,
+    interviews_5yr: document.getElementById('sInterviews').value,
+  };
+  fetch('/api/survey', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  }).catch(err => console.error('Survey save error:', err));
+  startApp();
+});
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function splitList(str) {

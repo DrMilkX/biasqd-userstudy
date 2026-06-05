@@ -4,12 +4,12 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-from flask import Flask, jsonify, render_template_string, send_from_directory
+from flask import Flask, jsonify, render_template_string, request, send_from_directory
 from flask_socketio import SocketIO, emit
 
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "votes.db"
-CSV_PATH = BASE_DIR / "synthetic_hiring_bias_dataset.csv"
+CSV_PATH = BASE_DIR / "study_applicants.csv"
 
 app = Flask(__name__, static_folder=str(BASE_DIR))
 app.config["SECRET_KEY"] = "hirepasS-secret-2025"
@@ -28,6 +28,19 @@ def init_db():
                 session_id   TEXT NOT NULL,
                 timestamp    TEXT NOT NULL,
                 hired        INTEGER NOT NULL CHECK(hired IN (0, 1))
+            )
+        """)
+        con.execute("""
+            CREATE TABLE IF NOT EXISTS survey_responses (
+                uid             TEXT PRIMARY KEY,
+                session_id      TEXT NOT NULL,
+                timestamp       TEXT NOT NULL,
+                age             TEXT,
+                race_ethnicity  TEXT,
+                gender          TEXT,
+                education_level TEXT,
+                occupation      TEXT,
+                interviews_5yr  TEXT
             )
         """)
         con.commit()
@@ -65,6 +78,31 @@ def styles():
 @app.route("/api/applicants")
 def api_applicants():
     return jsonify(APPLICANTS)
+
+
+@app.route("/api/survey", methods=["POST"])
+def api_survey():
+    data = request.get_json(force=True)
+    uid = str(uuid.uuid4())
+    ts = datetime.now(timezone.utc).isoformat()
+    with sqlite3.connect(DB_PATH) as con:
+        con.execute(
+            """INSERT INTO survey_responses
+               (uid, session_id, timestamp, age, race_ethnicity, gender,
+                education_level, occupation, interviews_5yr)
+               VALUES (?,?,?,?,?,?,?,?,?)""",
+            (uid,
+             data.get("session_id", ""),
+             ts,
+             data.get("age", ""),
+             data.get("race_ethnicity", ""),
+             data.get("gender", ""),
+             data.get("education_level", ""),
+             data.get("occupation", ""),
+             data.get("interviews_5yr", "")),
+        )
+        con.commit()
+    return jsonify({"uid": uid})
 
 
 @socketio.on("connect")
