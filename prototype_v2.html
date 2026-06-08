@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HIRE/PASS — Resume Screener</title>
+<title>HIRE/PASS — Bias Analysis Experiment</title>
 <link rel="stylesheet" href="styles.css">
 <style>
 .survey-screen {
@@ -99,13 +99,51 @@
 <body>
 
 <header>
-  <div class="logo">HIRE/PASS</div>
-  <div class="session-info">PROTOTYPE</div>
+  <div class="logo">BIAS HIRE/PASS</div>
+  <div class="session-info">USER STUDY</div>
 </header>
 
 <main>
+  <!-- ── Consent / disclaimer ───────────────────────────────────────────── -->
+  <div class="survey-screen" id="consentScreen">
+    <div class="survey-card">
+      <div class="survey-title">Research Study</div>
+      <div class="survey-subtitle">Please read before continuing</div>
+
+      <p style="font-size:13px;line-height:1.7;color:#333;margin:0 0 14px">
+        This is an academic research study examining hiring decisions and potential
+        sources of bias in resume evaluation. Your participation is entirely
+        voluntary and you may stop at any time.
+      </p>
+
+      <p style="font-size:13px;line-height:1.7;color:#333;margin:0 0 14px">
+        <strong>Data collected:</strong> We collect the hiring decisions you make
+        during this session along with optional demographic information you choose
+        to provide (age, gender, race/ethnicity, education, occupation, and prior
+        interviewing experience).
+      </p>
+
+      <p style="font-size:13px;line-height:1.7;color:#333;margin:0 0 14px">
+        <strong>How your data will be used:</strong> All responses are stored
+        anonymously and used solely for statistical analysis and academic research.
+        Your individual responses will never be shared, sold, or used for any
+        purpose other than aggregate research reporting. No personally identifying
+        information is collected.
+      </p>
+
+      <p style="font-size:13px;line-height:1.7;color:#555;margin:0 0 22px">
+        By clicking <em>I Agree</em> below you confirm that you have read this
+        notice and consent to participate under these terms.
+      </p>
+
+      <div style="display:flex;justify-content:flex-end">
+        <button class="survey-submit" id="consentAgree">I Agree →</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ── Pre-study survey ─────────────────────────────────────────────────── -->
-  <div class="survey-screen" id="surveyScreen">
+  <div class="survey-screen" id="surveyScreen" style="display:none">
     <div class="survey-card">
       <div class="survey-title">Before You Begin</div>
       <div class="survey-subtitle">Optional — takes about 30 seconds</div>
@@ -156,7 +194,7 @@
       </div>
 
       <div class="survey-field">
-        <label class="survey-label" for="sOccupation">Occupation Background</label>
+        <label class="survey-label" for="sOccupation">Occupation Background (SOC/SIC)</label>
         <select id="sOccupation">
           <option value="">— select —</option>
           <option>Management</option>
@@ -181,6 +219,17 @@
           <option>Installation, Maintenance &amp; Repair</option>
           <option>Production / Manufacturing</option>
           <option>Transportation &amp; Material Moving</option>
+          <option>Agriculture, Forestry and Fishing
+          <option>Mining</option>
+          <option>Construction</option>
+          <option>Manufacturing</option>
+          <option>Transportation, Communications, Electric, Gas and Sanitary service</option>
+          <option>Wholesale Trade</option>
+          <option>Retail Trade</option>
+          <option>Finance, Insurance and Real estate</option>
+          <option>Services</option>
+          <option>Public administration</option>
+          <option>Nonclassifiable </option>
           <option>Military</option>
           <option>Student</option>
           <option>Other / Not listed</option>
@@ -246,7 +295,7 @@
         <span class="d-lbl">rejected</span>
       </div>
     </div>
-    <button class="restart-btn" id="restartBtn">↺ Review Again</button>
+    <div><p>Thanks for participating!</p></div>
   </div>
   </div><!-- #appContent -->
 </main>
@@ -326,6 +375,11 @@ function startApp() {
       .catch(err => console.error('Failed to load applicants:', err));
   }
 }
+
+document.getElementById('consentAgree').addEventListener('click', () => {
+  document.getElementById('consentScreen').style.display = 'none';
+  document.getElementById('surveyScreen').style.display = '';
+});
 
 document.getElementById('surveySkip').addEventListener('click', () => startApp());
 
