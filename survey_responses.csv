@@ -1,0 +1,28 @@
+uid,session_id,timestamp,age,race_ethnicity,gender,education_level,occupation,interviews_5yr
+243f9deb-e986-422b-ba5a-bc0426a4559c,2kswv9-qCOelc2W-AAAB,2026-06-05T19:39:32.959925+00:00,28,Black or African American,Non-binary / Other,PhD / Doctorate,Computer & Mathematical,6–10
+35a6f2d0-1ac0-4906-8d1b-18c8edd90afc,mR5y9zrim1ISGeu2AAAB,2026-06-08T20:04:38.005772+00:00,28,Black or African American,Non-binary / Other,PhD / Doctorate,Computer & Mathematical,11–20
+4026848b-3a32-4f85-94b5-996f4d1b78b9,Pi8Vo1uSUOcR1FsvAAAh,2026-06-09T18:07:47.117466+00:00,,,,,,
+f3854045-2306-4275-8503-8c8bb8095b1b,1-DyzzOgglP_cIi5AAAf,2026-06-09T18:08:17.307834+00:00,,,,,,
+36915ae8-13f9-475d-9791-d59301fc0f68,_SArPZILe7oKtuHjAAAN,2026-06-10T01:29:03.703220+00:00,35,Asian,Male,PhD / Doctorate,Computer & Mathematical,More than 20
+44d9c318-95a8-49a8-ac11-4499598e92a0,jQOCDTVtWOSq4GW5AAAl,2026-06-10T13:41:58.224829+00:00,37,White,Male,Bachelor's Degree,Computer & Mathematical,11–20
+0b053cee-692c-4dd7-b59c-a8f8bbc742c4,LPOdg9qNEDILsDMrAAAr,2026-06-10T15:49:54.303981+00:00,44,Hispanic or Latino,Female,PhD / Doctorate,Other / Not listed,1–5
+d00e622e-6755-44b6-8ff2-86938f6befe3,xLOYu3IkBWk7BQRPAAAt,2026-06-10T16:35:02.300846+00:00,30,White,Male,Master's Degree,Computer & Mathematical,1–5
+00908b79-54e6-4b20-aefc-bda6026768f6,SYZaWnyCn6YRkHZqAAAv,2026-06-10T17:13:27.451948+00:00,47,White,Female,Master's Degree,Management,More than 20
+3078e386-1ae1-4792-9c0d-03566a67e8a8,5BEtzNSA0p7BRkSsAAA5,2026-06-11T08:29:20.475353+00:00,,White,Female,PhD / Doctorate,Computer & Mathematical,0
+9d24e569-d229-4696-9e1d-6be48e3b6bad,TrLtC6LNj-d1Ks7oAABR,2026-06-11T18:57:30.715135+00:00,47,White,Male,PhD / Doctorate,Computer & Mathematical,More than 20
+f503a5dd-29f3-4e52-a556-75e1e44f8c10,Q0ZfzbaREPzBKL2fAABT,2026-06-11T19:01:49.885980+00:00,59,Hispanic or Latino,Male,PhD / Doctorate,Educational Instruction & Library,0
+5a03094e-c0d0-433d-914e-b95f64d79f8e,TxUr9XB9ZPeFiCJtAACT,2026-06-12T23:40:25.935819+00:00,20,White,Female,Some College,Student,0
+c071d69f-1abf-4a72-b3b5-3073f566a02b,ThYM1xr_JWBhKoAlAACf,2026-06-14T13:27:36.526507+00:00,45,Asian,Female,Master's Degree,Computer & Mathematical,1–5
+7f0af92c-fbb2-4c48-b24e-8cbb7a43f839,Uieva8Tl0VYbijbPAADL,2026-06-15T21:55:28.949838+00:00,41,Hispanic or Latino,Female,Bachelor's Degree,Business & Financial Operations,1–5
+8a8fe901-6e5f-4397-bd31-07c81ed8ab09,FjR-kiNftWJdUTBOAADV,2026-06-15T22:01:00.257734+00:00,61,White,Male,Some College,Business & Financial Operations,0
+b6e98c4f-fecd-4b65-8f81-9e9788afc7db,2hGqiwf5X4JH-q10AADf,2026-06-15T22:08:34.445189+00:00,61,Blanco,Masculino,"Título profesional (JD, MD, etc.)",Operaciones comerciales y financieras,0
+ee8f6cf2-ff07-47f2-969b-a63c25c13044,hKWX0ZocKxnll8IJAADp,2026-06-15T22:25:10.814332+00:00,53,Hispanic or Latino,Female,"Professional Degree (JD, MD, etc.)",Healthcare Practitioners & Technical,0
+156b9e35-c1c5-4e3c-8fb2-d4ff09856ab7,j9wYNx_WS1YlROJ9AADt,2026-06-15T22:27:37.895608+00:00,55,Hispanic or Latino,Male,Master's Degree,Business & Financial Operations,6–10
+34f945b3-a73c-4bec-8efe-85f81e8c559c,45Ql2MJ8ay_p15HKAAD7,2026-06-15T23:08:13.233551+00:00,59,Hispanic or Latino,Male,PhD / Doctorate,Educational Instruction & Library,6–10
+10815432-7a85-4198-a3af-c701c496847d,B3VXKU6lse-c3y1MAAD_,2026-06-15T23:44:58.633544+00:00,61,Hispanic or Latino,Male,PhD / Doctorate,Production / Manufacturing,1–5
+4c879f17-dcb1-42b2-95af-ced95e75f3c0,IIyxvsH173GLOvCgAAEB,2026-06-15T23:46:05.177001+00:00,61,Hispanic or Latino,Male,PhD / Doctorate,Production / Manufacturing,1–5
+4328903e-d0f8-4305-84bf-60108941e23c,CnICaJRDHASCn-uvAAET,2026-06-16T06:08:59.538877+00:00,,,,,,
+84815e0f-208f-4066-b27c-119ab0927589,NsuLwb6wNgRaElyGAAEh,2026-06-16T14:16:34.566027+00:00,28,Asian,Female,Master's Degree,Other / Not listed,1–5
+6d0d37f4-e43e-4f5a-bbc3-91d30344b764,7H6nEorwFTbDJetSAAE1,2026-06-16T20:38:14.630789+00:00,54,Hispanic or Latino,Female,Master's Degree,Management,0
+cc90d372-bc48-432a-89ae-eef60d7eff87,595f-4odagG-JAHPAAE3,2026-06-16T20:45:32.389005+00:00,47,White,Female,Master's Degree,Other / Not listed,1–5
+9b220e13-0192-44be-b123-f223adb35de2,ePwMsmcZrA3YTU5KAAE5,2026-06-16T21:04:24.462552+00:00,29,Asian,Female,PhD / Doctorate,"Arts, Design, Entertainment & Media",0
