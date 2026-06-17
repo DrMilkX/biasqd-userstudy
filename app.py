@@ -18,6 +18,8 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 KEEP_COLS = {"id", "name", "education_level", "education_organization",
              "years_experience", "skills", "languages", "test_score"}
 
+PORT = 5098
+
 
 def init_db():
     with sqlite3.connect(DB_PATH) as con:
@@ -138,4 +140,4 @@ if __name__ == "__main__":
     init_db()
     print(f"DB: {DB_PATH}")
     print(f"CSV: {CSV_PATH}  ({len(load_csv())} applicants)")
-    socketio.run(app, host="0.0.0.0", port=5000, debug=True)
+    socketio.run(app, host="0.0.0.0", port=PORT, debug=True)
