@@ -49,24 +49,22 @@ class EvoNN:
         accuracy = (self.forward(X) == np.array(y).reshape(-1,1)).sum() / len(np.array(y))
         return accuracy
 
-    def proportion(self, X1, X2):
-        if len(X1) == 0 or len(X2) == 0:
-            return None, None
-        probx = self.forward(X1).mean()
-        proby = self.forward(X2).mean()
-        return probx, proby
-
-
     def grab_X_split(self, X, c):
         ''' Grabs the splits of X based on the comparisons '''
+
+        # print("====== COMPS =====")
+        # print(c)
+        # print(X.shape)
+
+
         if "GENDER" in c:
             male = X[X['gender']==1]
             female = X[X['gender']==0]
             return male.to_numpy(), female.to_numpy()
 
         elif "AGE" in c:
-            old = X[X['age']==1]
-            young = X[X['age']==0]
+            old = X[X['age_binary']==1]
+            young = X[X['age_binary']==0]
             return old.to_numpy(), young.to_numpy()
 
         elif "RACE" in c:
@@ -89,4 +87,4 @@ class EvoNN:
         return prob
 
     def run(self, X, y, comps):
-        return self.accuracy(X,y), (self.proportion2(X, comps[0]), self.proportion2(X, comps[1]))
+        return self.accuracy(X,y), (self.proportion2(X, comps[0]), self.proportion2(X, comps[1]), self.proportion2(X, comps[2]))

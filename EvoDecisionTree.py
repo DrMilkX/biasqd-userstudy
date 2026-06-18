@@ -365,8 +365,8 @@ class EvoDecTree:
             return male.to_numpy(), female.to_numpy()
 
         elif "AGE" in c:
-            old = X[X['age']==1]
-            young = X[X['age']==0]
+            old = X[X['age_binary']==1]
+            young = X[X['age_binary']==0]
             return old.to_numpy(), young.to_numpy()
 
         elif "RACE" in c:
@@ -393,7 +393,7 @@ class EvoDecTree:
         return prob
 
     def run(self, X, Xnp, y, comps):
-        return self.accuracy(Xnp,y), (self.proportion2(X, comps[0]), self.proportion2(X, comps[1]))
+        return self.accuracy(Xnp,y), (self.proportion2(X, comps[0]), self.proportion2(X, comps[1]), self.proportion2(X, comps[2]))
 
 
     def mutate(self, mutation_rate=0.2):
