@@ -81,7 +81,7 @@ GRID_DIR = f"{HEAD_DIR}/grid"
 ## EXPERIMENT SETTINGS
 EXPERIMENT = "BOTH"
 EXP_RANGE = [1]
-EXP_ITERATIONS = 100
+EXP_ITERATIONS = 5000
 DATASETS = ['synthetic']
 
 
@@ -191,7 +191,7 @@ def arx_vis_out(arx, x_prob, y_prob, a, b, name, scaled=True):
 # Rewriting Pyribs was a pain in the ASS :( why would anyone change the framework definition?!
 
 # %%
-def getArxSubInd(arx, xr=(12,17), yr=(12,17), zr=(12,17), dims=(AX,AX,AX)):
+def getArxSubInd(arx, xr=(4,6), yr=(4,6), zr=(4,6), dims=(AX,AX,AX)):
     ''' Returns a subset of the archive based on the x and y indices '''
     i = list(range(dims[0]*dims[1]*dims[2]))
     i = np.array(i).reshape(dims)
@@ -254,7 +254,7 @@ def nnME(X,y, comparisons,iterations=100000, dname=""):
             
             # print(bcs)
             # print(f"objs: {objs} | bcs: {bcs}")
-            if itr%20 == 0: print (f"objs: {objs[0]} | bcs: {bcs[0]}")
+            # if itr%20 == 0: print (f"objs: {objs[0]} | bcs: {bcs[0]}")
 
             # assert not np.any(bcs > 2), f"Behavioral characteristic out of bounds )"
 
@@ -302,7 +302,7 @@ def nnME(X,y, comparisons,iterations=100000, dname=""):
     # arx.to_pickle(f"{ARCHIVE_DIR}/NN/nn_exp_{dname}.pkl")
 
     # for models in the square (fair zone)
-    square_i = getArxSubInd(arx, xr=(12,17), yr=(12,17), zr=(12,17), dims=(AX,AX,AX))
+    square_i = getArxSubInd(arx, xr=(4,6), yr=(4,6), zr=(4,6), dims=(AX,AX,AX))
     square = arx.loc[arx['index'].isin(square_i)]
         
     best_model_unbiased_index = square['objective'].idxmax() if len(square) > 0 else None
@@ -437,7 +437,7 @@ def dtME(X,y, comparisons, iterations=100000, dname=""):
     # arx.to_pickle(f"{ARCHIVE_DIR}/DT/dt_exp_{dname}.pkl")
 
     # for models in the square (fair zone)
-    square_i = getArxSubInd(arx, xr=(12,17), yr=(12,17), zr=(12,17), dims=(AX,AX,AX))
+    square_i = getArxSubInd(arx, xr=(4,6), yr=(4,6), zr=(4,6), dims=(AX,AX,AX))
     square = arx.loc[arx['index'].isin(square_i)]
         
     best_model_unbiased_index = square['objective'].idxmax() if not square.empty else None
