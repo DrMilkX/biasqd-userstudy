@@ -344,8 +344,13 @@ class EvoDecTree:
         if self.tree is None:
             raise ValueError("Tree has not been built yet.")
 
-        predictions = self.predict(X)
-        return float(numpy.mean(predictions == y))
+        y_true = numpy.array(y).reshape(-1,1)
+        y_pred = self.predict(X)
+        tp = numpy.sum((y_pred == 1) & (y_true == 1))
+        fp = numpy.sum((y_pred == 1) & (y_true == 0))
+        fn = numpy.sum((y_pred == 0) & (y_true == 1))
+        f1 = 2 * tp / (2 * tp + fp + fn + numpy.finfo(float).eps)
+        return f1
     
 
     def proportion(self, X1, X2):

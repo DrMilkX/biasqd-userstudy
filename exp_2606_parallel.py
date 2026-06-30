@@ -71,7 +71,7 @@ from EvoNeuralNet import EvoNN
 
 # %%
 # DIRECTORY SETUP
-HEAD_DIR = "6-17"
+HEAD_DIR = "6-29"
 ARCHIVE_DIR = f"{HEAD_DIR}/archive"
 WEIGHTS_DIR = f"{HEAD_DIR}/weights"
 RESULTS_DIR = f"{HEAD_DIR}/results"

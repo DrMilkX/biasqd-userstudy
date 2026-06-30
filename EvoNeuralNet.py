@@ -46,8 +46,13 @@ class EvoNN:
     
 
     def accuracy(self, X, y):
-        accuracy = (self.forward(X) == np.array(y).reshape(-1,1)).sum() / len(np.array(y))
-        return accuracy
+        y_true = np.array(y).reshape(-1,1)
+        y_pred = self.forward(X)
+        tp = np.sum((y_pred == 1) & (y_true == 1))
+        fp = np.sum((y_pred == 1) & (y_true == 0))
+        fn = np.sum((y_pred == 0) & (y_true == 1))
+        f1 = 2 * tp / (2 * tp + fp + fn + np.finfo(float).eps)
+        return f1
 
     def grab_X_split(self, X, c):
         ''' Grabs the splits of X based on the comparisons '''
